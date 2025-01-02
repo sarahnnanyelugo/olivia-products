@@ -70,7 +70,7 @@ const CartOffcanvas: React.FC = () => {
         )}
         {cart.length > 1 && <button onClick={clearCart}>Clear All</button>}
         <div>
-          <h5>Total: ${calculateTotalPrice().toFixed(2)}</h5>
+          <strong>Total: ${calculateTotalPrice().toFixed(2)}</strong>
         </div>
         <button className="checkout-btn">Checkout</button>
       </Offcanvas.Body>

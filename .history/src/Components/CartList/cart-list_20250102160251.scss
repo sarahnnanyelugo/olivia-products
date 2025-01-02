@@ -1,0 +1,11 @@
+.offcanvas {
+  background: rgb(222, 234, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 234, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 75%
+  );
+  .item-list {
+    background-color: red;
+  }
+}
