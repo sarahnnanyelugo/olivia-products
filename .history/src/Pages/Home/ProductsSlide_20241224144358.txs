@@ -1,0 +1,42 @@
+interface CarouselProps {
+  images: string[]; // Ensure this matches the type of your input data
+}
+
+const Carousel = ({ images }: CarouselProps): JSX.Element => {
+  const [startIndex, setStartIndex] = useState < number > 0;
+
+  const displayedImages = images.slice(startIndex, startIndex + 5);
+
+  const handleNext = (): void => {
+    setStartIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrev = (): void => {
+    setStartIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  };
+
+  return (
+    <div className="carousel">
+      <button className="prev-button" onClick={handlePrev}>
+        &#8249;
+      </button>
+      <div className="carousel-images">
+        {displayedImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Product ${startIndex + index + 1}`}
+            className="carousel-image"
+          />
+        ))}
+      </div>
+      <button className="next-button" onClick={handleNext}>
+        &#8250;
+      </button>
+    </div>
+  );
+};
+
+export default Carousel;

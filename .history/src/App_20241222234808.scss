@@ -1,0 +1,30 @@
+@font-face {
+  font-family: sailecMedium;
+  src: url(./assets/fonts/Sailec-Font/Sailec-Medium/Sailec-Medium.ttf);
+}
+@font-face {
+  font-family: sailecRegularIt;
+  src: url(./assets/fonts/Sailec-Font/Sailec-Regular-Italic/Sailec-Regular-Italic.ttf);
+}
+@font-face {
+  font-family: sailecBold;
+  src: url(./assets/fonts/Sailec-Font/Sailec-Bold/Sailec-Bold.ttf);
+}
+@font-face {
+  font-family: sailecLight;
+  src: url(./assets/fonts/Sailec-Font/Sailec-Light/Sailec-Light.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sailecBold;
+}
+p {
+  font-family: sailecMedium;
+}
+a {
+  font-family: sailecMedium;
+}
