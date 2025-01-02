@@ -36,10 +36,9 @@ export const ViewProductPage: React.FC = () => {
       productName: product.name,
       productPrice: product.price,
       firstImg: product.firstImg,
-      quantity: quantity, // Pass the updated quantity
+      quantity: 1, // Default quantity to 1 when adding to the cart
     });
   };
-
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };
@@ -49,7 +48,6 @@ export const ViewProductPage: React.FC = () => {
       setQuantity((prevQuantity) => prevQuantity - 1);
     }
   };
-
   return (
     <div className="product-detail d-md-flex col-md-10 offset-md-1">
       {/* Image Carousel Section */}
@@ -116,8 +114,7 @@ export const ViewProductPage: React.FC = () => {
         <p>{product.description}</p>
 
         <button className="btn btn-primary" onClick={handleAddToCart}>
-          Add to Cart ${(product.price * quantity).toFixed(2)}{" "}
-          {/* Show total */}
+          Add to Cart ${product.price.toFixed(2)}
         </button>
       </div>
     </div>

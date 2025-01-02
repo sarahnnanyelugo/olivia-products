@@ -36,10 +36,9 @@ export const ViewProductPage: React.FC = () => {
       productName: product.name,
       productPrice: product.price,
       firstImg: product.firstImg,
-      quantity: quantity, // Pass the updated quantity
+      quantity: 1, // Default quantity to 1 when adding to the cart
     });
   };
-
   const handleIncrement = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };
@@ -49,7 +48,6 @@ export const ViewProductPage: React.FC = () => {
       setQuantity((prevQuantity) => prevQuantity - 1);
     }
   };
-
   return (
     <div className="product-detail d-md-flex col-md-10 offset-md-1">
       {/* Image Carousel Section */}
@@ -104,20 +102,24 @@ export const ViewProductPage: React.FC = () => {
       {/* Product Details Section */}
       <div className="product-info col-md-6">
         <h2>{product.name}</h2>
-        <div className="quantity-controls">
-          <button onClick={handleDecrement} className="decrement-btn">
-            -
-          </button>
-          <span>{quantity}</span>
-          <button onClick={handleIncrement} className="increment-btn">
-            +
-          </button>
-        </div>
         <p>{product.description}</p>
+        <button
+          className="prev-arrow"
+          onClick={() =>
+            setActiveImage((prev) => (prev - 1 + images.length) % images.length)
+          }
+        >
+          &#10094;
+        </button>
+        <button
+          className="next-arrow"
+          onClick={() => setActiveImage((prev) => (prev + 1) % images.length)}
+        >
+          &#10095;
+        </button>
 
         <button className="btn btn-primary" onClick={handleAddToCart}>
-          Add to Cart ${(product.price * quantity).toFixed(2)}{" "}
-          {/* Show total */}
+          Add to Cart ${product.price.toFixed(2)}
         </button>
       </div>
     </div>
