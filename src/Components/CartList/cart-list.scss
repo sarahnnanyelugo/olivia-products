@@ -1,4 +1,6 @@
 .offcanvas {
+  z-index: 3050 !important; /* Ensure it's above other elements */
+
   background: rgb(222, 234, 255);
   background: linear-gradient(
     180deg,

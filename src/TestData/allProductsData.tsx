@@ -4,6 +4,10 @@ import product1 from "../assets/images/product1.avif";
 import product2 from "../assets/images/product2.avif";
 import product3 from "../assets/images/product3.avif";
 import product4 from "../assets/images/product4.avif";
+import PaperTablet from "../assets/images/paper-tablet.avif";
+import TabletSample from "../assets/images/tablet-sample.avif";
+import Tablet3 from "../assets/images/tablet3.avif";
+import TabletCompare from "../assets/images/tablet-compare.avif";
 export const allProductsData = [
   {
     firstImg: first,
@@ -11,6 +15,7 @@ export const allProductsData = [
     id: 1,
     price: 16000,
     name: "Hair food",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: product1,
@@ -18,6 +23,7 @@ export const allProductsData = [
     id: 2,
     price: 10000,
     name: "Organic Shampoo",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: product3,
@@ -25,6 +31,7 @@ export const allProductsData = [
     id: 3,
     price: 5000,
     name: "Dish wash",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: product1,
@@ -32,13 +39,15 @@ export const allProductsData = [
     id: 4,
     price: 12000,
     name: "Laundry stones",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: first,
     hoverImg: second,
     id: 5,
     price: 9000,
-    name: "Hand wash",
+    name: "Laundry Tablets",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: product1,
@@ -46,6 +55,7 @@ export const allProductsData = [
     id: 6,
     price: 2220,
     name: "Body wash",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: product3,
@@ -53,6 +63,7 @@ export const allProductsData = [
     price: 1000,
     id: 7,
     name: "Face wash",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
   {
     firstImg: product1,
@@ -60,5 +71,6 @@ export const allProductsData = [
     id: 8,
     price: 3400,
     name: "Disinfectant",
+    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
   },
 ];
