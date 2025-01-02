@@ -87,7 +87,7 @@ export const Footer = () => {
             <div className="col-4">
               {" "}
               <ul className="list-unstyled footer-links">
-                <h5>Help</h5>
+                <h6>Help</h6>
                 <li>
                   <NavLink to={""}>Contact Us</NavLink>
                 </li>
