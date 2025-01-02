@@ -1,0 +1,16 @@
+footer {
+  .footer-inner {
+    padding: 10px 50px;
+    background: rgb(0, 48, 87);
+  }
+  .footer-top {
+    height: 10px;
+    background: rgb(222, 234, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(222, 234, 255, 1) 13%,
+      rgba(250, 230, 255, 1) 78%,
+      rgba(255, 242, 223, 1) 93%
+    );
+  }
+}

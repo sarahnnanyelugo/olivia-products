@@ -11,7 +11,7 @@ export const Middle: React.FC = () => {
   return (
     <>
       <div className="middle-nav-div d-flex align-items-center">
-        <ul className="list-unstyled list-inline col-md-4 navs">
+        <ul className="list-unstyled list-inline col-md-4">
           <li className="list-inline-item">
             <NavLink to={"/"}>Shop</NavLink>
           </li>
@@ -22,7 +22,7 @@ export const Middle: React.FC = () => {
             <NavLink to={"/"}>How it works</NavLink>
           </li>
         </ul>
-        <div className="col-md-4 col-2">
+        <div className="col-md-4">
           <center>
             <div className="col-md-8">
               <img src={Logo} className="col-md-2" width="100%" />
