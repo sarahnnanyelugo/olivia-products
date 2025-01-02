@@ -8,7 +8,7 @@ import PaperTablet from "../assets/images/paper-tablet.avif";
 import TabletSample from "../assets/images/tablet-sample.avif";
 import Tablet3 from "../assets/images/tablet3.avif";
 import TabletCompare from "../assets/images/tablet-compare.avif";
-// import TabletVideo from "../assets/images/tablet-vid.mp4";
+import TabletVideo from "../assets/images/tablet-compare.avif";
 export const allProductsData = [
   {
     firstImg: first,
@@ -16,7 +16,14 @@ export const allProductsData = [
     id: 1,
     price: 16000,
     name: "Hair food",
-    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
+    additionalMedia: [
+      { type: "image", src: PaperTablet },
+      { type: "image", src: Tablet3 },
+      { type: "image", src: TabletCompare },
+      { type: "image", src: TabletSample },
+      { type: "video", src: TabletVideo },
+    ],
+    additionalImgs: [, , ,],
   },
   {
     firstImg: product1,

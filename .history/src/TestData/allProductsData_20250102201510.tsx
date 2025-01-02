@@ -16,7 +16,14 @@ export const allProductsData = [
     id: 1,
     price: 16000,
     name: "Hair food",
-    additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
+    additionalMedia: [
+      { type: "image", src: PaperTablet },
+      { type: "image", src: Tablet3 },
+      { type: "image", src: TabletCompare },
+      { type: "image", src: TabletSample },
+      { type: "video", src: "../assets/images/tablet-vid.mp4" },
+    ],
+    additionalImgs: [, , ,],
   },
   {
     firstImg: product1,
