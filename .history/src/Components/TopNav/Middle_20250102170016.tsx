@@ -22,14 +22,14 @@ export const Middle: React.FC = () => {
             <NavLink to={"/"}>How it works</NavLink>
           </li>
         </ul>
-        <div className="col-md-4">
+        <div className="col-md-4" style={{ flexGrow: 1 }}>
           <center>
             <div className="col-md-8">
               <img src={Logo} className="col-md-2" width="" />
             </div>
           </center>
         </div>
-        <div style={{ flexGrow: 1 }} />
+
         {/* Cart Icon with Item Count */}
         <div
           style={{ position: "relative", cursor: "pointer" }}

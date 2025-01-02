@@ -62,7 +62,7 @@ const MainProduct: React.FC<ProductProps> = ({
         )}
       </div>
 
-      <div className="d-flex" style={{ textAlign: "left", padding: "5px" }}>
+      <div className="d-flex" style={{ textAlign: "left" }}>
         <h6 style={{ flexGrow: 1 }}>${productPrice.toFixed(2)}</h6>
         <h6>{productName}</h6>
       </div>

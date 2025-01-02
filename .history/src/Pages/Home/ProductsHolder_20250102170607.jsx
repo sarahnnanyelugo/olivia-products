@@ -59,23 +59,17 @@ export const ProductsHolder = () => {
   } = useCart();
 
   return (
-    <center>
-      {" "}
-      <div className="prod-slide col-md-11">
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <MdNavigateBefore
-            onClick={handlePrev}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
+    <div className="prod-slide">
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <MdNavigateBefore onClick={handlePrev} />
 
-          <MdNavigateNext
-            onClick={handleNext}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
-        </div>
+        <MdNavigateNext onClick={handleNext} />
+      </div>
 
+      <center>
+        {" "}
         <div
-          className="carousel "
+          className="carousel col-md-11"
           style={{
             display: "flex",
             transition: isTransitioning ? "transform 1s ease-in-out" : "none",
@@ -105,18 +99,18 @@ export const ProductsHolder = () => {
             </div>
           ))}
         </div>
+      </center>
 
-        {/* Cart Offcanvas */}
-        <CartOffcanvas
-          show={setIsOffCanvasOpen}
-          onClose={() => setIsOffCanvasOpen(false)}
-          cart={cart}
-          onRemoveFromCart={handleRemoveFromCart}
-          onClearCart={handleClearCart}
-          onIncrementQuantity={incrementQuantity}
-          onDecrementQuantity={decrementQuantity}
-        />
-      </div>
-    </center>
+      {/* Cart Offcanvas */}
+      <CartOffcanvas
+        show={setIsOffCanvasOpen}
+        onClose={() => setIsOffCanvasOpen(false)}
+        cart={cart}
+        onRemoveFromCart={handleRemoveFromCart}
+        onClearCart={handleClearCart}
+        onIncrementQuantity={incrementQuantity}
+        onDecrementQuantity={decrementQuantity}
+      />
+    </div>
   );
 };

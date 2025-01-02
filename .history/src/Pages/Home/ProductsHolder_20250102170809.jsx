@@ -63,15 +63,9 @@ export const ProductsHolder = () => {
       {" "}
       <div className="prod-slide col-md-11">
         <div className="d-flex justify-content-between align-items-center mb-3">
-          <MdNavigateBefore
-            onClick={handlePrev}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
+          <MdNavigateBefore onClick={handlePrev} />
 
-          <MdNavigateNext
-            onClick={handleNext}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
+          <MdNavigateNext onClick={handleNext} />
         </div>
 
         <div

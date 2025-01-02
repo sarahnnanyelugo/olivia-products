@@ -68,10 +68,7 @@ export const ProductsHolder = () => {
             style={{ color: "#003057 ", fontSize: "38px" }}
           />
 
-          <MdNavigateNext
-            onClick={handleNext}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
+          <MdNavigateNext onClick={handleNext} />
         </div>
 
         <div
