@@ -23,9 +23,7 @@ export const ContactUs = () => {
           <h6>
             Message<span>*</span>
           </h6>
-          <textarea />
-          <input type="file" />
-          <button>Send</button>
+          <textarea /> <button>Send</button>
         </div>
       </form>
     </div>
