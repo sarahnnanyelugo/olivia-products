@@ -26,7 +26,7 @@ export const ContactUs = () => {
             Message<span>*</span>
           </h6>
           <textarea />
-          <div className="file-input-wrapper">
+          <div className="file-input-wrapper col-md-12">
             <input type="file" id="fileInput" className="file-input" />
             <label htmlFor="fileInput" className="file-input-label">
               <FaPaperclip className="file-input-icon" />

@@ -26,13 +26,7 @@ export const ContactUs = () => {
             Message<span>*</span>
           </h6>
           <textarea />
-          <div className="file-input-wrapper">
-            <input type="file" id="fileInput" className="file-input" />
-            <label htmlFor="fileInput" className="file-input-label">
-              <FaPaperclip className="file-input-icon" />
-              Attach File
-            </label>
-          </div>
+          <input type="file" />
           <button>Send</button>
         </div>
       </form>
