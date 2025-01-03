@@ -1,0 +1,33 @@
+  [
+    {
+      name: "Alice Johnson",
+      comment: "This product is amazing! Highly recommend it to everyone.",
+      rating: 5,
+      backgroundColor: "#f5f7fa",
+    },
+    {
+      name: "Bob Smith",
+      comment: "Great service and fast delivery. I’m very satisfied.",
+      rating: 4,
+      backgroundColor: "#e3fcec",
+    },
+    {
+      name: "Charlie Lee",
+      comment: "Good quality, but it took a while to arrive.",
+      rating: 3,
+      backgroundColor: "#fef3c7",
+    },
+    {
+      name: "Diana White",
+      comment: "Excellent! Will definitely buy again.",
+      rating: 5,
+      backgroundColor: "#fde2e4",
+    },
+    {
+      name: "Edward Green",
+      comment: "Very helpful customer support.",
+      rating: 4,
+      backgroundColor: "#dbeafe",
+    },
+  ],
+
