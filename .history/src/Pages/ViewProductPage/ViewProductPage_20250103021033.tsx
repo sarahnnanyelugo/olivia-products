@@ -103,20 +103,20 @@ export const ViewProductPage: React.FC = () => {
 
       {/* Product Details Section */}
       <div className="product-info col-md-5">
-        <h1>{product.name}</h1>
+        <h2>{product.name}</h2>
         <div className="quantity-controls">
-          <span onClick={handleDecrement} className="decrement-btn">
+          <button onClick={handleDecrement} className="decrement-btn">
             -
-          </span>
+          </button>
           <span>{quantity}</span>
-          <span onClick={handleIncrement} className="increment-btn">
+          <button onClick={handleIncrement} className="increment-btn">
             +
-          </span>
+          </button>
         </div>
         <p>{product.description}</p>
 
-        <button className="add-to-cart2" onClick={handleAddToCart}>
-          Add to Cart | ${(product.price * quantity).toFixed(2)}{" "}
+        <button className="add-to-cart-btn" onClick={handleAddToCart}>
+          Add to Cart ${(product.price * quantity).toFixed(2)}{" "}
           {/* Show total */}
         </button>
       </div>

@@ -111,12 +111,12 @@ export const ViewProductPage: React.FC = () => {
           <span>{quantity}</span>
           <span onClick={handleIncrement} className="increment-btn">
             +
-          </span>
+          </sp>
         </div>
         <p>{product.description}</p>
 
         <button className="add-to-cart2" onClick={handleAddToCart}>
-          Add to Cart | ${(product.price * quantity).toFixed(2)}{" "}
+          Add to Cart ${(product.price * quantity).toFixed(2)}{" "}
           {/* Show total */}
         </button>
       </div>

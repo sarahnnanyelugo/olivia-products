@@ -116,7 +116,7 @@ export const ViewProductPage: React.FC = () => {
         <p>{product.description}</p>
 
         <button className="add-to-cart2" onClick={handleAddToCart}>
-          Add to Cart | ${(product.price * quantity).toFixed(2)}{" "}
+          Add to Cart ${(product.price * quantity).toFixed(2)}{" "}
           {/* Show total */}
         </button>
       </div>
