@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { OrderIcon } from "./OrderIcon";
 export interface OrderDetailsProps {
   label: string;
@@ -7,7 +6,7 @@ export interface OrderDetailsProps {
 export const OrderDetails: React.FC<OrderDetailsProps> = ({}) => {
   return (
     <div className=" row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
-      <Link to={"/order-form"} className="col ">
+      <div className="col ">
         <div className="order-details">
           {" "}
           <center>
@@ -63,8 +62,8 @@ export const OrderDetails: React.FC<OrderDetailsProps> = ({}) => {
             <h6>Track Order</h6>
           </center>
         </div>
-      </Link>{" "}
-      <Link to={"/order-form"} className="col ">
+      </div>{" "}
+      <div className="col ">
         <div className="order-details">
           {" "}
           <center>
@@ -96,8 +95,8 @@ export const OrderDetails: React.FC<OrderDetailsProps> = ({}) => {
             <h6>Return Order</h6>
           </center>
         </div>
-      </Link>{" "}
-      <Link to={"/order-form"} className="col ">
+      </div>{" "}
+      <div className="col ">
         <div className="order-details">
           {" "}
           <center>
@@ -129,7 +128,7 @@ export const OrderDetails: React.FC<OrderDetailsProps> = ({}) => {
             <h6>Track Order</h6>
           </center>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };

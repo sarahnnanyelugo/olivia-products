@@ -11,7 +11,6 @@ import { ViewProductPage } from "./Pages/ViewProductPage/ViewProductPage";
 import { CartProvider } from "./CartContext";
 import { Footer } from "./Components/Footer/Footer";
 import { ContactUs } from "./Pages/ContactUs/ContactUs";
-import { OrderForm } from "./Pages/ContactUs/OrderForm";
 function App() {
   return (
     <>
@@ -23,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />{" "}
           <Route path="/product/:id" element={<ViewProductPage />} />{" "}
           <Route path="/contact-us" element={<ContactUs />} />{" "}
-          <Route path="/order-form" element={<OrderForm />} />{" "}
+          <Route path="/order-form" element={<ContactUs />} />{" "}
         </Routes>
         <Footer />
       </CartProvider>

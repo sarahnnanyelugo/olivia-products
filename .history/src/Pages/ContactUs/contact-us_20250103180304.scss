@@ -7,10 +7,8 @@
     color: #18272f;
     position: relative;
     text-decoration: none;
-    text-decoration: none !important;
   }
-  a {
-  }
+
   h6::before {
     content: "";
     position: absolute;
@@ -111,34 +109,5 @@
 
   .file-input-label:active {
     background-color: #d0d0d0;
-  }
-}
-.order-form {
-  padding: 40px 20px;
-  background: #fff;
-  box-shadow: 0 0 2px 2px #e7e7e7;
-  margin-top: 200px;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  input {
-    width: 100%;
-    padding: 10px 20px;
-    border: solid 1px #e7e7e7;
-    border-radius: 5px;
-    font-family: sailecBold;
-  }
-
-  button,
-  h6 {
-    margin-top: 30px;
-    font-family: sailecBold;
-    padding: 10px 30px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: none;
-  }
-  h4 {
-    margin-top: 30px;
-    margin-bottom: 30px;
   }
 }
