@@ -89,8 +89,8 @@ export const About: React.FC = () => {
         </div>
       </div>
       <div className="paper-div d-md-flex">
-        <div className="col-md-3 offset-md-1 pd-1">
-          <h5>THE SOLUTION</h5>
+        <div className="col-md-4">
+          <h4>THE SOLUTION</h4>
           <h2>All Power, No Plastic</h2>
           <p>
             Keep our homes and planet clean with products that eliminate

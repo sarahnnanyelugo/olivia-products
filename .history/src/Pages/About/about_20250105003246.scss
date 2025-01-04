@@ -34,7 +34,7 @@
     margin-bottom: 240px;
     font-size: 22px;
     opacity: 0.3;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 .writeup p.visible {
@@ -60,23 +60,4 @@
   //   height: 1000px; /* Just for demo purposes */
   overflow-y: auto;
   margin-top: 200px;
-}
-.paper-div {
-  height: 700px;
-  background: rgb(241, 223, 200);
-  background: linear-gradient(
-    90deg,
-    rgba(241, 223, 200, 1) 60%,
-    rgba(245, 229, 206, 1) 77%
-  );
-
-  .refil {
-    background: url("../../assets/images/paper.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .pd-1 {
-    margin-top: 150px;
-  }
 }

@@ -3,7 +3,6 @@ import "./about.scss";
 import Abt1 from "../../assets/images/abt1.avif";
 import Abt2 from "../../assets/images/abt2.avif";
 import Abt3 from "../../assets/images/abt3.avif";
-import Abt4 from "../../assets/images/paper.avif";
 
 export const About: React.FC = () => {
   const images: string[] = [Abt3, Abt2, Abt1];
@@ -65,17 +64,14 @@ export const About: React.FC = () => {
       <div className="scroll-container" ref={containerRef}>
         <div className="content">
           <div className="sticky-image col-md-6">
-            <img
-              src={currentImage}
-              alt="Scroll Transition"
-              className="col-md-11"
-            />
+            <img src={currentImage} alt="Scroll Transition" />
           </div>
-          <div className="writeup col-md-3">
+          <div className="writeup col-md-6">
             {[
               "The average person eats credit card’s worth of plastic each week - amounting to 74,000 microplastics each year.",
               "Every year nearly 18 billion pounds of plastic enters the ocean - that's one garbage truck full every minute.",
               "We generate enough plastic waste each year to circle the earth four times. And we can't recycle our way out of this plastic problem. Only 5% of plastic waste actually gets recycled!",
+              "Paragraph 4 content...",
             ].map((text, index) => (
               <p
                 key={index}
@@ -86,21 +82,6 @@ export const About: React.FC = () => {
               </p>
             ))}
           </div>
-        </div>
-      </div>
-      <div className="paper-div d-md-flex">
-        <div className="col-md-3 offset-md-1 pd-1">
-          <h5>THE SOLUTION</h5>
-          <h2>All Power, No Plastic</h2>
-          <p>
-            Keep our homes and planet clean with products that eliminate
-            single-use plastic and can be refilled again (and again). Blueland:
-            Eco-Friendly Cleaning Products
-          </p>
-        </div>
-        <div className="col-md-8 refil ">
-          {" "}
-          {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
         </div>
       </div>
     </div>

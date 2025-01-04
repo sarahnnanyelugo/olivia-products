@@ -3,7 +3,6 @@ import "./about.scss";
 import Abt1 from "../../assets/images/abt1.avif";
 import Abt2 from "../../assets/images/abt2.avif";
 import Abt3 from "../../assets/images/abt3.avif";
-import Abt4 from "../../assets/images/paper.avif";
 
 export const About: React.FC = () => {
   const images: string[] = [Abt3, Abt2, Abt1];
@@ -86,21 +85,6 @@ export const About: React.FC = () => {
               </p>
             ))}
           </div>
-        </div>
-      </div>
-      <div className="paper-div d-md-flex">
-        <div className="col-md-3 offset-md-1 pd-1">
-          <h5>THE SOLUTION</h5>
-          <h2>All Power, No Plastic</h2>
-          <p>
-            Keep our homes and planet clean with products that eliminate
-            single-use plastic and can be refilled again (and again). Blueland:
-            Eco-Friendly Cleaning Products
-          </p>
-        </div>
-        <div className="col-md-8 refil ">
-          {" "}
-          {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
         </div>
       </div>
     </div>

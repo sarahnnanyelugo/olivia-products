@@ -1,0 +1,26 @@
+.banner {
+  height: 600px;
+  background: url("../../assets/images/cloud-bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  p {
+    font-size: 60px;
+    font-family: sailecLight;
+    margin-top: 30px;
+    line-height: 70px;
+  }
+  h5 {
+    border-bottom: solid 1px #003057;
+    width: fit-content;
+  }
+}
+.problem-div {
+  h3 {
+    border-bottom: solid 1px #003057;
+  }
+  p {
+    font-size: 45px;
+    font-family: sailecRegularIt;
+  }
+}

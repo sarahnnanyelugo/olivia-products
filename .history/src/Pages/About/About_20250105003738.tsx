@@ -89,18 +89,10 @@ export const About: React.FC = () => {
         </div>
       </div>
       <div className="paper-div d-md-flex">
-        <div className="col-md-3 offset-md-1 pd-1">
-          <h5>THE SOLUTION</h5>
-          <h2>All Power, No Plastic</h2>
-          <p>
-            Keep our homes and planet clean with products that eliminate
-            single-use plastic and can be refilled again (and again). Blueland:
-            Eco-Friendly Cleaning Products
-          </p>
-        </div>
-        <div className="col-md-8 refil ">
+        <div className="col-md-4"></div>
+        <div className="col-md-6">
           {" "}
-          {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
+          <img src={Abt4} alt="Scroll Transition" className="col-md-12" />
         </div>
       </div>
     </div>

@@ -64,6 +64,7 @@
 .paper-div {
   height: 700px;
   background: rgb(241, 223, 200);
+  padding-left: 50px;
   background: linear-gradient(
     90deg,
     rgba(241, 223, 200, 1) 60%,
@@ -75,8 +76,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .pd-1 {
-    margin-top: 150px;
   }
 }

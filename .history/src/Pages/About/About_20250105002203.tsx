@@ -3,7 +3,6 @@ import "./about.scss";
 import Abt1 from "../../assets/images/abt1.avif";
 import Abt2 from "../../assets/images/abt2.avif";
 import Abt3 from "../../assets/images/abt3.avif";
-import Abt4 from "../../assets/images/paper.avif";
 
 export const About: React.FC = () => {
   const images: string[] = [Abt3, Abt2, Abt1];
@@ -12,23 +11,22 @@ export const About: React.FC = () => {
   const [visibleParagraphs, setVisibleParagraphs] = useState<boolean[]>([]);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const paragraphsRef = useRef<(HTMLParagraphElement | null)[]>([]);
-
   const handleScroll = (): void => {
     if (containerRef.current) {
       const { top, height } = containerRef.current.getBoundingClientRect();
-      const scrollPosition = -top;
+      const scrollPosition = -top; // How far the div has been scrolled into view
 
-      // Handle image transition
       if (scrollPosition >= 0 && scrollPosition <= height) {
+        // Calculate the new index based on scroll position
         const newIndex = Math.floor(scrollPosition / 200) % images.length;
         if (newIndex !== scrollIndex) {
           setScrollIndex(newIndex);
           setCurrentImage(images[newIndex]);
         }
       }
-
-      // Check visibility of paragraphs
-      const updatedVisibility = paragraphsRef.current.map((paragraph) => {
+    }
+  };
+  const updatedVisibility = paragraphsRef.current.map((paragraph) => {
         if (!paragraph) return false;
         const rect = paragraph.getBoundingClientRect();
         return rect.top >= 0 && rect.bottom <= window.innerHeight;
@@ -37,7 +35,6 @@ export const About: React.FC = () => {
       setVisibleParagraphs(updatedVisibility);
     }
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -65,42 +62,27 @@ export const About: React.FC = () => {
       <div className="scroll-container" ref={containerRef}>
         <div className="content">
           <div className="sticky-image col-md-6">
-            <img
-              src={currentImage}
-              alt="Scroll Transition"
-              className="col-md-11"
-            />
+            <img src={currentImage} alt="Scroll Transition" />
           </div>
-          <div className="writeup col-md-3">
-            {[
-              "The average person eats credit card’s worth of plastic each week - amounting to 74,000 microplastics each year.",
-              "Every year nearly 18 billion pounds of plastic enters the ocean - that's one garbage truck full every minute.",
-              "We generate enough plastic waste each year to circle the earth four times. And we can't recycle our way out of this plastic problem. Only 5% of plastic waste actually gets recycled!",
-            ].map((text, index) => (
-              <p
-                key={index}
-                ref={(el) => (paragraphsRef.current[index] = el)}
-                className={visibleParagraphs[index] ? "visible" : "hidden"}
-              >
-                {text}
-              </p>
-            ))}
+          <div className="writeup col-md-6">
+            {/* Long text content */}
+            <p style={{ marginBottom: "100px" }}>
+              The average person eats credit card’s worth of plastic each week -
+              amounting to 74,000 microplastics each year.
+            </p>{" "}
+            <p style={{ marginBottom: "100px" }}>
+              The average person eats credit card’s worth of plastic each week -
+              amounting to 74,000 microplastics each year.
+            </p>{" "}
+            <p style={{ marginBottom: "100px" }}>
+              The average person eats credit card’s worth of plastic each week -
+              amounting to 74,000 microplastics each year.
+            </p>{" "}
+            <p style={{ marginBottom: "100px" }}>
+              The average person eats credit card’s worth of plastic each week -
+              amountinxxxxxg to 7z4,000 microplastics each year.
+            </p>
           </div>
-        </div>
-      </div>
-      <div className="paper-div d-md-flex">
-        <div className="col-md-3 offset-md-1 pd-1">
-          <h5>THE SOLUTION</h5>
-          <h2>All Power, No Plastic</h2>
-          <p>
-            Keep our homes and planet clean with products that eliminate
-            single-use plastic and can be refilled again (and again). Blueland:
-            Eco-Friendly Cleaning Products
-          </p>
-        </div>
-        <div className="col-md-8 refil ">
-          {" "}
-          {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
         </div>
       </div>
     </div>
