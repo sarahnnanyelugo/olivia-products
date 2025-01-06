@@ -384,7 +384,7 @@ export const OurMission = () => {
           </Accordion>
         </div>
         <div className="col-md-5 offset-md-1">
-          <img src={Img5} width="100%" />
+          <img src={Img3} width="100%" />
         </div>
       </div>
     </div>

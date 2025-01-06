@@ -186,67 +186,10 @@ export const OurMission = () => {
           </Accordion>
         </div>
       </div>
-      <div id="product" className="section d-md-flex col-md-7 offset-md-3">
+      <div id="product" className="section col-md-flex">
         {" "}
-        <div className="col-md-6 ">
-          <h2>People</h2>
-          <p>Creating space for everyone</p>
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                <h6>Olivia Team</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  We track our emissions from raw material extraction to
-                  delivery, minimizing our footprint, and procuring offsets when
-                  needed by supporting conservation and restoration projects
-                  including Rimba Raya and renewables energy projects Crow Lakes
-                  Wind and our own tablet/powder manufacturing. To achieve
-                  carbon neutrality, Blueland works with The Change Climate
-                  Project to audit our company’s entire operations as well as
-                  the embedded carbon in all of our products’ input materials.
-                  This includes auditing energy used to manufacture our
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>
-                <h6>Social Fairness</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  We ensure our products are made without chemicals that could
-                  be harmful to people or the environment. This means our
-                  products do not use any chemicals that can be found on the
-                  Cradle to Cradle banned chemicals list.
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>{" "}
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>
-                <h6>Community</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  All of our products must be created in the cycle of reuse,
-                  meaning they should be reusable, recyclable, compostable or
-                  biodegradable.
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-        <div className="col-md-5 offset-md-1">
-          <img src={Img3} width="100%" />
-        </div>
-      </div>
-      <div id="people" className="section col-md-7 offset-md-3 d-md-flex">
-        <div className="col-md-5">
-          <img src={Img2} width="100%" />
-        </div>
         <div className="col-md-6 offset-md-1">
-          <h2>People</h2>
+          <h2>Planet</h2>
           <p>Putting the planet first</p>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -331,62 +274,12 @@ export const OurMission = () => {
             </Accordion.Item>
           </Accordion>
         </div>
-      </div>
-      <div id="policy" className="section d-md-flex col-md-7 offset-md-3">
-        {" "}
-        <div className="col-md-6 ">
-          <h2>Policy</h2>
-          <p>Creating space for everyone</p>
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                <h6>Olivia Team</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  We track our emissions from raw material extraction to
-                  delivery, minimizing our footprint, and procuring offsets when
-                  needed by supporting conservation and restoration projects
-                  including Rimba Raya and renewables energy projects Crow Lakes
-                  Wind and our own tablet/powder manufacturing. To achieve
-                  carbon neutrality, Blueland works with The Change Climate
-                  Project to audit our company’s entire operations as well as
-                  the embedded carbon in all of our products’ input materials.
-                  This includes auditing energy used to manufacture our
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>
-                <h6>Social Fairness</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  We ensure our products are made without chemicals that could
-                  be harmful to people or the environment. This means our
-                  products do not use any chemicals that can be found on the
-                  Cradle to Cradle banned chemicals list.
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>{" "}
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>
-                <h6>Community</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  All of our products must be created in the cycle of reuse,
-                  meaning they should be reusable, recyclable, compostable or
-                  biodegradable.
-                </p>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-        <div className="col-md-5 offset-md-1">
-          <img src={Img5} width="100%" />
+        <div className="col-md-5">
+          <img src={Img2} width="100%" />
         </div>
       </div>
+      <div id="people" className="section"></div>
+      <div id="policy" className="section"></div>
     </div>
   );
 };

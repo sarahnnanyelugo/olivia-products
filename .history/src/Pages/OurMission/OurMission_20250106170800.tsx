@@ -246,7 +246,7 @@ export const OurMission = () => {
           <img src={Img2} width="100%" />
         </div>
         <div className="col-md-6 offset-md-1">
-          <h2>People</h2>
+          <h2>Policy</h2>
           <p>Putting the planet first</p>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -384,7 +384,7 @@ export const OurMission = () => {
           </Accordion>
         </div>
         <div className="col-md-5 offset-md-1">
-          <img src={Img5} width="100%" />
+          <img src={Img3} width="100%" />
         </div>
       </div>
     </div>
