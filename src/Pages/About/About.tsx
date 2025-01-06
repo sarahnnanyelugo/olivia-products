@@ -4,6 +4,37 @@ import Abt1 from "../../assets/images/abt1.avif";
 import Abt2 from "../../assets/images/abt2.avif";
 import Abt3 from "../../assets/images/abt3.avif";
 import Abt4 from "../../assets/images/paper.avif";
+import { VideoSlide } from "./VideoSlide";
+import FactTab from "./FactTab/FactTab";
+const tabs = [
+  {
+    label: "Tab 1",
+    content: {
+      image: Abt1,
+      heading: "Heading for Tab 1",
+      description:
+        "This is a description for Tab 1. It contains relevant information.",
+    },
+  },
+  {
+    label: "Tab 2",
+    content: {
+      image: Abt2,
+      heading: "Heading for Tab 2",
+      description:
+        "This is a description for Tab 2. It contains some other information.",
+    },
+  },
+  {
+    label: "Tab 3",
+    content: {
+      image: Abt3,
+      heading: "Heading for Tab 3",
+      description:
+        "This is a description for Tab 3. It contains more interesting information.",
+    },
+  },
+];
 
 export const About: React.FC = () => {
   const images: string[] = [Abt3, Abt2, Abt1];
@@ -90,7 +121,7 @@ export const About: React.FC = () => {
       </div>
       <div className="paper-div d-md-flex">
         <div className="col-md-3 offset-md-1 pd-1">
-          <h5>THE SOLUTION</h5>
+          <h6>THE SOLUTION</h6>
           <h2>All Power, No Plastic</h2>
           <p>
             Keep our homes and planet clean with products that eliminate
@@ -102,6 +133,16 @@ export const About: React.FC = () => {
           {" "}
           {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
         </div>
+      </div>
+      <div>
+        <VideoSlide />
+      </div>
+      <center>
+        <h1>We Reimagined Everything</h1>
+      </center>
+      <div>
+        {" "}
+        <FactTab tabs={tabs} />
       </div>
     </div>
   );
