@@ -14,7 +14,7 @@ import { ContactUs } from "./Pages/ContactUs/ContactUs";
 import { OrderForm } from "./Pages/ContactUs/OrderForm";
 import { WholeSalePage } from "./Pages/WholeSalePage/WholeSalePage";
 import { About } from "./Pages/About/About";
-import { OurMission } from "./Pages/OurMission/OurMission";
+import { OurMission } from "./Pages/About/OurMission/OurMission";
 function App() {
   return (
     <>

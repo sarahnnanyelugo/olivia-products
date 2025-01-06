@@ -12,32 +12,27 @@ const tabs = [
     content: {
       image: Abt1,
       heading: "DID YOU KNOW?",
-      heading2: "OUR SOLUTION",
+      heading2: "DID YOU KNOW?",
       description: "Only 5% of plastic actually gets recycled.",
-      description2:
-        "We made sure our bottles would be the last ones you'd ever need - made to be reused and refilled forever with plastic-free tablets.",
+      description2: "Only 5% of plastic actually gets recycled.",
     },
   },
   {
     label: "Tab 2",
     content: {
       image: Abt2,
-      heading: "DID YOU KNOW?",
-      heading2: "OUR SOLUTION",
-      description: "Only 5% of plastic actually gets recycled.",
-      description2:
-        "We made sure our bottles would be the last ones you'd ever need - made to be reused and refilled forever with plastic-free tablets.",
+      heading: "Heading for Tab 2",
+      description:
+        "This is a description for Tab 2. It contains some other information.",
     },
   },
   {
     label: "Tab 3",
     content: {
       image: Abt3,
-      heading: "DID YOU KNOW?",
-      heading2: "OUR SOLUTION",
-      description: "Only 5% of plastic actually gets recycled.",
-      description2:
-        "We made sure our bottles would be the last ones you'd ever need - made to be reused and refilled forever with plastic-free tablets.",
+      heading: "Heading for Tab 3",
+      description:
+        "This is a description for Tab 3. It contains more interesting information.",
     },
   },
 ];
@@ -139,31 +134,16 @@ export const About: React.FC = () => {
           {" "}
           {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
         </div>
-      </div>{" "}
-      <div
-        style={{
-          width: "100%",
-          background: "#EFF5FF",
-          paddingTop: "50px",
-          paddingBottom: "50px",
-        }}
-      >
+      </div>
+      <div>
+        <VideoSlide />
+      </div>
+
+      <div style={{ width: "100%", background: "#EFF5FF" }}>
         <center>
           <h1>We Reimagined Everything</h1>
         </center>
         <FactTab tabs={tabs} />
-      </div>
-      <div>
-        <center>
-          <div className="col-md-8 impact-div">
-            <h6>THE IMPACT</h6>
-            <h1>
-              Over 1 billion single-use plastic bottles diverted from landfills
-              and oceans since 2019
-            </h1>
-          </div>
-        </center>
-        <VideoSlide />
       </div>
     </div>
   );

@@ -139,31 +139,16 @@ export const About: React.FC = () => {
           {" "}
           {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
         </div>
-      </div>{" "}
-      <div
-        style={{
-          width: "100%",
-          background: "#EFF5FF",
-          paddingTop: "50px",
-          paddingBottom: "50px",
-        }}
-      >
+      </div>
+      <div>
+        <VideoSlide />
+      </div>
+
+      <div style={{ width: "100%", background: "#EFF5FF" }}>
         <center>
           <h1>We Reimagined Everything</h1>
         </center>
         <FactTab tabs={tabs} />
-      </div>
-      <div>
-        <center>
-          <div className="col-md-8 impact-div">
-            <h6>THE IMPACT</h6>
-            <h1>
-              Over 1 billion single-use plastic bottles diverted from landfills
-              and oceans since 2019
-            </h1>
-          </div>
-        </center>
-        <VideoSlide />
       </div>
     </div>
   );

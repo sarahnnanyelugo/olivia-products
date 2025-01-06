@@ -1,0 +1,17 @@
+.mission-landing {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background: rgb(130, 186, 227);
+  background: linear-gradient(
+    180deg,
+    rgba(130, 186, 227, 1) 46%,
+    rgba(171, 201, 227, 1) 69%
+  );
+  h1 {
+    font-family: sailecLight;
+    font-size: 80px;
+  }
+  p {
+    font-size: 18px;
+  }
+}

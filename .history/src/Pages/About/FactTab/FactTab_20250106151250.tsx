@@ -77,9 +77,9 @@ const FactTab: React.FC<{ tabs: Tab[] }> = ({ tabs }) => {
           />
         </div>
         <div className="right-content" style={{ flex: 1 }}>
-          <h6>{tabs[activeIndex].content.heading}</h6>
+          <h5>{tabs[activeIndex].content.heading}</h5>
           <p>{tabs[activeIndex].content.description}</p>{" "}
-          <h6>{tabs[activeIndex].content.heading2}</h6>
+          <h5>{tabs[activeIndex].content.heading2}</h5>
           <p>{tabs[activeIndex].content.description2}</p>
         </div>
       </div>

@@ -8,8 +8,6 @@ interface TabContent {
   image: string;
   heading: string;
   description: string;
-  heading2: string;
-  description2: string;
 }
 
 interface Tab {
@@ -50,7 +48,7 @@ const FactTab: React.FC<{ tabs: Tab[] }> = ({ tabs }) => {
                 activeIndex === index ? "3px solid #007bff" : "none",
               backgroundColor: "transparent",
               cursor: "pointer",
-              transition: "all 0.7s ease",
+              transition: "all 0.5s ease",
               fontWeight: activeIndex === index ? "bold" : "normal",
             }}
           >
@@ -77,10 +75,8 @@ const FactTab: React.FC<{ tabs: Tab[] }> = ({ tabs }) => {
           />
         </div>
         <div className="right-content" style={{ flex: 1 }}>
-          <h6>{tabs[activeIndex].content.heading}</h6>
-          <p>{tabs[activeIndex].content.description}</p>{" "}
-          <h6>{tabs[activeIndex].content.heading2}</h6>
-          <p>{tabs[activeIndex].content.description2}</p>
+          <h3>{tabs[activeIndex].content.heading}</h3>
+          <p>{tabs[activeIndex].content.description}</p>
         </div>
       </div>
     </div>

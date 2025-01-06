@@ -8,8 +8,6 @@ interface TabContent {
   image: string;
   heading: string;
   description: string;
-  heading2: string;
-  description2: string;
 }
 
 interface Tab {
@@ -32,7 +30,7 @@ const FactTab: React.FC<{ tabs: Tab[] }> = ({ tabs }) => {
   };
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", background: "#EFF5FF" }}>
       {/* Tab Headers */}
       <div
         className="col-md-4 offset-md-4 d-md-flex"
@@ -77,10 +75,8 @@ const FactTab: React.FC<{ tabs: Tab[] }> = ({ tabs }) => {
           />
         </div>
         <div className="right-content" style={{ flex: 1 }}>
-          <h6>{tabs[activeIndex].content.heading}</h6>
-          <p>{tabs[activeIndex].content.description}</p>{" "}
-          <h6>{tabs[activeIndex].content.heading2}</h6>
-          <p>{tabs[activeIndex].content.description2}</p>
+          <h3>{tabs[activeIndex].content.heading}</h3>
+          <p>{tabs[activeIndex].content.description}</p>
         </div>
       </div>
     </div>

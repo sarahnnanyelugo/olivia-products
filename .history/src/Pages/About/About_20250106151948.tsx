@@ -155,7 +155,7 @@ export const About: React.FC = () => {
       </div>
       <div>
         <center>
-          <div className="col-md-8 impact-div">
+          <div className="col-md-8">
             <h6>THE IMPACT</h6>
             <h1>
               Over 1 billion single-use plastic bottles diverted from landfills

@@ -1,0 +1,78 @@
+import React, { useState, useEffect } from "react";
+import "./our-mission.scss";
+import Img1 from "../../assets/images/many-prod.avif";
+import { NavLink } from "react-router-dom";
+
+export const OurMission = () => {
+  const [activeSection, setActiveSection] = useState("planet");
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const scrollY = window.scrollY;
+        const sectionId = section.getAttribute("id");
+
+        if (scrollY >= top && scrollY < top + height) {
+          setActiveSection(sectionId || "");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  return (
+    <div>
+      <div className="mission-landing">
+        <center>
+          <h1>For the Love of the Planet</h1>
+          <p>It's always been about more than cleaning</p>
+        </center>
+      </div>
+      <center>
+        <div className="mission-statement">
+          <h1>Our Mission</h1>
+          <p>Make it easy for everyone to make sustainable choices</p>
+        </div>
+      </center>
+      <div className="change-div">
+        <div className="change-div-inner col-md-7 offset-md-2 d-md-flex">
+          <div className="col-md-7">
+            <img src={Img1} width="100%" />
+          </div>
+          <div className="col-md-4 offset-md-1 mission-statement2">
+            <h1>Built for Change</h1>
+            <p>
+              We set out to create a business that acts as a force for good –
+              showing that sustainable business practices and products can be
+              the "norm," not the exception
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="mission-navlinks">
+        <ul className="list-inline list-unstyled col-md-6 offset-md-3">
+          <li className="list-inline-item">
+            <a href="#planet">Planet</a>
+          </li>{" "}
+          <li className="list-inline-item">
+            <a href="#product">Product</a>
+          </li>{" "}
+          <li className="list-inline-item">
+            <a href="#people">People</a>
+          </li>{" "}
+          <li className="list-inline-item">
+            <a href="#policy">Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="planet"></div>
+      <div id="product"></div>
+      <div id="people"></div>
+      <div id="policy"></div>
+    </div>
+  );
+};
