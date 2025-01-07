@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
-import All from "../../assets/images/all.jpeg";
+import All from "../../assets/images/all-prod.avif";
 import { useCart } from "../../CartContext";
 import { GrCart } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
@@ -35,7 +35,7 @@ export const Middle: React.FC = () => {
                   {" "}
                   <img src={All} className="col-md-12" />
                 </div>
-                <div className="col-md-5 offset-md-1 d-md-flex">
+                <div className="col-md-6 d-md-flex">
                   <div className="col-md-6 ">
                     <ul className="list-unstyled">
                       <li>

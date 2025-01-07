@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
-import All from "../../assets/images/all.jpeg";
 import { useCart } from "../../CartContext";
 import { GrCart } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
 
 export const Middle: React.FC = () => {
   const { setIsOffCanvasOpen, cart } = useCart(); // Access cart from the context
@@ -30,57 +28,9 @@ export const Middle: React.FC = () => {
             </button>
             <div className={`mega-menu ${isOpen ? "open" : ""}`}>
               {/* Menu content goes here */}
-              <div className="menu-content col-md-12 d-flex">
-                <div className="col-md-6">
-                  {" "}
-                  <img src={All} className="col-md-12" />
-                </div>
-                <div className="col-md-5 offset-md-1 d-md-flex">
-                  <div className="col-md-6 ">
-                    <ul className="list-unstyled">
-                      <li>
-                        <NavLink to={"/"}>Shop All</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Best Sellers</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Starter Kits</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Refills</NavLink>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-md-6 first-ul">
-                    <ul className="list-unstyled">
-                      <li>
-                        <NavLink to={"/"}>Hand Soap</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Dish Wash</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Laundry</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Toilet Wash</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Shampoo</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Personal Care</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Hair Care</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/"}>Extras</NavLink>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div className="menu-content ">
+                <h1>Mega Menu</h1>
+                <p>This is your mega menu content area.</p>
               </div>
             </div>
           </li>
@@ -108,18 +58,10 @@ export const Middle: React.FC = () => {
           <div className={`mega-menu  ${isOpen2 ? "open" : ""}`}>
             {/* Menu content goes here */}
             <div className="menu-content col-md-12">
-              <div className=" col-md-8 offset-md-2">
-                <div className="d-flex">
-                  <h6 style={{ flexGrow: 1 }}>WHAT ARE YOU LOOKING FOR</h6>
-                  <IoClose
-                    onClick={toggleMenu2}
-                    style={{ color: "#000", fontSize: "20px" }}
-                  />
-                </div>
-                <div className="d-flex search-box ">
-                  <IoSearch className="search-icon" />
-                  <input type="search" placeholder="Search" />
-                </div>
+              <div className="d-flex search-box col-md-8 offset-md-2">
+                <h6>WHAT ARE YOU LOOKING FOR</h6>
+                <IoSearch className="search-icon" />
+                <input type="search" placeholder="Search" />
               </div>
             </div>
           </div>

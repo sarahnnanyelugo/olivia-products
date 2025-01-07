@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
-import All from "../../assets/images/all.jpeg";
+import All from "../../assets/images/family-use.avif";
 import { useCart } from "../../CartContext";
 import { GrCart } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";

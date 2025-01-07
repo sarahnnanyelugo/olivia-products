@@ -35,7 +35,7 @@ export const Middle: React.FC = () => {
                   {" "}
                   <img src={All} className="col-md-12" />
                 </div>
-                <div className="col-md-5 offset-md-1 d-md-flex">
+                <div className="col-md-6 d-md-flex">
                   <div className="col-md-6 ">
                     <ul className="list-unstyled">
                       <li>
