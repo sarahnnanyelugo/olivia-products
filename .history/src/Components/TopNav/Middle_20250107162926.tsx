@@ -38,58 +38,58 @@ export const Middle: React.FC = () => {
                 <div className="col-md-5 offset-md-1 d-md-flex">
                   <div className="col-md-6 ">
                     <ul className="list-unstyled">
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/"}>Shop All</NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/"}>Best Sellers</NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/"}>Starter Kits</NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/"}>Refills</NavLink>
                       </li>
                     </ul>
                   </div>
                   <div className="col-md-6 first-ul">
                     <ul className="list-unstyled">
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=hand-soap"}>
                           Hand Soap
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=dish-wash"}>
                           Dish Wash
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=Laundry"}>
                           Laundry
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=toilet-Wash"}>
                           Toilet Wash
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=Shampoo"}>
                           Shampoo
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=personal-care"}>
                           Personal Care
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=hair-care"}>
                           Hair Care
                         </NavLink>
                       </li>
-                      <li onClick={toggleMenu}>
+                      <li onClick={() => setIsOffCanvasOpen(true)}>
                         <NavLink to={"/collections?category=extras"}>
                           Extras
                         </NavLink>

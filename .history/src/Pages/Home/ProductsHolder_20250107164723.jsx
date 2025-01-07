@@ -69,10 +69,10 @@ export const ProductsHolder = ({ category = "", viewType = "slide" }) => {
   // Render logic based on viewType
   if (viewType === "grid") {
     return (
-      <div className="products-grid-container">
-        <div className="products-grid">
+      <div className="products-grid">
+        <div className="row">
           {filteredProducts.map((product, index) => (
-            <div key={index} className=" mb-4">
+            <div key={index} className="col-md-3 mb-4">
               <MainProduct
                 productName={product.name}
                 productPrice={product.price}

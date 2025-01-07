@@ -52,7 +52,6 @@ const MainProduct: React.FC<ProductProps> = ({
               className={`product-image ${isHovered ? "visible" : "hidden"}`}
               src={hoverImg}
               alt="Product Hover"
-              width="100%"
             />
           </Link>
         </div>

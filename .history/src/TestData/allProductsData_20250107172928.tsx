@@ -38,7 +38,7 @@ export const allProductsData = [
     price: 5000,
     name: "Dish wash",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
-    category: ["dish-wash", "hand-soap"],
+    category: ["dish-wash"],
   },
   {
     firstImg: product1,

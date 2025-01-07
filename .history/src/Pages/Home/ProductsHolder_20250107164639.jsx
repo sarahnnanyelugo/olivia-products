@@ -20,12 +20,13 @@ export const ProductsHolder = ({ category = "", viewType = "slide" }) => {
       )
     : allProductsData;
 
-  // For sliding view
+  // Extend products for infinite scroll effect
   const extendedProducts = [
     ...filteredProducts.slice(-visibleItems),
     ...filteredProducts,
     ...filteredProducts.slice(0, visibleItems),
   ];
+
   const actualStartIndex = startIndex + visibleItems;
 
   const handleNext = () => {
@@ -66,40 +67,6 @@ export const ProductsHolder = ({ category = "", viewType = "slide" }) => {
     decrementQuantity,
   } = useCart();
 
-  // Render logic based on viewType
-  if (viewType === "grid") {
-    return (
-      <div className="products-grid-container">
-        <div className="products-grid">
-          {filteredProducts.map((product, index) => (
-            <div key={index} className=" mb-4">
-              <MainProduct
-                productName={product.name}
-                productPrice={product.price}
-                firstImg={product.firstImg}
-                hoverImg={product.hoverImg}
-                id={product.id}
-                onAddToCart={addToCart}
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Cart Offcanvas */}
-        <CartOffcanvas
-          show={setIsOffCanvasOpen}
-          onClose={() => setIsOffCanvasOpen(false)}
-          cart={cart}
-          onRemoveFromCart={handleRemoveFromCart}
-          onClearCart={handleClearCart}
-          onIncrementQuantity={incrementQuantity}
-          onDecrementQuantity={decrementQuantity}
-        />
-      </div>
-    );
-  }
-
-  // Sliding view (default)
   return (
     <center>
       <div className="prod-slide col-md-11">
@@ -126,7 +93,7 @@ export const ProductsHolder = ({ category = "", viewType = "slide" }) => {
             width: `${(extendedProducts.length / visibleItems) * 25}%`,
           }}
         >
-          {extendedProducts.map((product, index) => (
+          {filteredProducts.map((product, index) => (
             <div
               key={index}
               style={{

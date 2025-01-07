@@ -9,7 +9,7 @@ export const Collections: React.FC = () => {
 
   return (
     <div className="col-md-12 collection-section row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
-      <ProductsHolder category={category} viewType="grid" />
+      <ProductsHolder category="Dish wash" viewType="grid" />
     </div>
   );
 };

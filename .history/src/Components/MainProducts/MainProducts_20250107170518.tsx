@@ -35,24 +35,22 @@ const MainProduct: React.FC<ProductProps> = ({
   return (
     <>
       <div
-        className="product-container"
+        className="product-container col-md-12"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="image-wrapper">
+        <div className="image-wrapper col-md-12">
           {" "}
           <img
             className={`product-image ${isHovered ? "hidden" : "visible"}`}
             src={firstImg}
             alt="Product"
-            width="100%"
           />
           <Link to={`/product/${id}`}>
             <img
               className={`product-image ${isHovered ? "visible" : "hidden"}`}
               src={hoverImg}
               alt="Product Hover"
-              width="100%"
             />
           </Link>
         </div>

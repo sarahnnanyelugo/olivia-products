@@ -28,7 +28,7 @@ export const allProductsData = [
     price: 10000,
     name: "Organic Shampoo",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
-    category: ["dish-wash", "hand-soap"],
+    category: ["dish-wash"],
   },
   {
     firstImg: product3,
@@ -38,7 +38,7 @@ export const allProductsData = [
     price: 5000,
     name: "Dish wash",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
-    category: ["dish-wash", "hand-soap"],
+    category: ["dish-wash"],
   },
   {
     firstImg: product1,
@@ -88,7 +88,7 @@ export const allProductsData = [
     id: 7,
     name: "Face wash",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
-    category: ["hand-soap"],
+    category: ["personal-care"],
   },
   {
     firstImg: product1,
@@ -98,7 +98,7 @@ export const allProductsData = [
     price: 3400,
     name: "Disinfectant",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
-    category: ["hand-soap"],
+    category: ["hair-care"],
   },
   {
     firstImg: product1,

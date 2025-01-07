@@ -101,7 +101,7 @@
     transform: scale(0);
     transform-origin: center;
     transition: transform 0.5s ease;
-    z-index: 2000;
+    z-index: 1000;
     overflow: hidden;
     img {
       border-radius: 10px;
@@ -114,7 +114,8 @@
 
   .menu-content {
     padding-top: 0;
-
+    position: relative;
+    z-index: 2000 !important;
     .first-ul {
       border-left: solid 1px rgb(163, 163, 226);
       padding-left: 60px;
