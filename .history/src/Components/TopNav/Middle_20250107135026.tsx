@@ -60,7 +60,7 @@ export const Middle: React.FC = () => {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=dish-wash"}>
+                        <NavLink to={"/collections?category=dish wash"}>
                           Dish Wash
                         </NavLink>
                       </li>
@@ -70,7 +70,7 @@ export const Middle: React.FC = () => {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=toilet-Wash"}>
+                        <NavLink to={"/collections?category=toilet%20Wash"}>
                           Toilet Wash
                         </NavLink>
                       </li>
@@ -80,17 +80,17 @@ export const Middle: React.FC = () => {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=personal-care"}>
+                        <NavLink to={"/collections?category=Personal%20Care"}>
                           Personal Care
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=hair-care"}>
+                        <NavLink to={"/collections?category=Hair%20Care"}>
                           Hair Care
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=extras"}>
+                        <NavLink to={"/collections?category=Extras"}>
                           Extras
                         </NavLink>
                       </li>

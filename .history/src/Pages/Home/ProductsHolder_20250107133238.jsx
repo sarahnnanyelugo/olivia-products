@@ -11,7 +11,6 @@ export const ProductsHolder = ({ category = "" }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const visibleItems = 4;
 
-  // Filter products by category if provided
   const filteredProducts = category
     ? allProductsData.filter((product) =>
         product.category.some(
@@ -22,9 +21,9 @@ export const ProductsHolder = ({ category = "" }) => {
 
   // Extend products for infinite scroll effect
   const extendedProducts = [
-    ...filteredProducts.slice(-visibleItems),
-    ...filteredProducts,
-    ...filteredProducts.slice(0, visibleItems),
+    ...allProductsData.slice(-visibleItems),
+    ...allProductsData,
+    ...allProductsData.slice(0, visibleItems),
   ];
 
   const actualStartIndex = startIndex + visibleItems;
@@ -48,14 +47,14 @@ export const ProductsHolder = ({ category = "" }) => {
       const timeout = setTimeout(() => {
         setIsTransitioning(false);
         if (startIndex === -1) {
-          setStartIndex(filteredProducts.length - 1);
-        } else if (startIndex === filteredProducts.length) {
+          setStartIndex(allProductsData.length - 1);
+        } else if (startIndex === allProductsData.length) {
           setStartIndex(0);
         }
       }, 1000);
       return () => clearTimeout(timeout);
     }
-  }, [isTransitioning, startIndex, filteredProducts.length]);
+  }, [isTransitioning, startIndex]);
 
   const {
     cart,
@@ -69,6 +68,7 @@ export const ProductsHolder = ({ category = "" }) => {
 
   return (
     <center>
+      {" "}
       <div className="prod-slide col-md-11">
         <div className="d-flex justify-content-between align-items-center mb-3">
           <MdNavigateBefore
@@ -83,7 +83,7 @@ export const ProductsHolder = ({ category = "" }) => {
         </div>
 
         <div
-          className="carousel"
+          className="carousel "
           style={{
             display: "flex",
             transition: isTransitioning ? "transform 1s ease-in-out" : "none",
@@ -93,7 +93,7 @@ export const ProductsHolder = ({ category = "" }) => {
             width: `${(extendedProducts.length / visibleItems) * 25}%`,
           }}
         >
-          {filteredProducts.map((product, index) => (
+          {extendedProducts.map((product, index) => (
             <div
               key={index}
               style={{

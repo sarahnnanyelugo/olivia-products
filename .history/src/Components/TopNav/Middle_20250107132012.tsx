@@ -55,44 +55,32 @@ export const Middle: React.FC = () => {
                   <div className="col-md-6 first-ul">
                     <ul className="list-unstyled">
                       <li>
-                        <NavLink to={"/collections?category=hand-soap"}>
+                        <NavLink to={"/collections?category=Hand%20Soap"}>
                           Hand Soap
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=dish-wash"}>
+                        <NavLink to={"/collections?category=Dish%20Wash"}>
                           Dish Wash
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=Laundry"}>
-                          Laundry
-                        </NavLink>
+                        <NavLink to={"/"}>Laundry</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=toilet-Wash"}>
-                          Toilet Wash
-                        </NavLink>
+                        <NavLink to={"/"}>Toilet Wash</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=Shampoo"}>
-                          Shampoo
-                        </NavLink>
+                        <NavLink to={"/"}>Shampoo</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=personal-care"}>
-                          Personal Care
-                        </NavLink>
+                        <NavLink to={"/"}>Personal Care</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=hair-care"}>
-                          Hair Care
-                        </NavLink>
+                        <NavLink to={"/"}>Hair Care</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=extras"}>
-                          Extras
-                        </NavLink>
+                        <NavLink to={"/"}>Extras</NavLink>
                       </li>
                     </ul>
                   </div>

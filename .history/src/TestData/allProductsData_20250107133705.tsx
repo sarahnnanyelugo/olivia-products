@@ -11,7 +11,6 @@ import TabletCompare from "../assets/images/tablet-compare.avif";
 
 export const allProductsData = [
   {
-    heading: "Hand Soap",
     firstImg: first,
     hoverImg: second,
     id: 1,
@@ -24,7 +23,6 @@ export const allProductsData = [
     firstImg: product1,
     hoverImg: product2,
     id: 2,
-    heading: "Dish Wash",
     price: 10000,
     name: "Organic Shampoo",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
@@ -34,7 +32,6 @@ export const allProductsData = [
     firstImg: product3,
     hoverImg: product4,
     id: 3,
-    heading: "Dish Wash",
     price: 5000,
     name: "Dish wash",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
@@ -45,7 +42,6 @@ export const allProductsData = [
     hoverImg: product2,
     id: 4,
     price: 12000,
-    heading: "Laundry",
     name: "Laundry stones",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
     category: ["laundry"],
@@ -54,7 +50,6 @@ export const allProductsData = [
     firstImg: first,
     hoverImg: second,
     id: 5,
-    heading: "Toilet Wash",
     price: 9000,
     name: "Laundry Tablets",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
@@ -64,7 +59,6 @@ export const allProductsData = [
     firstImg: product1,
     hoverImg: product2,
     id: 6,
-    heading: "Shampoo",
     price: 2220,
     name: "Body wash",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],
@@ -72,7 +66,6 @@ export const allProductsData = [
   },
   {
     firstImg: product3,
-    heading: "Personal Care",
     hoverImg: product4,
     price: 1000,
     id: 7,
@@ -84,7 +77,6 @@ export const allProductsData = [
     firstImg: product1,
     hoverImg: product2,
     id: 8,
-    heading: "Hair Care",
     price: 3400,
     name: "Disinfectant",
     additionalImgs: [PaperTablet, Tablet3, TabletCompare, TabletSample],

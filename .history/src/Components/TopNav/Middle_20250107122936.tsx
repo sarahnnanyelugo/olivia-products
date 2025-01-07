@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
@@ -19,7 +19,20 @@ export const Middle: React.FC = () => {
   const toggleMenu2 = () => {
     setIsOpen2(!isOpen2);
   };
-
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isOpen]);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isOpen]);
   return (
     <>
       <div className="middle-nav-div d-flex align-items-center">
@@ -55,44 +68,28 @@ export const Middle: React.FC = () => {
                   <div className="col-md-6 first-ul">
                     <ul className="list-unstyled">
                       <li>
-                        <NavLink to={"/collections?category=hand-soap"}>
-                          Hand Soap
-                        </NavLink>
+                        <NavLink to={"/"}>Hand Soap</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=dish-wash"}>
-                          Dish Wash
-                        </NavLink>
+                        <NavLink to={"/"}>Dish Wash</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=Laundry"}>
-                          Laundry
-                        </NavLink>
+                        <NavLink to={"/"}>Laundry</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=toilet-Wash"}>
-                          Toilet Wash
-                        </NavLink>
+                        <NavLink to={"/"}>Toilet Wash</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=Shampoo"}>
-                          Shampoo
-                        </NavLink>
+                        <NavLink to={"/"}>Shampoo</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=personal-care"}>
-                          Personal Care
-                        </NavLink>
+                        <NavLink to={"/"}>Personal Care</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=hair-care"}>
-                          Hair Care
-                        </NavLink>
+                        <NavLink to={"/"}>Hair Care</NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/collections?category=extras"}>
-                          Extras
-                        </NavLink>
+                        <NavLink to={"/"}>Extras</NavLink>
                       </li>
                     </ul>
                   </div>
@@ -117,7 +114,6 @@ export const Middle: React.FC = () => {
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-        <NavLink to={"/collections"}>Collections</NavLink>
 
         <div className="top-mega-menu2">
           {" "}
@@ -143,9 +139,11 @@ export const Middle: React.FC = () => {
         </div>
         {/* Cart Icon with Item Count */}
 
-        <div style={{ position: "relative", cursor: "pointer" }}>
-          <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />{" "}
-          {/* Adjust the icon size as needed */}
+        <div
+          style={{ position: "relative", cursor: "pointer" }}
+          onClick={() => setIsOffCanvasOpen(true)}
+        >
+          <GrCart size={30} /> {/* Adjust the icon size as needed */}
           {cart.length > 0 && ( // Show count only if cart has items
             <span
               style={{
