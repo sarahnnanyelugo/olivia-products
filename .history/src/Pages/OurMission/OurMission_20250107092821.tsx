@@ -30,7 +30,7 @@ export const OurMission = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="mission-container">
+    <div>
       <div className="mission-landing">
         <center>
           <h1>For the Love of the Planet</h1>
@@ -94,7 +94,7 @@ export const OurMission = () => {
           </li>
         </ul>
       </div>
-      <div style={{ height: "70px" }} id="planet" />
+
       <div id="planet" className="section col-md-7 offset-md-3 d-md-flex">
         <div className="col-md-5">
           <img src={Img2} width="100%" />
@@ -186,11 +186,10 @@ export const OurMission = () => {
           </Accordion>
         </div>
       </div>
-      <div style={{ height: "70px" }} id="product" />
       <div id="product" className="section d-md-flex col-md-7 offset-md-3">
         {" "}
         <div className="col-md-6 ">
-          <h2>Product</h2>
+          <h2>People</h2>
           <p>Creating space for everyone</p>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -242,7 +241,6 @@ export const OurMission = () => {
           <img src={Img3} width="100%" />
         </div>
       </div>
-      <div style={{ height: "70px" }} id="people" />
       <div id="people" className="section col-md-7 offset-md-3 d-md-flex">
         <div className="col-md-5">
           <img src={Img2} width="100%" />

@@ -45,6 +45,12 @@
     text-decoration: none;
     margin: 15px;
   }
+  .menu-search {
+    color: #003057;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px;
+  }
 }
 .top-nav {
   position: sticky; // Ensure the parent allows for sticky positioning.
@@ -156,19 +162,4 @@
     width: 100%;
     border: none;
   }
-}
-.menu-search {
-  color: #003057;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 15px;
-  margin-right: 20px;
-}
-.shop-btn {
-  color: #003057;
-  font-family: sailecMedium;
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  margin-right: 20px;
 }

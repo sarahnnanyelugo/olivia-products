@@ -30,7 +30,7 @@ export const OurMission = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="mission-container">
+    <div>
       <div className="mission-landing">
         <center>
           <h1>For the Love of the Planet</h1>
@@ -190,7 +190,7 @@ export const OurMission = () => {
       <div id="product" className="section d-md-flex col-md-7 offset-md-3">
         {" "}
         <div className="col-md-6 ">
-          <h2>Product</h2>
+          <h2>People</h2>
           <p>Creating space for everyone</p>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">

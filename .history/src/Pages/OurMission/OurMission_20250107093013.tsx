@@ -30,7 +30,7 @@ export const OurMission = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="mission-container">
+    <div>
       <div className="mission-landing">
         <center>
           <h1>For the Love of the Planet</h1>

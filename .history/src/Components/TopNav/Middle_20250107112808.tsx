@@ -5,7 +5,6 @@ import Logo from "../../assets/images/logo.png";
 import { useCart } from "../../CartContext";
 import { GrCart } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa";
 
 export const Middle: React.FC = () => {
   const { setIsOffCanvasOpen, cart } = useCart(); // Access cart from the context
@@ -24,7 +23,7 @@ export const Middle: React.FC = () => {
         <ul className="list-unstyled list-inline col-md-4 navs">
           <li className="list-inline-item  top-mega-menu">
             <button onClick={toggleMenu} className="shop-btn">
-              Shop <FaAngleDown />
+              Shop
             </button>
             <div className={`mega-menu ${isOpen ? "open" : ""}`}>
               {/* Menu content goes here */}

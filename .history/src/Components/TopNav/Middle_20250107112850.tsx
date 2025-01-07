@@ -24,7 +24,7 @@ export const Middle: React.FC = () => {
         <ul className="list-unstyled list-inline col-md-4 navs">
           <li className="list-inline-item  top-mega-menu">
             <button onClick={toggleMenu} className="shop-btn">
-              Shop <FaAngleDown />
+              Shop
             </button>
             <div className={`mega-menu ${isOpen ? "open" : ""}`}>
               {/* Menu content goes here */}

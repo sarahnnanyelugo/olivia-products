@@ -4,35 +4,17 @@ import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
 import { useCart } from "../../CartContext";
 import { GrCart } from "react-icons/gr";
-import { IoSearch } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa";
 
 export const Middle: React.FC = () => {
   const { setIsOffCanvasOpen, cart } = useCart(); // Access cart from the context
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-  const [isOpen2, setIsOpen2] = useState(false);
-  const toggleMenu2 = () => {
-    setIsOpen2(!isOpen2);
-  };
 
   return (
     <>
       <div className="middle-nav-div d-flex align-items-center">
         <ul className="list-unstyled list-inline col-md-4 navs">
-          <li className="list-inline-item  top-mega-menu">
-            <button onClick={toggleMenu} className="shop-btn">
-              Shop <FaAngleDown />
-            </button>
-            <div className={`mega-menu ${isOpen ? "open" : ""}`}>
-              {/* Menu content goes here */}
-              <div className="menu-content ">
-                <h1>Mega Menu</h1>
-                <p>This is your mega menu content area.</p>
-              </div>
-            </div>
+          <li className="list-inline-item">
+            <NavLink to={"/"}>Shop</NavLink>
           </li>
           <li className="list-inline-item">
             <NavLink to={"/"}>Holiday Shop</NavLink>
@@ -51,22 +33,7 @@ export const Middle: React.FC = () => {
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-
-        <div className="top-mega-menu2">
-          {" "}
-          <IoSearch onClick={toggleMenu2} className="menu-search" />
-          <div className={`mega-menu  ${isOpen2 ? "open" : ""}`}>
-            {/* Menu content goes here */}
-            <div className="menu-content col-md-12">
-              <div className="d-flex search-box col-md-8 offset-md-2">
-                <IoSearch className="search-icon" />
-                <input type="search" />
-              </div>
-            </div>
-          </div>
-        </div>
         {/* Cart Icon with Item Count */}
-
         <div
           style={{ position: "relative", cursor: "pointer" }}
           onClick={() => setIsOffCanvasOpen(true)}

@@ -145,30 +145,13 @@
   .menu-content {
     text-align: center;
   }
-  .search-box {
-    border-bottom: solid 1px #e7e7e7;
-  }
   .search-icon {
-    color: rgb(132, 124, 124);
+    color: #000;
     font-size: 40px;
   }
   input {
     width: 100%;
     border: none;
+    border-bottom: solid 1px #e7e7e7;
   }
-}
-.menu-search {
-  color: #003057;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 15px;
-  margin-right: 20px;
-}
-.shop-btn {
-  color: #003057;
-  font-family: sailecMedium;
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  margin-right: 20px;
 }

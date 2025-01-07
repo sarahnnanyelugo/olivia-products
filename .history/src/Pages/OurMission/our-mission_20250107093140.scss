@@ -40,7 +40,6 @@
   background: #f5f9ff;
   position: sticky;
   top: 60px;
-  z-index: 10;
   ul {
   }
   li {
@@ -60,30 +59,26 @@
   }
 }
 #planet {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 200px;
+  margin-top: 200px;
   p {
     font-size: 13px;
   }
 }
 #product {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 200px;
+  margin-top: 200px;
 }
 #people {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 200px;
+  margin-top: 200px;
 }
 #policy {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 200px;
+  margin-top: 200px;
 }
 .mission-container {
   .accordion {
-    --bs-accordion-border-width: 0;
-  }
-  .accordion-button {
-    z-index: 1 !important;
-    border-bottom: solid 1px #e7e7e7;
+    border: none;
   }
 }

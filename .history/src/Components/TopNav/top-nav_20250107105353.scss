@@ -78,8 +78,7 @@
     display: none;
   }
 }
-
-.top-mega-menu {
+.mega-menu {
   .menu-trigger {
     padding: 10px 20px;
     font-size: 16px;
@@ -88,10 +87,10 @@
 
   .mega-menu {
     position: fixed;
-    top: 120px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: #fff;
     color: #fff;
     display: flex;
@@ -111,64 +110,4 @@
   .menu-content {
     text-align: center;
   }
-}
-
-.top-mega-menu2 {
-  .menu-trigger {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .mega-menu {
-    position: fixed;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: #fff;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transform-origin: center;
-    transition: transform 0.5s ease;
-    z-index: 1000;
-    overflow: hidden;
-  }
-
-  .mega-menu.open {
-    transform: scale(1);
-  }
-
-  .menu-content {
-    text-align: center;
-  }
-  .search-box {
-    border-bottom: solid 1px #e7e7e7;
-  }
-  .search-icon {
-    color: rgb(132, 124, 124);
-    font-size: 40px;
-  }
-  input {
-    width: 100%;
-    border: none;
-  }
-}
-.menu-search {
-  color: #003057;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 15px;
-  margin-right: 20px;
-}
-.shop-btn {
-  color: #003057;
-  font-family: sailecMedium;
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  margin-right: 20px;
 }
