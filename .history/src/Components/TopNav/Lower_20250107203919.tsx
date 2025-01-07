@@ -16,27 +16,25 @@ export const Lower = () => {
             <NavLink to={"/"}>Bestsellers</NavLink>
           </li>{" "}
           <li className="list-inline-item">
-            <NavLink to={"/collections?category=hand-soap"}>Hand Soap</NavLink>
+            <NavLink to={"/"}>Hand Soap</NavLink>
           </li>{" "}
           <li className="list-inline-item">
-            <NavLink to={"/collections?category=dish-wash"}>Dish</NavLink>
+            <NavLink to={"/"}>Dish</NavLink>
           </li>{" "}
           <li className="list-inline-item">
             <NavLink to={"/collections?category=Laundry"}>Laundry</NavLink>
           </li>{" "}
           <li className="list-inline-item">
-            <NavLink to={"/collections?category=toilet-Wash"}>Toilet</NavLink>
+            <NavLink to={"/"}>Toilet</NavLink>
           </li>{" "}
           <li className="list-inline-item">
             <NavLink to={"/"}>Spray Cleaners</NavLink>
           </li>{" "}
           <li className="list-inline-item">
-            <NavLink to={"/collections?category=personal-care"}>
-              Personal Care
-            </NavLink>
+            <NavLink to={"/"}>Personal Care</NavLink>
           </li>{" "}
           <li className="list-inline-item">
-            <NavLink to={"/collections?category=Shampoo"}>Shampoo</NavLink>
+            <NavLink to={"/"}>Extras</NavLink>
           </li>
         </ul>
       </center>

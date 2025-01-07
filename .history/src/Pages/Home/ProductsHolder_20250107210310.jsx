@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom"; // Import to read the query string
 import CartOffcanvas from "../../Components/CartList/CartList";
 import MainProduct from "../../Components/MainProducts/MainProducts";
 import { allProductsData } from "../../TestData/allProductsData";
@@ -11,20 +10,18 @@ export const ProductsHolder = ({ category = "", viewType = "slide" }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const visibleItems = 4;
-
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const categoryFromQuery = queryParams.get("category") || "";
-
-  // If category is "*", show all products. Otherwise, filter based on the provided category.
-  const filteredProducts =
-    categoryFromQuery === "*" || categoryFromQuery === ""
-      ? allProductsData // Show all products
-      : allProductsData.filter((product) =>
-          product.category.some(
-            (cat) => cat.toLowerCase() === categoryFromQuery.toLowerCase()
-          )
-        );
+  // Filter products by category if provided
+  const filteredProducts = category;
+  categoryFromQuery === "*" || categoryFromQuery === ""
+    ? allProductsData.filter((product) =>
+        product.category.some(
+          (cat) => cat.toLowerCase() === category.toLowerCase()
+        )
+      )
+    : allProductsData;
 
   // For sliding view
   const extendedProducts = [

@@ -36,7 +36,7 @@ export const Lower = () => {
             </NavLink>
           </li>{" "}
           <li className="list-inline-item">
-            <NavLink to={"/collections?category=Shampoo"}>Shampoo</NavLink>
+            <NavLink to={"/"}>Extras</NavLink>
           </li>
         </ul>
       </center>

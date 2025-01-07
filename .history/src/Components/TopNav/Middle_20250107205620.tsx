@@ -39,9 +39,7 @@ export const Middle: React.FC = () => {
                   <div className="col-md-6 ">
                     <ul className="list-unstyled">
                       <li onClick={toggleMenu}>
-                        <NavLink to={"/collections?category=*"}>
-                          Shop All
-                        </NavLink>
+                        <NavLink to={"/*"}>Shop All</NavLink>
                       </li>
                       <li onClick={toggleMenu}>
                         <NavLink to={"/"}>Best Sellers</NavLink>
