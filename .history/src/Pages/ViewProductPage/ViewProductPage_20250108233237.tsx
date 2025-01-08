@@ -84,7 +84,7 @@ export const ViewProductPage: React.FC = () => {
           </div>
           <button
             className="prev-arrow"
-            style={{ height: "40px", width: "40px", fontSize: "14px" }}
+            style={{ height: "20px" }}
             onClick={() =>
               setActiveImage(
                 (prev) => (prev - 1 + images.length) % images.length
@@ -94,7 +94,6 @@ export const ViewProductPage: React.FC = () => {
             &#10094;
           </button>
           <button
-            style={{ height: "40px", width: "40px", fontSize: "14px" }}
             className="next-arrow"
             onClick={() => setActiveImage((prev) => (prev + 1) % images.length)}
           >
@@ -107,19 +106,11 @@ export const ViewProductPage: React.FC = () => {
       <div className="product-info col-md-5">
         <h1>{product.name}</h1>
         <div className="quantity-controls">
-          <span
-            onClick={handleDecrement}
-            className="decrement-btn"
-            style={{ cursor: "pointer" }}
-          >
+          <span onClick={handleDecrement} className="decrement-btn">
             -
           </span>
           <span>{quantity}</span>
-          <span
-            onClick={handleIncrement}
-            className="increment-btn"
-            style={{ cursor: "pointer" }}
-          >
+          <span onClick={handleIncrement} className="increment-btn">
             +
           </span>
         </div>

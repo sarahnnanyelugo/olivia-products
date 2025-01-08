@@ -76,9 +76,8 @@ export const Middle: React.FC = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-6 first-ul d-flex">
-                    <ul className="list-unstyled ">
-                      {" "}
+                  <div className="col-md-6 first-ul">
+                    <ul className="list-unstyled">
                       <li onClick={toggleMenu}>
                         <NavLink to={"/collections?category=hand-soap"}>
                           Hand Soap
@@ -119,11 +118,7 @@ export const Middle: React.FC = () => {
                           Extras
                         </NavLink>
                       </li>
-                    </ul>{" "}
-                    <IoClose
-                      onClick={toggleMenu}
-                      style={{ color: "red", fontSize: "25px" }}
-                    />
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -146,7 +141,7 @@ export const Middle: React.FC = () => {
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-        <NavLink to={"/"}>Blog</NavLink>
+        <NavLink to={"/collections"}>Collections</NavLink>
 
         <div className="top-mega-menu2">
           <IoSearch onClick={toggleMenu2} className="menu-search" />

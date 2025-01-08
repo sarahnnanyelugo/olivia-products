@@ -47,7 +47,7 @@
 
 .carousel-container {
   overflow: hidden;
-  position: relative;
+  width: 100%;
 }
 
 .carousel {
@@ -57,6 +57,8 @@
 
 .carousel > div {
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 .prod-slide {
   overflow: hidden;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
@@ -10,44 +10,21 @@ import { FaAngleDown } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
 export const Middle: React.FC = () => {
-  const { setIsOffCanvasOpen, cart } = useCart();
+  const { setIsOffCanvasOpen, cart } = useCart(); // Access cart from the context
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLLIElement>(null); // Ref for the mega menu container
-
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(!isOpen);
   };
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-      setIsOpen(false); // Close the menu if clicked outside
-    }
-  };
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("no-scroll");
-      document.addEventListener("mousedown", handleClickOutside); // Listen for clicks outside
-    } else {
-      document.body.classList.remove("no-scroll");
-      document.removeEventListener("mousedown", handleClickOutside); // Clean up the listener
-    }
-    return () => {
-      document.body.classList.remove("no-scroll");
-      document.removeEventListener("mousedown", handleClickOutside); // Clean up on unmount
-    };
-  }, [isOpen]);
-
   const [isOpen2, setIsOpen2] = useState(false);
   const toggleMenu2 = () => {
-    setIsOpen2((prev) => !prev);
+    setIsOpen2(!isOpen2);
   };
 
   return (
     <>
       <div className="middle-nav-div d-flex align-items-center">
         <ul className="list-unstyled list-inline col-md-4 navs">
-          <li className="list-inline-item top-mega-menu" ref={menuRef}>
+          <li className="list-inline-item  top-mega-menu">
             <button onClick={toggleMenu} className="shop-btn">
               Shop <FaAngleDown />
             </button>
@@ -55,10 +32,11 @@ export const Middle: React.FC = () => {
               {/* Menu content goes here */}
               <div className="menu-content col-md-12 d-flex">
                 <div className="col-md-6">
+                  {" "}
                   <img src={All} className="col-md-12" />
                 </div>
                 <div className="col-md-5 offset-md-1 d-md-flex">
-                  <div className="col-md-6">
+                  <div className="col-md-6 ">
                     <ul className="list-unstyled">
                       <li onClick={toggleMenu}>
                         <NavLink to={"/collections?category=*"}>
@@ -76,9 +54,8 @@ export const Middle: React.FC = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-6 first-ul d-flex">
-                    <ul className="list-unstyled ">
-                      {" "}
+                  <div className="col-md-6 first-ul">
+                    <ul className="list-unstyled">
                       <li onClick={toggleMenu}>
                         <NavLink to={"/collections?category=hand-soap"}>
                           Hand Soap
@@ -119,11 +96,7 @@ export const Middle: React.FC = () => {
                           Extras
                         </NavLink>
                       </li>
-                    </ul>{" "}
-                    <IoClose
-                      onClick={toggleMenu}
-                      style={{ color: "red", fontSize: "25px" }}
-                    />
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -146,13 +119,15 @@ export const Middle: React.FC = () => {
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-        <NavLink to={"/"}>Blog</NavLink>
+        <NavLink to={"/collections"}>Collections</NavLink>
 
         <div className="top-mega-menu2">
+          {" "}
           <IoSearch onClick={toggleMenu2} className="menu-search" />
-          <div className={`mega-menu ${isOpen2 ? "open" : ""}`}>
+          <div className={`mega-menu  ${isOpen2 ? "open" : ""}`}>
+            {/* Menu content goes here */}
             <div className="menu-content col-md-12">
-              <div className="col-md-8 offset-md-2">
+              <div className=" col-md-8 offset-md-2">
                 <div className="d-flex">
                   <h6 style={{ flexGrow: 1 }}>WHAT ARE YOU LOOKING FOR</h6>
                   <IoClose
@@ -160,7 +135,7 @@ export const Middle: React.FC = () => {
                     style={{ color: "#000", fontSize: "20px" }}
                   />
                 </div>
-                <div className="d-flex search-box">
+                <div className="d-flex search-box ">
                   <IoSearch className="search-icon" />
                   <input type="search" placeholder="Search" />
                 </div>
@@ -168,10 +143,12 @@ export const Middle: React.FC = () => {
             </div>
           </div>
         </div>
+        {/* Cart Icon with Item Count */}
 
         <div style={{ position: "relative", cursor: "pointer" }}>
-          <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />
-          {cart.length > 0 && (
+          <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />{" "}
+          {/* Adjust the icon size as needed */}
+          {cart.length > 0 && ( // Show count only if cart has items
             <span
               style={{
                 position: "absolute",

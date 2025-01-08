@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./top-nav.scss";
 import Logo from "../../assets/images/logo.png";
@@ -12,29 +12,20 @@ import { IoClose } from "react-icons/io5";
 export const Middle: React.FC = () => {
   const { setIsOffCanvasOpen, cart } = useCart();
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLLIElement>(null); // Ref for the mega menu container
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-      setIsOpen(false); // Close the menu if clicked outside
-    }
-  };
-
+  // Add or remove the 'no-scroll' class based on the menu state
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
-      document.addEventListener("mousedown", handleClickOutside); // Listen for clicks outside
     } else {
       document.body.classList.remove("no-scroll");
-      document.removeEventListener("mousedown", handleClickOutside); // Clean up the listener
     }
     return () => {
-      document.body.classList.remove("no-scroll");
-      document.removeEventListener("mousedown", handleClickOutside); // Clean up on unmount
+      document.body.classList.remove("no-scroll"); // Cleanup on unmount
     };
   }, [isOpen]);
 
@@ -47,7 +38,7 @@ export const Middle: React.FC = () => {
     <>
       <div className="middle-nav-div d-flex align-items-center">
         <ul className="list-unstyled list-inline col-md-4 navs">
-          <li className="list-inline-item top-mega-menu" ref={menuRef}>
+          <li className="list-inline-item top-mega-menu">
             <button onClick={toggleMenu} className="shop-btn">
               Shop <FaAngleDown />
             </button>
@@ -76,9 +67,8 @@ export const Middle: React.FC = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-6 first-ul d-flex">
-                    <ul className="list-unstyled ">
-                      {" "}
+                  <div className="col-md-6 first-ul">
+                    <ul className="list-unstyled">
                       <li onClick={toggleMenu}>
                         <NavLink to={"/collections?category=hand-soap"}>
                           Hand Soap
@@ -119,11 +109,7 @@ export const Middle: React.FC = () => {
                           Extras
                         </NavLink>
                       </li>
-                    </ul>{" "}
-                    <IoClose
-                      onClick={toggleMenu}
-                      style={{ color: "red", fontSize: "25px" }}
-                    />
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -146,7 +132,7 @@ export const Middle: React.FC = () => {
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-        <NavLink to={"/"}>Blog</NavLink>
+        <NavLink to={"/collections"}>Collections</NavLink>
 
         <div className="top-mega-menu2">
           <IoSearch onClick={toggleMenu2} className="menu-search" />

@@ -51,7 +51,10 @@ export const Middle: React.FC = () => {
             <button onClick={toggleMenu} className="shop-btn">
               Shop <FaAngleDown />
             </button>
-            <div className={`mega-menu ${isOpen ? "open" : ""}`}>
+            <div
+              className={`mega-menu ${isOpen ? "open" : ""}`}
+              style={{ top: "120px", position: "fixed" }}
+            >
               {/* Menu content goes here */}
               <div className="menu-content col-md-12 d-flex">
                 <div className="col-md-6">
@@ -76,9 +79,8 @@ export const Middle: React.FC = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-6 first-ul d-flex">
-                    <ul className="list-unstyled ">
-                      {" "}
+                  <div className="col-md-6 first-ul">
+                    <ul className="list-unstyled">
                       <li onClick={toggleMenu}>
                         <NavLink to={"/collections?category=hand-soap"}>
                           Hand Soap
@@ -119,23 +121,16 @@ export const Middle: React.FC = () => {
                           Extras
                         </NavLink>
                       </li>
-                    </ul>{" "}
-                    <IoClose
-                      onClick={toggleMenu}
-                      style={{ color: "red", fontSize: "25px" }}
-                    />
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </li>
-          <li className="list-inline-item">
-            <NavLink to={"/"}>Holiday Shop</NavLink>
-          </li>
-          <li className="list-inline-item">
-            <NavLink to={"/"}>How it works</NavLink>
-          </li>
+          {/* Other nav items */}
         </ul>
+
+        {/* Center logo */}
         <div className="col-md-4 col-2">
           <center>
             <Link to={"/"} className="">
@@ -143,11 +138,13 @@ export const Middle: React.FC = () => {
             </Link>
           </center>
         </div>
+
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-        <NavLink to={"/"}>Blog</NavLink>
+        <NavLink to={"/collections"}>Collections</NavLink>
 
+        {/* Search menu */}
         <div className="top-mega-menu2">
           <IoSearch onClick={toggleMenu2} className="menu-search" />
           <div className={`mega-menu ${isOpen2 ? "open" : ""}`}>
@@ -169,6 +166,7 @@ export const Middle: React.FC = () => {
           </div>
         </div>
 
+        {/* Cart icon */}
         <div style={{ position: "relative", cursor: "pointer" }}>
           <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />
           {cart.length > 0 && (

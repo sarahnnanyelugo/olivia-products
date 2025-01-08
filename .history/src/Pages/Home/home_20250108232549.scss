@@ -57,6 +57,10 @@
 
 .carousel > div {
   box-sizing: border-box;
+  img {
+    position: relative;
+    z-index: 2;
+  }
 }
 .prod-slide {
   overflow: hidden;

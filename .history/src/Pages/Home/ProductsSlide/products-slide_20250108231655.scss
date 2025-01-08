@@ -60,6 +60,7 @@ $level2-left: 90px;
   height: $level2-height;
   width: $level2-width;
   line-height: $level2-height;
+  background-color: #228291;
   left: $level-2-left;
   margin-top: 60px;
 }
@@ -68,6 +69,7 @@ $level2-left: 90px;
   height: $level1-height;
   width: $level1-width;
   line-height: $level1-height;
+  background-color: #6796e5;
   left: $level-1-left;
   margin-top: 30px;
 }
@@ -76,6 +78,7 @@ $level2-left: 90px;
   height: $level0-height;
   width: $level0-width;
   line-height: $level0-height;
+  background-color: #4ec9e1;
   left: $level0-left;
 }
 
@@ -83,6 +86,7 @@ $level2-left: 90px;
   height: $level1-height;
   width: $level1-width;
   line-height: $level1-height;
+  background-color: #6796e5;
   margin-top: 30px;
   left: $level1-left;
 }
@@ -91,6 +95,7 @@ $level2-left: 90px;
   height: $level2-height;
   width: $level2-width;
   line-height: $level2-height;
+  background-color: #228291;
   margin-top: 60px;
   left: $level2-left;
 }
@@ -184,8 +189,5 @@ $level2-left: 90px;
   width: 100%;
 }
 .prd-slid {
-  img {
-    z-index: -1 !important;
-    position: relative;
-  }
+  z-index: -1 !important;
 }

@@ -47,12 +47,14 @@
 
 .carousel-container {
   overflow: hidden;
-  position: relative;
+  width: 100%;
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  position: relative;
+  z-index: 2;
 }
 
 .carousel > div {

@@ -23,6 +23,8 @@
 .cart-btn {
   position: absolute;
   bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0.5rem 1rem;
   background-color: blue;
   color: white;
@@ -38,6 +40,7 @@
     position: relative;
 
     border-radius: 10px;
+    // z-index: -1 !important;
   }
   h6 {
     font-size: 10px;

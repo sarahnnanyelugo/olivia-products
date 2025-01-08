@@ -107,19 +107,11 @@ export const ViewProductPage: React.FC = () => {
       <div className="product-info col-md-5">
         <h1>{product.name}</h1>
         <div className="quantity-controls">
-          <span
-            onClick={handleDecrement}
-            className="decrement-btn"
-            style={{ cursor: "pointer" }}
-          >
+          <span onClick={handleDecrement} className="decrement-btn">
             -
           </span>
           <span>{quantity}</span>
-          <span
-            onClick={handleIncrement}
-            className="increment-btn"
-            style={{ cursor: "pointer" }}
-          >
+          <span onClick={handleIncrement} className="increment-btn">
             +
           </span>
         </div>

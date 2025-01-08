@@ -53,6 +53,10 @@
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  img {
+    position: relative !important;
+    z-index: 2;
+  }
 }
 
 .carousel > div {

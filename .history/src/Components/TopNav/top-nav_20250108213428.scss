@@ -62,7 +62,6 @@
   .middle {
     position: sticky;
     top: 0; // Ensure it's fixed at the top when scrolling.
-    z-index: 5000;
   }
 
   .lower {
@@ -89,7 +88,7 @@
 
   .mega-menu {
     position: fixed;
-    top: 0px;
+    top: 120px;
     left: 0;
     width: 100%;
     height: 55%;

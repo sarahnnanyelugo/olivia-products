@@ -23,6 +23,8 @@
 .cart-btn {
   position: absolute;
   bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0.5rem 1rem;
   background-color: blue;
   color: white;
@@ -31,12 +33,11 @@
   cursor: pointer;
 }
 .product-container {
+  position: relative;
   display: inline-block;
   width: 100%;
-
+  z-index: 2;
   img {
-    position: relative;
-
     border-radius: 10px;
   }
   h6 {

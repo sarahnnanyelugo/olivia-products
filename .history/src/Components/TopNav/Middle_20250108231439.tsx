@@ -122,7 +122,7 @@ export const Middle: React.FC = () => {
                     </ul>{" "}
                     <IoClose
                       onClick={toggleMenu}
-                      style={{ color: "red", fontSize: "25px" }}
+                      style={{ color: "#000", fontSize: "25px" }}
                     />
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export const Middle: React.FC = () => {
         <div style={{ flexGrow: 1 }} />
         <NavLink to={"/about-us"}>About Us</NavLink>
         <NavLink to={"/our-mission"}>Our Mission</NavLink>
-        <NavLink to={"/"}>Blog</NavLink>
+        <NavLink to={"/collections"}>Collections</NavLink>
 
         <div className="top-mega-menu2">
           <IoSearch onClick={toggleMenu2} className="menu-search" />
