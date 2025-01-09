@@ -126,13 +126,13 @@ export const Home = () => {
       {/* Testifiers Section */}
       <div className="testifiers-div d-md-flex">
         <div className="col-12 col-md-6 d-flex">
-          <div className="col-6 testifiers">
+          <div className="col-12 col-md-6 testifiers">
             <center>
               <h5>"Best sustainable cleaning products”</h5>
               <img src={Testifier} alt="Testifier 1" width="154px" />
             </center>
           </div>
-          <div className="col-6  testifiers">
+          <div className="col-12 col-md-6 testifiers">
             <center>
               <h5>Best for the Environment</h5>
               <img src={Testifier2} alt="Testifier 2" width="154px" />
@@ -164,11 +164,11 @@ export const Home = () => {
       </center>
       <ProductsHolder />
 
-      <div className="mission-vision col-md-10 offset-md-1 d-flex mt-5">
+      <div className="mission-vision col-md-10 offset-md-1 d-md-flex mt-5">
         <div className="col-md-6">
           <img src={MissionImg} width="100%" />
         </div>
-        <div className="col-md-6 statement">
+        <div className="col-md-6 statement" style={{ paddingLeft: "50px" }}>
           <h5>OUR MISSION</h5>
 
           <h2>Creating a World Without Waste</h2>

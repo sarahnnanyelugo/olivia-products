@@ -53,7 +53,7 @@ export const Home = () => {
       {/* Stats Section */}
       <div className="stats">
         <center>
-          <div className="col-md-8 col-12">
+          <div className="col-md-8">
             <h1>
               <CountUp
                 start={0}
@@ -66,7 +66,7 @@ export const Home = () => {
             </h1>
             <div className="d-md-flex">
               {/* Powerfully Effective */}
-              <div className="d-flex col-12 col-md-6">
+              <div className="d-flex col-6">
                 {" "}
                 <div className="col-md-6 stats-data col-6">
                   <img src={Power} alt="Power" width="100px" />
@@ -89,7 +89,7 @@ export const Home = () => {
                   <p>Compostable paper-based packaging</p>
                 </div>
               </div>
-              <div className="d-flex col-12 col-md-6">
+              <div className="d-flex col-6">
                 {" "}
                 {/* Clean Ingredients */}
                 <div className="col-md-6 stats-data col-6">
@@ -125,36 +125,29 @@ export const Home = () => {
 
       {/* Testifiers Section */}
       <div className="testifiers-div d-md-flex">
-        <div className="col-12 col-md-6 d-flex">
-          <div className="col-6 testifiers">
-            <center>
-              <h5>"Best sustainable cleaning products”</h5>
-              <img src={Testifier} alt="Testifier 1" width="154px" />
-            </center>
-          </div>
-          <div className="col-6  testifiers">
-            <center>
-              <h5>Best for the Environment</h5>
-              <img src={Testifier2} alt="Testifier 2" width="154px" />
-            </center>
-          </div>
+        <div className="col-md-3 testifiers">
+          <center>
+            <h5>"Best sustainable cleaning products”</h5>
+            <img src={Testifier} alt="Testifier 1" width="154px" />
+          </center>
         </div>
-        <div className="col-12 col-md-6 d-flex">
-          {" "}
-          <div className="col-6 testifiers">
-            <center>
-              <h5>
-                "Tried the whole line and absolutely love it. It's genius"
-              </h5>
-              <img src={Testifier3} alt="Testifier 3" width="104px" />
-            </center>
-          </div>
-          <div className="col-6 testifiers">
-            <center>
-              <h5>World Changing Ideas</h5>
-              <img src={Testifier4} alt="Testifier 4" width="104px" />
-            </center>
-          </div>
+        <div className="col-md-3 testifiers">
+          <center>
+            <h5>Best for the Environment</h5>
+            <img src={Testifier2} alt="Testifier 2" width="154px" />
+          </center>
+        </div>
+        <div className="col-md-3 testifiers">
+          <center>
+            <h5>"Tried the whole line and absolutely love it. It's genius"</h5>
+            <img src={Testifier3} alt="Testifier 3" width="104px" />
+          </center>
+        </div>
+        <div className="col-md-3 testifiers">
+          <center>
+            <h5>World Changing Ideas</h5>
+            <img src={Testifier4} alt="Testifier 4" width="104px" />
+          </center>
         </div>
       </div>
 
@@ -164,11 +157,11 @@ export const Home = () => {
       </center>
       <ProductsHolder />
 
-      <div className="mission-vision col-md-10 offset-md-1 d-flex mt-5">
+      <div className="mission-vision col-md-10 offset-md-1 d-md-flex mt-5">
         <div className="col-md-6">
           <img src={MissionImg} width="100%" />
         </div>
-        <div className="col-md-6 statement">
+        <div className="col-md-6 statement" style={{ paddingLeft: "50px" }}>
           <h5>OUR MISSION</h5>
 
           <h2>Creating a World Without Waste</h2>

@@ -168,7 +168,7 @@ export const Home = () => {
         <div className="col-md-6">
           <img src={MissionImg} width="100%" />
         </div>
-        <div className="col-md-6 statement">
+        <div className="col-md-6 statement" style={{ paddingLeft: "50px" }}>
           <h5>OUR MISSION</h5>
 
           <h2>Creating a World Without Waste</h2>
