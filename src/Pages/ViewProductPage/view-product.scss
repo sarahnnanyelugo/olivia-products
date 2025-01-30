@@ -1,13 +1,12 @@
 // ProductDetail.scss
 
 .product-detail {
-  display: flex;
+  // display: flex;
   gap: 2rem;
   padding: 2rem;
   margin-top: 100px;
   z-index: 10;
-  // position: relative;
-  // z-index: -1;
+
   .product-images {
     display: flex;
     flex: 1;
@@ -41,7 +40,9 @@
         cursor: pointer;
         border-radius: 50%;
         z-index: 10;
-
+        @media screen and (max-width: 820px) {
+          top: 30%;
+        }
         &:hover {
           background-color: rgba(0, 0, 0, 0.7);
         }
@@ -61,7 +62,9 @@
       flex-direction: column;
       gap: 0.5rem;
       align-items: center;
-
+      @media screen and (max-width: 820px) {
+        margin-right: 20px;
+      }
       .thumbnail {
         width: 60px;
         height: 60px;
@@ -87,9 +90,12 @@
     flex-direction: column;
     gap: 1rem;
 
-    h2 {
+    h1 {
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
+      @media screen and (max-width: 820px) {
+        margin-top: -100px;
+      }
     }
 
     .price {
@@ -107,7 +113,10 @@
       color: white;
       cursor: pointer;
       transition: background-color 0.3s ease;
-
+      @media screen and (max-width: 820px) {
+        font-size: 14px !important;
+        margin-top: 0;
+      }
       &:hover {
         background-color: #0056b3;
       }

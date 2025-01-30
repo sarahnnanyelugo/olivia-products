@@ -79,6 +79,7 @@ export const ViewProductPage: React.FC = () => {
                 src={img}
                 alt={`Image ${index + 1}`}
                 className="main-image"
+                width="100%"
               />
             ))}
           </div>
@@ -104,7 +105,7 @@ export const ViewProductPage: React.FC = () => {
       </div>
 
       {/* Product Details Section */}
-      <div className="product-info col-md-5">
+      <div className="product-info col-md-5 offset-3 offset-md-0">
         <h1>{product.name}</h1>
         <div className="quantity-controls">
           <span

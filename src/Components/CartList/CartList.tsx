@@ -40,9 +40,10 @@ const CartOffcanvas: React.FC = () => {
               className="d-flex item-list"
             >
               <img
-                className="col-md-2"
+                className="col-md-2 col-4"
                 src={item.firstImg}
                 alt={item.productName}
+                width="100%"
                 style={{ marginRight: "1rem" }}
               />
               <div style={{ flexGrow: 1 }} className="mt-2">
@@ -55,11 +56,11 @@ const CartOffcanvas: React.FC = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="qty-d">
                 {" "}
                 <MdDelete
                   onClick={() => removeFromCart(item.id)}
-                  className="remove-btn mt-4"
+                  className="remove-btn "
                   title="remove"
                 />
                 <p>${(item.productPrice * item.quantity).toFixed(2)}</p>

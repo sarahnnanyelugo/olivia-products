@@ -6,7 +6,6 @@ import MainProduct from "../../Components/MainProducts/MainProducts";
 import { allProductsData } from "../../TestData/allProductsData";
 import { useCart } from "../../CartContext";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
-
 export const ProductsHolder = ({
   category = "",
   viewType = "slide",
@@ -15,11 +14,26 @@ export const ProductsHolder = ({
   const [startIndex, setStartIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [sortOrder, setSortOrder] = useState(""); // New state for sorting
-  const visibleItems = 4;
+  const [visibleItems, setVisibleItems] = useState(
+    window.innerWidth < 768 ? 1 : 4
+  ); // Initial visibleItems based on screen size
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const categoryFromQuery = queryParams.get("category") || "";
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 768) {
+  //       setVisibleItems(1); // Show 1 item on small screens
+  //     } else {
+  //       setVisibleItems(4); // Show 4 items on larger screens
+  //     }
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   // Filter products by category
   const filteredProducts =

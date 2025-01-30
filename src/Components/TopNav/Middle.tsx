@@ -209,7 +209,10 @@ export const Middle: React.FC = () => {
                   <img src={Logo} className="offset-2" width="35px" />
                 </div>
 
-                <div style={{ position: "relative", cursor: "pointer" }} className="carted">
+                <div
+                  style={{ position: "relative", cursor: "pointer" }}
+                  className="carted"
+                >
                   <GrCart size={20} onClick={() => setIsOffCanvasOpen(true)} />
                   {cart.length > 0 && (
                     <span

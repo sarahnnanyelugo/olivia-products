@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Offcanvas } from "react-bootstrap"; // Assuming you're using Bootstrap's Offcanvas component
 import { Link } from "react-router-dom";
+import { Desktop } from "../../Utils/mediaQueries";
 import "./main-product.scss";
 
 export interface ProductProps {
@@ -60,11 +61,13 @@ const MainProduct: React.FC<ProductProps> = ({
           </Link>
         </div>
 
-        {isHovered && (
-          <button onClick={handleAddToCart} className="cart-btn">
-            Add to Cart
-          </button>
-        )}
+        <Desktop>
+          {isHovered && (
+            <button onClick={handleAddToCart} className="cart-btn">
+              Add to Cart
+            </button>
+          )}
+        </Desktop>
       </div>
 
       <div

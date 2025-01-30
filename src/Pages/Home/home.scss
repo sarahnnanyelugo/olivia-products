@@ -276,3 +276,24 @@
     grid-template-columns: 1fr; /* Single column on very small screens */
   }
 }
+@media (max-width: 768px) {
+  .prod-slide {
+    padding: 0 10px;
+  }
+}
+/* Default: 4 items in a row */
+.carousel {
+  flex: 0 0 25%; /* 100% / 4 items */
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 50%; /* 100% / 2 items */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 0 0 100%; /* 100% / 1 item */
+  }
+}
