@@ -95,7 +95,7 @@ export const Footer = () => {
                   <NavLink to={""}>Returns & Exchanges</NavLink>
                 </li>
                 <li>
-                  <NavLink to={""}>FAQ</NavLink>
+                  <NavLink to={"/faqs"}>FAQ</NavLink>
                 </li>
                 <li>
                   <NavLink to={""}>Accessibility Tool</NavLink>

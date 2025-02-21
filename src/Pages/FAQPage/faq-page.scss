@@ -1,0 +1,132 @@
+.faq-div {
+  padding: 20px;
+  .faq-banner {
+    background: #eef0fd;
+    margin-top: 80px;
+    height: 500px;
+    padding: 90px 40px;
+    border-radius: 20px;
+    p {
+      font-size: 25px;
+      margin-top: 20px;
+    }
+  }
+  h1 {
+    font-size: 60px;
+  }
+  input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+  }
+
+  .input-divd {
+    border-radius: 20px;
+    border: solid 1px #ccc;
+    height: 50px;
+    padding-left: 10px;
+  }
+  .icon {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .question-btn {
+    height: 100px;
+    border-radius: 35px;
+    padding: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .box-1 {
+    border: solid 3px #707bb1;
+
+    font-size: 22px;
+    span {
+      background: #334bce;
+      border: none;
+      width: 40px;
+      padding-left: 5px;
+      border-radius: 5px;
+      margin-top: -5px;
+      height: 45px;
+
+      color: #fff;
+    }
+  }
+  .box-2 {
+    background: #334bce;
+    color: #fff;
+    font-size: 22px;
+    span {
+      background: #fff;
+      border: none;
+      color: #334bce;
+      width: 40px;
+      padding-left: 5px;
+      border-radius: 5px;
+      margin-top: -5px;
+    }
+  }
+}
+.question-body {
+  input {
+    width: 100%;
+    padding: 10px 20px;
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+  }
+}
+.act-btn {
+  background: #334bce;
+  font-family: sailecMedium;
+}
+.act-btn1 {
+  background: rgb(100, 1, 1);
+  font-family: sailecMedium;
+  border: solid 1px rgb(100, 1, 1);
+}
+.flip-card {
+  background-color: transparent;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  //   background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: #334bce;
+  p {
+    color: white !important;
+  }
+}

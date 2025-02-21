@@ -1,11 +1,21 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./about.scss";
+import React, { useRef, useState } from "react";
+
+import Product1 from "../../assets/images/product1.avif";
+import Product2 from "../../assets/images/product2.avif";
+import Product3 from "../../assets/images/product3.avif";
+import Product4 from "../../assets/images/product4.avif";
+import Product5 from "../../assets/images/product5.avif";
+import Product6 from "../../assets/images/product6.avif";
+import Product7 from "../../assets/images/product7.avif";
+
 import Abt1 from "../../assets/images/abt1.avif";
 import Abt2 from "../../assets/images/abt2.avif";
 import Abt3 from "../../assets/images/abt3.avif";
-import Abt4 from "../../assets/images/paper.avif";
+import "./about.scss";
+import { Link } from "react-router-dom";
+import FactTab from "../../Components/FactTab/FactTab";
 import { VideoSlide } from "./VideoSlide";
-import FactTab from "./FactTab/FactTab";
+
 const tabs = [
   {
     label: "Tab 1",
@@ -42,46 +52,27 @@ const tabs = [
   },
 ];
 
-export const About: React.FC = () => {
-  const images: string[] = [Abt3, Abt2, Abt1];
-  const [currentImage, setCurrentImage] = useState<string>(images[0]);
-  const [scrollIndex, setScrollIndex] = useState<number>(0);
-  const [visibleParagraphs, setVisibleParagraphs] = useState<boolean[]>([]);
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const paragraphsRef = useRef<(HTMLParagraphElement | null)[]>([]);
+const items = [
+  Product1,
+  Product2,
+  Product3,
+  Product4,
+  Product5,
+  Product6,
+  Product7,
+];
 
-  const handleScroll = (): void => {
-    if (containerRef.current) {
-      const { top, height } = containerRef.current.getBoundingClientRect();
-      const scrollPosition = -top;
-
-      // Handle image transition
-      if (scrollPosition >= 0 && scrollPosition <= height) {
-        const newIndex = Math.floor(scrollPosition / 200) % images.length;
-        if (newIndex !== scrollIndex) {
-          setScrollIndex(newIndex);
-          setCurrentImage(images[newIndex]);
-        }
-      }
-
-      // Check visibility of paragraphs
-      const updatedVisibility = paragraphsRef.current.map((paragraph) => {
-        if (!paragraph) return false;
-        const rect = paragraph.getBoundingClientRect();
-        return rect.top >= 0 && rect.bottom <= window.innerHeight;
-      });
-
-      setVisibleParagraphs(updatedVisibility);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollIndex]);
+export const About = () => {
+  const images = [Abt3, Abt2, Abt1];
+  const [currentImage, setCurrentImage] = useState(images[0]);
+  const [scrollIndex, setScrollIndex] = useState(0);
+  const [visibleParagraphs, setVisibleParagraphs] = useState([]);
+  const containerRef = useRef[null];
+  const paragraphsRef = useRef([]);
 
   return (
-    <div className="abt">
+    <div className="home-div">
+      {/* Video Section */}
       <div className="banner">
         <center>
           <div className="col-md-5">
@@ -135,10 +126,7 @@ export const About: React.FC = () => {
             Eco-Friendly Cleaning Products
           </p>
         </div>
-        <div className="col-md-8 refil ">
-          {" "}
-          {/* <img src={Abt4} alt="Scroll Transition" className="col-md-12" /> */}
-        </div>
+        <div className="col-md-8 refil "> </div>
       </div>{" "}
       <div
         style={{

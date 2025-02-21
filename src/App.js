@@ -13,9 +13,10 @@ import { Footer } from "./Components/Footer/Footer";
 import { ContactUs } from "./Pages/ContactUs/ContactUs";
 import { OrderForm } from "./Pages/ContactUs/OrderForm";
 import { WholeSalePage } from "./Pages/WholeSalePage/WholeSalePage";
-import { About } from "./Pages/About/About";
 import { OurMission } from "./Pages/OurMission/OurMission";
 import { Collections } from "./Pages/Collections/Collections";
+import { About } from "./Pages/About/About";
+import { FAQPage } from "./Pages/FAQPage/FAQPage";
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
           <Route path="/about-us" element={<About />} />{" "}
           <Route path="/our-mission" element={<OurMission />} />{" "}
           <Route path="/collections" element={<Collections />} />{" "}
+          <Route path="/faqs" element={<FAQPage />} />{" "}
         </Routes>
         <Footer />
       </CartProvider>

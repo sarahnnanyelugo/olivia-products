@@ -1,5 +1,6 @@
 .tab-content {
   padding-top: 30px;
+
   .left-content {
     padding-right: 10px;
   }
@@ -9,6 +10,8 @@
   }
   img {
     border-radius: 10px;
+    z-index: -1;
+    position: relative;
   }
   h6 {
     margin-top: 40px;

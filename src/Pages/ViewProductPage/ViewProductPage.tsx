@@ -51,86 +51,92 @@ export const ViewProductPage: React.FC = () => {
   };
 
   return (
-    <div className="product-detail d-md-flex col-md-10 offset-md-1">
-      {/* Image Carousel Section */}
-      <div className="product-images col-md-6 d-md-flex">
-        <div className="image-thumbnails col-2">
-          {images.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`Thumbnail ${index + 1}`}
-              className={`thumbnail ${index === activeImage ? "active" : ""}`}
-              onClick={() => {
-                setTransitionDirection(index > activeImage ? "right" : "left");
-                setActiveImage(index);
-              }}
-            />
-          ))}
-        </div>
-        <div className="main-carousel col-10">
-          <div
-            className={`image-container ${transitionDirection}`}
-            style={{ transform: `translateX(-${activeImage * 100}%)` }}
-          >
+    <>
+      <div className="product-detail d-md-flex col-md-10 offset-md-1">
+        {/* Image Carousel Section */}
+        <div className="product-images col-md-6 d-md-flex">
+          <div className="image-thumbnails col-2">
             {images.map((img, index) => (
               <img
                 key={index}
                 src={img}
-                alt={`Image ${index + 1}`}
-                className="main-image"
-                width="100%"
+                alt={`Thumbnail ${index + 1}`}
+                className={`thumbnail ${index === activeImage ? "active" : ""}`}
+                onClick={() => {
+                  setTransitionDirection(
+                    index > activeImage ? "right" : "left"
+                  );
+                  setActiveImage(index);
+                }}
               />
             ))}
           </div>
-          <button
-            className="prev-arrow"
-            style={{ height: "40px", width: "40px", fontSize: "14px" }}
-            onClick={() =>
-              setActiveImage(
-                (prev) => (prev - 1 + images.length) % images.length
-              )
-            }
-          >
-            &#10094;
-          </button>
-          <button
-            style={{ height: "40px", width: "40px", fontSize: "14px" }}
-            className="next-arrow"
-            onClick={() => setActiveImage((prev) => (prev + 1) % images.length)}
-          >
-            &#10095;
+          <div className="main-carousel col-10">
+            <div
+              className={`image-container ${transitionDirection}`}
+              style={{ transform: `translateX(-${activeImage * 100}%)` }}
+            >
+              {images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Image ${index + 1}`}
+                  className="main-image"
+                  width="100%"
+                />
+              ))}
+            </div>
+            <button
+              className="prev-arrow"
+              style={{ height: "40px", width: "40px", fontSize: "14px" }}
+              onClick={() =>
+                setActiveImage(
+                  (prev) => (prev - 1 + images.length) % images.length
+                )
+              }
+            >
+              &#10094;
+            </button>
+            <button
+              style={{ height: "40px", width: "40px", fontSize: "14px" }}
+              className="next-arrow"
+              onClick={() =>
+                setActiveImage((prev) => (prev + 1) % images.length)
+              }
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        {/* Product Details Section */}
+        <div className="product-info col-md-5 offset-3 offset-md-0">
+          <h1>{product.name}</h1>
+          <div className="quantity-controls">
+            <span
+              onClick={handleDecrement}
+              className="decrement-btn"
+              style={{ cursor: "pointer" }}
+            >
+              -
+            </span>
+            <span>{quantity}</span>
+            <span
+              onClick={handleIncrement}
+              className="increment-btn"
+              style={{ cursor: "pointer" }}
+            >
+              +
+            </span>
+          </div>
+          <p>{product.description}</p>
+
+          <button className="add-to-cart2" onClick={handleAddToCart}>
+            Add to Cart | ${(product.price * quantity).toFixed(2)}{" "}
+            {/* Show total */}
           </button>
         </div>
-      </div>
-
-      {/* Product Details Section */}
-      <div className="product-info col-md-5 offset-3 offset-md-0">
-        <h1>{product.name}</h1>
-        <div className="quantity-controls">
-          <span
-            onClick={handleDecrement}
-            className="decrement-btn"
-            style={{ cursor: "pointer" }}
-          >
-            -
-          </span>
-          <span>{quantity}</span>
-          <span
-            onClick={handleIncrement}
-            className="increment-btn"
-            style={{ cursor: "pointer" }}
-          >
-            +
-          </span>
-        </div>
-        <p>{product.description}</p>
-
-        <button className="add-to-cart2" onClick={handleAddToCart}>
-          Add to Cart | ${(product.price * quantity).toFixed(2)}{" "}
-          {/* Show total */}
-        </button>
-      </div>
-    </div>
+      </div>{" "}
+    </>
   );
 };

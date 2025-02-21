@@ -137,7 +137,7 @@ export const Middle: React.FC = () => {
               <NavLink to={"/"}>Holiday Shop</NavLink>
             </li>
             <li className="list-inline-item">
-              <NavLink to={"/"}>How it works</NavLink>
+              <NavLink to={"/faqs"}>FAQs</NavLink>
             </li>
           </ul>
           <div className="col-md-4 col-2">

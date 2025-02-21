@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import "./our-mission.scss";
 import Img1 from "../../assets/images/many-prod.avif";
 import Img2 from "../../assets/images/butterfly.avif";
@@ -7,30 +7,88 @@ import Img4 from "../../assets/images/people.avif";
 import Img5 from "../../assets/images/policy.avif";
 import { NavLink } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
+import Product1 from "../../assets/images/product1.avif";
+import Product2 from "../../assets/images/product2.avif";
+import Product3 from "../../assets/images/product3.avif";
+import Product4 from "../../assets/images/product4.avif";
+import Product5 from "../../assets/images/product5.avif";
+import Product6 from "../../assets/images/product6.avif";
+import Product7 from "../../assets/images/product7.avif";
+
+import Abt1 from "../../assets/images/abt1.avif";
+import Abt2 from "../../assets/images/abt2.avif";
+import Abt3 from "../../assets/images/abt3.avif";
+import { VideoSlide } from "../About/VideoSlide";
+import FactTab from "../../Components/FactTab/FactTab";
+
+const tabs = [
+  {
+    label: "Tab 1",
+    content: {
+      image: Abt1,
+      heading: "DID YOU KNOW?",
+      heading2: "OUR SOLUTION",
+      description: "Only 5% of plastic actually gets recycled.",
+      description2:
+        "We made sure our bottles would be the last ones you'd ever need - made to be reused and refilled forever with plastic-free tablets.",
+    },
+  },
+  {
+    label: "Tab 2",
+    content: {
+      image: Abt2,
+      heading: "DID YOU KNOW?",
+      heading2: "OUR SOLUTION",
+      description: "Only 5% of plastic actually gets recycled.",
+      description2:
+        "We made sure our bottles would be the last ones you'd ever need - made to be reused and refilled forever with plastic-free tablets.",
+    },
+  },
+  {
+    label: "Tab 3",
+    content: {
+      image: Abt3,
+      heading: "DID YOU KNOW?",
+      heading2: "OUR SOLUTION",
+      description: "Only 5% of plastic actually gets recycled.",
+      description2:
+        "We made sure our bottles would be the last ones you'd ever need - made to be reused and refilled forever with plastic-free tablets.",
+    },
+  },
+];
 
 export const OurMission = () => {
   const [activeSection, setActiveSection] = useState("people");
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      const scrollY = window.scrollY;
 
-      sections.forEach((section) => {
-        const top = section.offsetTop - 100; // Offset for better accuracy
-        const height = section.offsetHeight;
-        const sectionId = section.getAttribute("id");
+  const images = [Abt3, Abt2, Abt1];
+  const [currentImage, setCurrentImage] = useState(images[0]);
+  const [scrollIndex, setScrollIndex] = useState(0);
+  const [visibleParagraphs, setVisibleParagraphs] = useState([]);
+  const containerRef = useRef[null];
+  const paragraphsRef = useRef([]);
 
-        if (scrollY >= top && scrollY < top + height) {
-          setActiveSection(sectionId || "");
-        }
-      });
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = document.querySelectorAll("section");
+  //     const scrollY = window.scrollY;
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //     sections.forEach((section) => {
+  //       const top = section.offsetTop - 100; // Offset for better accuracy
+  //       const height = section.offsetHeight;
+  //       const sectionId = section.getAttribute("id");
+
+  //       if (scrollY >= top && scrollY < top + height) {
+  //         setActiveSection(sectionId || "");
+  //       }
+  //     });
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   return (
-    <div className="mission-container abt">
+    <div className="home-div">
+      {/* Video Section */}
       <div className="mission-landing">
         <center>
           <h1>For the Love of the Planet</h1>
@@ -43,21 +101,25 @@ export const OurMission = () => {
           <p>Make it easy for everyone to make sustainable choices</p>
         </div>
       </center>
+
       <div className="change-div">
         <div className="change-div-inner col-md-7 offset-md-2 d-md-flex">
           <div className="col-md-7">
             <img src={Img1} width="100%" />
           </div>
+
           <div className="col-md-4 offset-md-1 mission-statement2">
             <h1>Built for Change</h1>
+
             <p>
               We set out to create a business that acts as a force for good –
               showing that sustainable business practices and products can be
-              the "norm," not the exception
+              the "norm," not the exception //{" "}
             </p>
           </div>
         </div>
       </div>
+
       <div className="mission-navlinks">
         <ul className="list-inline list-unstyled col-md-6 offset-md-3">
           <li className="list-inline-item">
@@ -102,7 +164,7 @@ export const OurMission = () => {
         <div className="col-md-6 offset-md-1">
           <h2>Planet</h2>
           <p>Putting the planet first</p>
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 <h6>Climate Neutral</h6>
@@ -192,7 +254,7 @@ export const OurMission = () => {
         <div className="col-md-6 ">
           <h2>Product</h2>
           <p>Creating space for everyone</p>
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 <h6>Olivia Team</h6>
@@ -250,7 +312,7 @@ export const OurMission = () => {
         <div className="col-md-6 offset-md-1">
           <h2>People</h2>
           <p>Putting the planet first</p>
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 <h6>Climate Neutral</h6>
@@ -339,7 +401,7 @@ export const OurMission = () => {
         <div className="col-md-6 ">
           <h2>Policy</h2>
           <p>Creating space for everyone</p>
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 <h6>Olivia Team</h6>
