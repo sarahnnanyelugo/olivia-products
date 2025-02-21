@@ -100,7 +100,7 @@ export const FAQPage = () => {
             </div>
           </div>
         </div>
-        <div className="row row-cols-1 row-cols-lg-4 g-2 g-lg-3 mt-5">
+        <div className="row row-cols-1 row-cols-lg-4 g-2 g-lg-3 questions-cover">
           {faqs.map((faq, index) => (
             <Questions
               key={index}
