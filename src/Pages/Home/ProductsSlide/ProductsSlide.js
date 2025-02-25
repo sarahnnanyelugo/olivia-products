@@ -1,72 +1,68 @@
 import { useState, createRef } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Product } from "./Product";
 import "./products-slide.scss";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { Desktop } from "../../../Utils/mediaQueries";
-
-export const ProductsSlide = ({ items, active: initialActive }) => {
-  const [active, setActive] = useState(initialActive);
-  const [direction, setDirection] = useState("");
-
-  const moveLeft = () => {
-    setActive((prevActive) => {
-      const newActive = active - 1 < 0 ? items.length - 1 : prevActive - 1;
-      setDirection("left");
-      return newActive;
-    });
-  };
-
-  const moveRight = () => {
-    setActive((prevActive) => {
-      const newActive = (active + 1) % items.length;
-      setDirection("right");
-      return newActive;
-    });
-  };
-
-  const generateItems = () => {
-    const itemsArray = [];
-    const itemCount = 5; // Number of items to display at a time
-    const range = Math.floor(itemCount / 2); // Number of items on either side of active item
-
-    for (let i = active - range; i <= active + range; i++) {
-      let index = i;
-      if (i < 0) {
-        index = items.length + i;
-      } else if (i >= items.length) {
-        index = i % items.length;
-      }
-
-      const level = active - i;
-      itemsArray.push(
-        <sCSSTransition
-          key={index}
-          classNames={direction}
-          timeout={1000}
-          nodeRef={createRef(null)}
-        >
-          <Product id={items[index]} level={level} />
-        </sCSSTransition>
-      );
-    }
-    return itemsArray;
-  };
-
+import Product1 from "../../../assets/images/product1.avif";
+import Product2 from "../../../assets/images/product2.avif";
+import Product3 from "../../../assets/images/product3.avif";
+import Product4 from "../../../assets/images/product4.avif";
+import Product5 from "../../../assets/images/product5.avif";
+import Product6 from "../../../assets/images/product6.avif";
+import Product7 from "../../../assets/images/product7.avif";
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
+const items = [
+  { id: 1, prdImg: Product1, price: "$10", name: "Hair Care" },
+  { id: 2, prdImg: Product2, price: "$20", name: "Kitchen Use" },
+  { id: 3, prdImg: Product3, price: "$30", name: "Auto maintainance" },
+  { id: 4, prdImg: Product4, price: "$40", name: "Laundry" },
+  { id: 5, prdImg: Product5, price: "$50", name: "Home hygeine" },
+  { id: 6, prdImg: Product6, price: "$60", name: "Body Care" },
+  { id: 7, prdImg: Product7, price: "$70" },
+];
+export const ProductsSlide = ({ deviceType = "desktop" }) => {
   return (
-    <Desktop>
+    <div className="sliding-products ">
       {" "}
-      <div id="carousel" className="noselect prd-slid">
-        <div className="arrow arrow-left" onClick={moveLeft}>
-          {" "}
-          <FaArrowAltCircleRight />
-        </div>
-        <TransitionGroup>{generateItems()}</TransitionGroup>
-        <div className="arrow arrow-right" onClick={moveRight}>
-          <FaArrowAltCircleLeft />
-        </div>
-      </div>
-    </Desktop>
+      <Carousel
+        swipeable={true} // Changed from false to true for better UX
+        draggable={true} // Changed from false to true for better UX
+        showDots={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlay={deviceType !== "mobile"} // Fixed reference to `deviceType`
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        customTransition="all .5s"
+        transitionDuration={800}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType={deviceType} // Fixed reference to `deviceType`
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+        {items.map((product) => (
+          <Product key={product.id} {...product} />
+        ))}
+      </Carousel>
+    </div>
   );
 };

@@ -1,9 +1,15 @@
-export const Product = ({ id, level, ref }) => {
-  const className = `item level${level}`;
-  console.log(id);
+import "./products-slide.scss";
+
+export const Product = (props) => {
+  const { prdImg, name, price } = props;
+
   return (
-    <div className={className} ref={ref} id="products-section">
-      <img src={id} alt={`Product ${level}`} width="100%" />
+    <div className="products-section col">
+      <img src={prdImg} width="100%" />
+      <div className="d-flex details">
+        <h4 style={{ flexGrow: 1 }}>{name}</h4>
+        <h4>{price}</h4>
+      </div>
     </div>
   );
 };

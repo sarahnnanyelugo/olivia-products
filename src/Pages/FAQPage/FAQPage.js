@@ -66,51 +66,49 @@ const faqs = [
 ];
 export const FAQPage = () => {
   return (
-    <>
-      <div className="faq-div ">
-        <div className="faq-banner d-md-flex">
-          <div className="col-md-8">
-            <h1>
-              Looking for help? Here are our most frequently asked questions.
-            </h1>
-            <p>
-              Everything you need to know about Olivia Products. Can't find the
-              answer to a question you have? No worries, just click "I have got
-              a question" or "Chat with our team!"
-            </p>
-          </div>
-          <div className=" offset-md-1 col-md-3 input-divd d-flex">
-            <IoSearch className="icon" />
+    <div className="faq-div ">
+      <div className="faq-banner d-md-flex">
+        <div className="col-md-8">
+          <h1>
+            Looking for help? Here are our most frequently asked questions.
+          </h1>
+          <p>
+            Everything you need to know about Olivia Products. Can't find the
+            answer to a question you have? No worries, just click "I have got a
+            question" or "Chat with our team!"
+          </p>
+        </div>
+        <div className=" offset-md-1 col-md-3 input-divd d-flex">
+          <IoSearch className="icon" />
 
-            <input type="search" placeholder="Search" />
-          </div>
-        </div>
-        <div className="row row-cols-2 row-cols-lg-2 g-2 g-lg-3">
-          <div className="col">
-            {" "}
-            <AskQuestion />
-          </div>
-          <div className="col">
-            {" "}
-            <div className="d-flex question-btn box-2">
-              <a style={{ flexGrow: "1" }}>Chat to our team</a>
-              <span>
-                <FaArrowRight className="icon" />
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="row row-cols-1 row-cols-lg-4 g-2 g-lg-3 questions-cover">
-          {faqs.map((faq, index) => (
-            <Questions
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              bg1={faq.bg1}
-            />
-          ))}
+          <input type="search" placeholder="Search" />
         </div>
       </div>
-    </>
+      <div className="row row-cols-2 row-cols-lg-2 g-2 g-lg-3">
+        <div className="col">
+          {" "}
+          <AskQuestion />
+        </div>
+        <div className="col">
+          {" "}
+          <div className="d-flex question-btn box-2">
+            <a style={{ flexGrow: "1" }}>Chat to our team</a>
+            <span>
+              <FaArrowRight className="icon" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="row row-cols-1 row-cols-lg-4 g-2 g-lg-3 questions-cover">
+        {faqs.map((faq, index) => (
+          <Questions
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+            bg1={faq.bg1}
+          />
+        ))}
+      </div>
+    </div>
   );
 };

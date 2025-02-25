@@ -3,9 +3,12 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import CartOffcanvas from "../../Components/CartList/CartList";
 import MainProduct from "../../Components/MainProducts/MainProducts";
+import Carousel from "react-bootstrap/Carousel";
+
 import { allProductsData } from "../../TestData/allProductsData";
 import { useCart } from "../../CartContext";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 export const ProductsHolder = ({
   category = "",
   viewType = "slide",
@@ -147,50 +150,75 @@ export const ProductsHolder = ({
   return (
     <center>
       <div className="prod-slide col-md-11">
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <MdNavigateBefore
-            onClick={handlePrev}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
+        {" "}
+        <Desktop>
+          <div className="d-flex justify-content-between align-items-center mb-3">
+            <MdNavigateBefore
+              onClick={handlePrev}
+              style={{ color: "#003057 ", fontSize: "38px" }}
+            />
 
-          <MdNavigateNext
-            onClick={handleNext}
-            style={{ color: "#003057 ", fontSize: "38px" }}
-          />
-        </div>
-
-        <div
-          className="carousel"
-          style={{
-            display: "flex",
-            transition: isTransitioning ? "transform 1s ease-in-out" : "none",
-            transform: `translateX(-${
-              (100 / visibleItems) * actualStartIndex
-            }%)`,
-            width: `${(extendedProducts.length / visibleItems) * 25}%`,
-          }}
-        >
-          {extendedProducts.map((product, index) => (
-            <div
-              key={index}
-              style={{
-                flex: `0 0 ${100 / visibleItems}%`,
-                boxSizing: "border-box",
-                padding: "10px",
-              }}
-            >
-              <MainProduct
-                productName={product.name}
-                productPrice={product.price}
-                firstImg={product.firstImg}
-                hoverImg={product.hoverImg}
-                id={product.id}
-                onAddToCart={addToCart}
-              />
-            </div>
-          ))}
-        </div>
-
+            <MdNavigateNext
+              onClick={handleNext}
+              style={{ color: "#003057 ", fontSize: "38px" }}
+            />
+          </div>{" "}
+          <div
+            className="carousel"
+            style={{
+              display: "flex",
+              transition: isTransitioning ? "transform 1s ease-in-out" : "none",
+              transform: `translateX(-${
+                (100 / visibleItems) * actualStartIndex
+              }%)`,
+              width: `${(extendedProducts.length / visibleItems) * 25}%`,
+            }}
+          >
+            {extendedProducts.map((product, index) => (
+              <div
+                key={index}
+                style={{
+                  flex: `0 0 ${100 / visibleItems}%`,
+                  boxSizing: "border-box",
+                  padding: "10px",
+                }}
+              >
+                <MainProduct
+                  productName={product.name}
+                  productPrice={product.price}
+                  firstImg={product.firstImg}
+                  hoverImg={product.hoverImg}
+                  id={product.id}
+                  onAddToCart={addToCart}
+                />
+              </div>
+            ))}
+          </div>
+        </Desktop>
+        <TabletAndBelow>
+          <Carousel>
+            {extendedProducts.map((product, index) => (
+              <Carousel.Item key={index}>
+                <div
+                  style={{
+                    flex: "0 0 100%",
+                    boxSizing: "border-box",
+                    padding: "10px",
+                  }}
+                >
+                  <MainProduct
+                    productName={product.name}
+                    productPrice={product.price}
+                    firstImg={product.firstImg}
+                    hoverImg={product.hoverImg}
+                    id={product.id}
+                    onAddToCart={addToCart}
+                  />
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </TabletAndBelow>
         {/* Cart Offcanvas */}
         <CartOffcanvas
           show={setIsOffCanvasOpen}

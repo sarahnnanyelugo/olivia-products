@@ -20,10 +20,12 @@ import CountUp from "react-countup";
 import { ProductsSlide } from "./ProductsSlide/ProductsSlide";
 import { ProductsHolder } from "./ProductsHolder";
 import { FaAngleRight } from "react-icons/fa";
+import Carousel from "react-bootstrap/Carousel";
 
 import "./home.scss";
 import { Link } from "react-router-dom";
 import TestimonialCarousel from "./Testimonials";
+import { TabletAndBelow } from "../../Utils/mediaQueries";
 
 const items = [
   Product1,
@@ -119,7 +121,7 @@ export const Home = () => {
           </p>
         </center>
         <div className="col-md-12 prd-slid">
-          <ProductsSlide items={items} active={0} />
+          <ProductsSlide />
         </div>
       </div>
 

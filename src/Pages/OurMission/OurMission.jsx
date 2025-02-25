@@ -121,7 +121,7 @@ export const OurMission = () => {
       </div>
 
       <div className="mission-navlinks">
-        <ul className="list-inline list-unstyled col-md-6 offset-md-3">
+        <ul className="list-inline list-unstyled col-md-6 offset-md-3 d-flex">
           <li className="list-inline-item">
             <a
               href="#planet"
