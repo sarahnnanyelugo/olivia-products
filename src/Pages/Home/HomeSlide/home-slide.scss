@@ -1,0 +1,103 @@
+// @import "../../../variables";
+
+.journey-div {
+  height: 800px;
+  position: relative;
+  margin-bottom: 0;
+  @media screen and (max-width: 820px) {
+    margin-top: 30px;
+  }
+  img {
+    object-fit: cover;
+  }
+  p {
+    color: #fff !important;
+    font-size: 42px !important;
+  }
+  .journey-cova {
+    position: absolute;
+    height: 950px !important;
+    width: 100%;
+    @media screen and (max-width: 820px) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    color: #fff;
+  }
+}
+.journey-carousel {
+  .carousel-control-next-icon {
+    // background-image: url("../../../assets/images/arrow.png");
+    height: 20px;
+    width: 20px;
+    margin-top: -40%;
+  }
+  .carousel-control-prev-icon {
+    // background-image: url("../../../assets/images/arrow.png");
+    transform: rotate(180deg);
+    height: 20px;
+    margin-top: -40%;
+    width: 20px;
+  }
+  .carousel-indicators {
+    // display: none;
+    top: 80%;
+    left: -42%;
+    @media screen and (max-width: 820px) {
+      left: 0% !important;
+    }
+    button {
+      height: 15px !important;
+      width: 15px !important;
+      border-radius: 100%;
+    }
+  }
+  .carousel-indicators-button {
+  }
+  .carousel-control-prev {
+    left: 10% !important;
+    display: none;
+    @media screen and (max-width: 820px) {
+      left: 35% !important;
+    }
+  }
+  .carousel-control-next {
+    right: 52% !important;
+    display: none;
+    @media screen and (max-width: 820px) {
+      right: 35% !important;
+    }
+  }
+}
+.target-img img {
+  transform: translateX(600px); // Move right inside container (not full screen)
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+  animation: none;
+}
+
+/* When the parent is active and visible */
+.carousel-item.active .target-img img {
+  transform: translateX(0); // Slide into correct place
+  opacity: 1;
+  animation: bounce 1s ease-out 2s forwards; // 👈
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+}

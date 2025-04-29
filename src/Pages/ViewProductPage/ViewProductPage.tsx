@@ -53,7 +53,6 @@ export const ViewProductPage: React.FC = () => {
   return (
     <>
       <div className="product-detail d-md-flex col-md-10 offset-md-1">
-        {/* Image Carousel Section */}
         <div className="product-images col-md-6 d-md-flex">
           <div className="image-thumbnails col-2">
             {images.map((img, index) => (
@@ -80,7 +79,7 @@ export const ViewProductPage: React.FC = () => {
                 <img
                   key={index}
                   src={img}
-                  alt={`Image ${index + 1}`}
+                  alt=""
                   className="main-image"
                   width="100%"
                 />

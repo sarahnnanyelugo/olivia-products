@@ -47,8 +47,8 @@
   }
 }
 .top-nav {
-  position: sticky; // Ensure the parent allows for sticky positioning.
-  height: 80px;
+  // position: sticky; // Ensure the parent allows for sticky positioning.
+  // height: 80px;
   @media screen and (max-width: 820px) {
     height: 0px;
   }

@@ -3,6 +3,7 @@ import { Product } from "./Product";
 import "./products-slide.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 import { Desktop } from "../../../Utils/mediaQueries";
 import Product1 from "../../../assets/images/product1.avif";
 import Product2 from "../../../assets/images/product2.avif";
@@ -42,20 +43,20 @@ export const ProductsSlide = ({ deviceType = "desktop" }) => {
     <div className="sliding-products ">
       {" "}
       <Carousel
-        swipeable={true} // Changed from false to true for better UX
-        draggable={true} // Changed from false to true for better UX
+        swipeable={true}
+        draggable={true}
         showDots={true}
         responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
+        ssr={true}
         infinite={true}
-        autoPlay={deviceType !== "mobile"} // Fixed reference to `deviceType`
+        autoPlay={deviceType !== "mobile"}
         autoPlaySpeed={5000}
         keyBoardControl={true}
         customTransition="all .5s"
         transitionDuration={800}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={deviceType} // Fixed reference to `deviceType`
+        deviceType={deviceType}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >

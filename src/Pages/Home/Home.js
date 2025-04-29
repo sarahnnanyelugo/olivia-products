@@ -26,22 +26,12 @@ import "./home.scss";
 import { Link } from "react-router-dom";
 import TestimonialCarousel from "./Testimonials";
 import { TabletAndBelow } from "../../Utils/mediaQueries";
-
-const items = [
-  Product1,
-  Product2,
-  Product3,
-  Product4,
-  Product5,
-  Product6,
-  Product7,
-];
+import { HomeSlide } from "./HomeSlide/HomeSlide";
 
 export const Home = () => {
   return (
     <div className="home-div">
-      {/* Video Section */}
-      <video
+      {/* <video
         className="video"
         width="100%"
         autoPlay
@@ -50,10 +40,34 @@ export const Home = () => {
         playsInline
         controls
         src={Video}
-      ></video>
+      ></video> */}
 
+      <HomeSlide />
       {/* Stats Section */}
-      <div className="stats">
+
+      <div className="col-md-8 offset-md-2 d-md-flex abt-div">
+        <div className="col-md-5">
+          <h6>ABOUT US</h6>
+          <h5>
+            One of the largest manufacturer and distributor of Laundry, Hygiene
+            and Dental Care products in Nigeria.
+          </h5>
+        </div>
+        <div className="col-md-6">
+          <p>
+            As the foremost personal care product manufacturers in Nigeria, our
+            product portfolio covers almost all the hygiene and healthcare
+            essentials for your daily lives. At Aspira, our dream is to ‘Develop
+            a Healthier Nation’. By manufacturing a wide range of affordable and
+            superior quality products that are suitable for the entire family –
+            from soaps for babies to adults with sensitive skin; oral care
+            products, luxurious beauty soaps to enhance your skin, and jellies
+            to protect your skin.
+          </p>
+          <button>Explore More</button>
+        </div>
+      </div>
+      {/* <div className="stats">
         <center>
           <div className="col-md-8 col-12">
             <h1>
@@ -67,7 +81,6 @@ export const Home = () => {
               Homes Have Made the Switch
             </h1>
             <div className="d-md-flex">
-              {/* Powerfully Effective */}
               <div className="d-flex col-12 col-md-6">
                 {" "}
                 <div className="col-md-6 stats-data col-6">
@@ -84,7 +97,6 @@ export const Home = () => {
                     5-star reviews
                   </p>
                 </div>
-                {/* Eco-friendly */}
                 <div className="col-md-6 stats-data col-6">
                   <img src={Plastic} alt="Eco-friendly" width="100px" />
                   <h6>Eco-friendly</h6>
@@ -93,13 +105,11 @@ export const Home = () => {
               </div>
               <div className="d-flex col-12 col-md-6">
                 {" "}
-                {/* Clean Ingredients */}
                 <div className="col-md-6 stats-data col-6">
                   <img src={Flower} alt="Clean Ingredients" width="100px" />
                   <h6>Clean Ingredients</h6>
                   <p>Safe for use around kids and pets</p>
                 </div>
-                {/* Money-Saving */}
                 <div className="col-md-6 stats-data col-6">
                   <img src={Money} alt="Money-Saving" width="100px" />
                   <h6>Money-Saving</h6>
@@ -109,7 +119,21 @@ export const Home = () => {
             </div>
           </div>
         </center>
-      </div>
+      </div> */}
+
+      <center>
+        <div className="col-md-5 home-prd">
+          <h6>OUR PRODUCTS</h6>
+          <h2>We touch millions of lives every day!</h2>
+          <p>
+            All of our products go through stringent quality control measures,
+            and their efficacy, safety, and Purity, are all well established. A
+            product leaves our factory gates only when we are 100% satisfied
+            about its quality. It’s no surprise therefore, that Aspira products
+            are the most popular personal care products in Nigeria.
+          </p>
+        </div>
+      </center>
 
       {/* Category Section */}
       <div className="category-div">

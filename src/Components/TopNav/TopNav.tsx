@@ -8,9 +8,8 @@ import { Desktop } from "../../Utils/mediaQueries";
 
 export const TopNav = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const location = useLocation(); // Get current location
+  const location = useLocation();
 
-  // List of paths where TopNav should NOT be shown
   const excludedPaths = ["/login", "/register", "/wholesale-page"];
 
   useEffect(() => {
@@ -31,20 +30,20 @@ export const TopNav = () => {
 
   return (
     <>
-      {/* <Desktop> */}
-        {" "}
-        <div className="top-nav sticky">
-          <div className={`upper ${scrollPosition > 50 ? "hide" : ""}`}>
+      <div className="top-nav sticky">
+        {/* <div className={`upper ${scrollPosition > 50 ? "hide" : ""}`}>
             <Upper />
           </div>
           <div className="middle">
             <Middle />
-          </div>
-          <div className={`lower ${scrollPosition > 50 ? "hide" : ""}`}>
-            <Lower />
-          </div>
+          </div> */}
+        {/* <div className={`lower ${scrollPosition > 50 ? "hide" : ""}`}>
+          <Lower />
+        </div>{" "} */}
+        <div className="lower">
+          <Lower />
         </div>
-      {/* </Desktop> */}
+      </div>
     </>
   );
 };
