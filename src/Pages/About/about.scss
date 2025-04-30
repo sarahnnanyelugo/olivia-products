@@ -1,10 +1,10 @@
 .banner {
-  height: 600px;
-  background: url("../../assets/images/cloud-bg.avif");
+  height: 500px;
+  background: url("../../assets/images/about-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 200px;
-  margin-top: 90px;
+  background-position: center;
   p {
     font-size: 60px;
     font-family: sailecLight;
@@ -12,19 +12,21 @@
     line-height: 70px;
   }
   h5 {
+    font-size: 50px;
+    color: #fff !important;
     border-bottom: solid 1px #003057;
     width: fit-content;
   }
 }
 
-.problem-div {
+.overview-div {
   margin-top: 80px;
   h4 {
     border-bottom: solid 1px #003057;
     width: fit-content;
   }
   p {
-    font-size: 45px;
+    font-size: 15px;
     font-family: sailecRegularIt;
   }
 }

@@ -78,18 +78,29 @@ export const About = () => {
           <div className="col-md-5">
             {" "}
             <h5>About Us</h5>
-            <p> Making a difference by doing things differently</p>
           </div>
         </center>
       </div>
-      <center>
-        <div className="col-md-6 problem-div">
-          <h4>THE PROBLEM</h4>
-          <p>
-            Plastic was meant to last forever, but most of it is only used once.
-          </p>
-        </div>
-      </center>
+      <div className="col-md-6 overview-div offset-md-1 ">
+        <h4>COMPANY OVERVIEW</h4>
+        <p>
+          Olivia Products Nigeria Ltd., part of Lee Group of Companies, is one
+          of the largest manufacturer and distributor of Laundry, Hygiene and
+          Dental Care products in Nigeria.
+        </p>
+        <p>
+          Olivia Products was established in 2009, having its manufacturing
+          plant & HQ based in Kano-Nigeria, producing various brands of consumer
+          products in non-food categories.
+        </p>
+        <p>
+          Our operations in Nigeria span over 15 years, with an enduring
+          commitment to consumers’ daily lives. We raise consumer satisfaction
+          and market standards by offering world-class products such as Viva,
+          Siri, Fizz, Oracare, Biotol, Sabil, Family Care, Baby & Me, Manuka &
+          MP3.
+        </p>
+      </div>
       <div className="scroll-container" ref={containerRef}>
         <div className="content">
           <div className="sticky-image col-md-6">

@@ -27,6 +27,9 @@ import { Link } from "react-router-dom";
 import TestimonialCarousel from "./Testimonials";
 import { TabletAndBelow } from "../../Utils/mediaQueries";
 import { HomeSlide } from "./HomeSlide/HomeSlide";
+const OPTIONS = { loop: true };
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 export const Home = () => {
   return (
@@ -45,8 +48,8 @@ export const Home = () => {
       <HomeSlide />
       {/* Stats Section */}
 
-      <div className="col-md-8 offset-md-2 d-md-flex abt-div">
-        <div className="col-md-5">
+      <div className="col-md-10 offset-md-1 d-md-flex abt-div">
+        <div className="col-md-6">
           <h6>ABOUT US</h6>
           <h5>
             One of the largest manufacturer and distributor of Laundry, Hygiene
@@ -122,7 +125,7 @@ export const Home = () => {
       </div> */}
 
       <center>
-        <div className="col-md-5 home-prd">
+        <div className="col-md-6 home-prd">
           <h6>OUR PRODUCTS</h6>
           <h2>We touch millions of lives every day!</h2>
           <p>
@@ -137,15 +140,8 @@ export const Home = () => {
 
       {/* Category Section */}
       <div className="category-div">
-        <center>
-          <h1>Shop By Category</h1>
-          <p>
-            Explore all of our reusable and sustainable household cleaning
-            products
-          </p>
-        </center>
         <div className="col-md-12 prd-slid">
-          <ProductsSlide />
+          <ProductsSlide options={OPTIONS} />
         </div>
       </div>
 
@@ -192,15 +188,20 @@ export const Home = () => {
 
       <div className="mission-vision col-md-10 offset-md-1 d-flex mt-5">
         <div className="col-md-6">
-          <img src={MissionImg} width="100%" />
+          <img src={MissionImg} width="100%" alt="" />
         </div>
         <div className="col-md-6 statement">
-          <h5>OUR MISSION</h5>
+          <h5>OLIVIACARE</h5>
 
-          <h2>Creating a World Without Waste</h2>
+          <h2>
+            Make A Difference With <span>Olivia Products</span>
+          </h2>
           <p>
-            We’re on a mission to make it easy for everyone to make sustainable
-            choices.
+            We are committed to positively impact the daily lives of people, and
+            to empower communities through our corporate social responsibility
+            activities. Our main focus is on helping the youth by providing
+            adequate support to develop their skills, and improving the
+            education system.
           </p>
           <Link to={"/our-mission"}>
             Our Mission <FaAngleRight />
@@ -211,8 +212,22 @@ export const Home = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
+      <div className="news-div">
+        <center>
+          <h6>NEWS AND EVENTS</h6>
+          <div className="col-md-6">
+            <h3>Get To Know More About Us From The Media</h3>
+            <p>
+              Get to know more about Aspira – the leading personal care product
+              suppliers in Nigeria – with news and stories appearing in
+              prominent media.
+            </p>
+          </div>
+        </center>
+        <div className="news-inner">
+          <div className="col-md-10 offset-md-1 d-md-flex "></div>
+        </div>
+      </div>
       <center>
         <h2>Over 100,000 5-Star Reviews</h2>
       </center>

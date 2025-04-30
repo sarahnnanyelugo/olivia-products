@@ -28,7 +28,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Keep your clothes stain free</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>{" "}
@@ -44,7 +44,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Illuminate your smile</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>
@@ -60,7 +60,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Your Powerful Shield against Germs</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>
@@ -76,7 +76,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Your Powerful Shield against Germs</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>
@@ -92,7 +92,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Your Powerful Shield against Germs</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-4 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>
@@ -108,7 +108,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Your Powerful Shield against Germs</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>
@@ -124,7 +124,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Your Powerful Shield against Germs</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img} width="100%" alt="" />
                   </div>{" "}
                 </div>
@@ -140,7 +140,7 @@ export const HomeSlide = () => {
                   <div className="col-md-4 offset-md-2 ">
                     <p>Your Powerful Shield against Germs</p>
                   </div>
-                  <div className="col-md-4 offset-md-1 target-img">
+                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img2} width="100%" alt="" />
                   </div>{" "}
                 </div>
