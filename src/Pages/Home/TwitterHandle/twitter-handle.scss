@@ -1,0 +1,18 @@
+.instagram-embed {
+  //   max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 500px !important;
+  overflow: hidden scroll !important;
+  width: 100% !important;
+}
+.ig-social {
+  padding: 20px !important;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.twitter {
+  @media screen and (min-width: 820px) {
+    margin-left: 20px;
+  }
+}

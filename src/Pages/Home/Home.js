@@ -27,6 +27,9 @@ import { Link } from "react-router-dom";
 import TestimonialCarousel from "./Testimonials";
 import { TabletAndBelow } from "../../Utils/mediaQueries";
 import { HomeSlide } from "./HomeSlide/HomeSlide";
+import FBSocials from "./FBSocials";
+import TwitterHandle from "./TwitterHandle/TwitterHandle";
+import YouTube from "./Youtube";
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -48,12 +51,12 @@ export const Home = () => {
       <HomeSlide />
       {/* Stats Section */}
 
-      <div className="col-md-10 offset-md-1 d-md-flex abt-div">
+      <div className="col-md-8 offset-md-2 d-md-flex abt-div">
         <div className="col-md-6">
           <h6>ABOUT US</h6>
           <h5>
             One of the largest manufacturer and distributor of Laundry, Hygiene
-            and Dental Care products in Nigeria.
+            and Hair Care products in Nigeria.
           </h5>
         </div>
         <div className="col-md-6">
@@ -70,78 +73,27 @@ export const Home = () => {
           <button>Explore More</button>
         </div>
       </div>
-      {/* <div className="stats">
+
+      <div className="products-intro-corner">
+        {" "}
         <center>
-          <div className="col-md-8 col-12">
-            <h1>
-              <CountUp
-                start={0}
-                end={1000000}
-                duration={2}
-                suffix="+"
-                enableScrollSpy={true}
-              />{" "}
-              Homes Have Made the Switch
-            </h1>
-            <div className="d-md-flex">
-              <div className="d-flex col-12 col-md-6">
-                {" "}
-                <div className="col-md-6 stats-data col-6">
-                  <img src={Power} alt="Power" width="100px" />
-                  <h6>Powerfully Effective</h6>
-                  <p>
-                    <CountUp
-                      start={0}
-                      end={90000}
-                      duration={2}
-                      suffix="+"
-                      enableScrollSpy={true}
-                    />{" "}
-                    5-star reviews
-                  </p>
-                </div>
-                <div className="col-md-6 stats-data col-6">
-                  <img src={Plastic} alt="Eco-friendly" width="100px" />
-                  <h6>Eco-friendly</h6>
-                  <p>Compostable paper-based packaging</p>
-                </div>
-              </div>
-              <div className="d-flex col-12 col-md-6">
-                {" "}
-                <div className="col-md-6 stats-data col-6">
-                  <img src={Flower} alt="Clean Ingredients" width="100px" />
-                  <h6>Clean Ingredients</h6>
-                  <p>Safe for use around kids and pets</p>
-                </div>
-                <div className="col-md-6 stats-data col-6">
-                  <img src={Money} alt="Money-Saving" width="100px" />
-                  <h6>Money-Saving</h6>
-                  <p>Never pay for water or plastic packaging</p>
-                </div>
-              </div>
-            </div>
+          <div className="col-md-5 home-prd">
+            <h6>OUR PRODUCTS</h6>
+            <h2>We touch millions of lives every day!</h2>
+            <p>
+              All of our products go through stringent quality control measures,
+              and their efficacy, safety, and Purity, are all well established.
+              A product leaves our factory gates only when we are 100% satisfied
+              about its quality. It’s no surprise therefore, that Aspira
+              products are the most popular personal care products in Nigeria.
+            </p>
           </div>
         </center>
-      </div> */}
-
-      <center>
-        <div className="col-md-6 home-prd">
-          <h6>OUR PRODUCTS</h6>
-          <h2>We touch millions of lives every day!</h2>
-          <p>
-            All of our products go through stringent quality control measures,
-            and their efficacy, safety, and Purity, are all well established. A
-            product leaves our factory gates only when we are 100% satisfied
-            about its quality. It’s no surprise therefore, that Aspira products
-            are the most popular personal care products in Nigeria.
-          </p>
-        </div>
-      </center>
-
-      {/* Category Section */}
-      <div className="category-div">
-        <div className="col-md-12 prd-slid">
-          <ProductsSlide options={OPTIONS} />
+        {/* Category Section */}
+        <div className="category-div">
+          <div className="col-md-12 prd-slid">
+            <ProductsSlide options={OPTIONS} />
+          </div>
         </div>
       </div>
 
@@ -182,7 +134,7 @@ export const Home = () => {
 
       {/* Bestsellers Section */}
       <center>
-        <h1>Bestsellers</h1>
+        <h1>Our Bestsellers</h1>
       </center>
       <ProductsHolder />
 
@@ -225,9 +177,20 @@ export const Home = () => {
           </div>
         </center>
         <div className="news-inner">
-          <div className="col-md-10 offset-md-1 d-md-flex "></div>
+          <div className="col-md-10 offset-md-1 d-md-flex ">
+            <div className="col-md-4">
+              <FBSocials />
+            </div>
+            <div className="col-md-4">
+              <TwitterHandle />
+            </div>{" "}
+            <div className="col-md-4">
+              <YouTube />
+            </div>
+          </div>
         </div>
       </div>
+
       <center>
         <h2>Over 100,000 5-Star Reviews</h2>
       </center>

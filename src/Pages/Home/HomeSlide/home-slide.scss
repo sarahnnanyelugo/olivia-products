@@ -8,12 +8,13 @@
     margin-top: 30px;
   }
   img {
-    object-fit: cover;
+    object-fit: contain;
   }
   p {
     margin-top: 150px;
     color: #fff !important;
-    font-size: 42px !important;
+    font-size: 65px !important;
+    text-shadow: 5px 5px 4px rgb(156, 114, 114);
   }
   .journey-cova {
     position: absolute;
@@ -28,21 +29,24 @@
     left: 0;
     padding-top: 50px;
     color: #fff;
+       
   }
+
 }
 .journey-carousel {
   .carousel-control-next-icon {
-    // background-image: url("../../../assets/images/arrow.png");
+    background-image: url("../../../assets/images/arrow.png");
     height: 20px;
     width: 20px;
     margin-top: -40%;
   }
   .carousel-control-prev-icon {
-    // background-image: url("../../../assets/images/arrow.png");
+    background-image: url("../../../assets/images/arrow.png");
     transform: rotate(180deg);
     height: 20px;
     margin-top: -40%;
     width: 20px;
+    display:block !important;
   }
   .carousel-indicators {
     display: none !important;
@@ -73,6 +77,14 @@
       right: 35% !important;
     }
   }
+}
+.target-img{
+  img{
+    height: 800px;
+      object-fit: contain;
+      margin-top:-40px;
+  }
+  
 }
 .target-img img {
   transform: translateX(600px); // Move right inside container (not full screen)

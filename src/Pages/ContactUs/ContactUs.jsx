@@ -3,17 +3,16 @@ import "./contact-us.scss";
 import { FaPaperclip } from "react-icons/fa"; // Using an icon from react-icons
 import Hero from "../../assets/images/contact-icons.png";
 
-import { OrderDetails } from "./OrderDetails";
 import { Col, Row } from "react-bootstrap";
 export const ContactUs = () => {
   return (
     <div className="col-md-12">
       <div className="contact-hero d-flex">
         <h1 className="offset-md-1">Contact Us</h1>
-        <img src={Hero} width="100%" alt="" />
+        {/* <img src={Hero} width="100%" alt="" /> */}
       </div>
       {/* <OrderDetails /> */}
-      <div className=" d-flex contact-info">
+      <div className=" d-flex contact-info col-md-10 offset-md-1">
         <div className="col-md-7">
           <form className="contact-form">
             {" "}
@@ -54,7 +53,25 @@ export const ContactUs = () => {
           </form>
         </div>
         <div className="col-md-5 " style={{ paddingLeft: "30px" }}>
-          <div className="general-info"></div>
+          <div className="general-info">
+            <h4>Olivia Products Nigeria Ltd</h4>
+            <p>Location:KM 8 Hadejia Road, Kano, Nigeria
+
+</p>
+<p>Contact:
+:</p>
+<ul>
+  <li><span>Lagos:</span>+234 901 419 6902</li>
+  <li><span>Whatsapp:</span> +234 912 350 9090</li>
+  <li><span>Monday - Friday:</span>8am - 5pm</li>
+  <h5>Write to us:</h5>
+  <li><span>General Enquiries</span> customercare@aspirang.com</li>
+  <li><span>Sales Enquiries</span> sales@aspirang.com</li>
+  <li><span>Supplier Enquiries</span> purchases@aspirang.com</li>
+  
+  </ul>
+  <h5>Follow us on:</h5>
+          </div>
         </div>
       </div>
       <div className="col-md-12">

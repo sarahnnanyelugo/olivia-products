@@ -8,8 +8,10 @@ import MainPic5 from "../../../assets/images/slide-bg5.jpg";
 import MainPic6 from "../../../assets/images/slide-bg6.jpg";
 import MainPic7 from "../../../assets/images/slide-bg7.jpg";
 import MainPic8 from "../../../assets/images/slide-bg8.jpg";
-import Img from "../../../assets/images/prd7.png";
-import Img2 from "../../../assets/images/prd5.png";
+import Img from "../../../assets/images/olivia1.png";
+import Img2 from "../../../assets/images/olivia2.png";
+import Img3 from "../../../assets/images/olivia3.png";
+import Img4 from "../../../assets/images/olivia4.png";
 import { IoArrowForward } from "react-icons/io5";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
@@ -45,7 +47,7 @@ export const HomeSlide = () => {
                     <p>Illuminate your smile</p>
                   </div>
                   <div className="col-md-5 offset-md- target-img">
-                    <img src={Img} width="100%" alt="" />
+                    <img src={Img2} width="100%" alt="" />
                   </div>{" "}
                 </div>
               </div>{" "}
@@ -77,7 +79,7 @@ export const HomeSlide = () => {
                     <p>Your Powerful Shield against Germs</p>
                   </div>
                   <div className="col-md-5 offset-md- target-img">
-                    <img src={Img} width="100%" alt="" />
+                    <img src={Img3} width="100%" alt="" />
                   </div>{" "}
                 </div>
               </div>{" "}
@@ -93,23 +95,7 @@ export const HomeSlide = () => {
                     <p>Your Powerful Shield against Germs</p>
                   </div>
                   <div className="col-md-4 offset-md- target-img">
-                    <img src={Img} width="100%" alt="" />
-                  </div>{" "}
-                </div>
-              </div>{" "}
-            </div>
-          </Carousel.Item>{" "}
-          <Carousel.Item>
-            <div className="journey-div col-md-12">
-              <img src={MainPic6} width="100%" alt="" />
-              <div className="journey-cova ">
-                <div className="d-md-flex">
-                  {" "}
-                  <div className="col-md-4 offset-md-2 ">
-                    <p>Your Powerful Shield against Germs</p>
-                  </div>
-                  <div className="col-md-5 offset-md- target-img">
-                    <img src={Img} width="100%" alt="" />
+                    <img src={Img4} width="100%" alt="" />
                   </div>{" "}
                 </div>
               </div>{" "}
@@ -125,28 +111,12 @@ export const HomeSlide = () => {
                     <p>Your Powerful Shield against Germs</p>
                   </div>
                   <div className="col-md-5 offset-md- target-img">
-                    <img src={Img} width="100%" alt="" />
-                  </div>{" "}
-                </div>
-              </div>{" "}
-            </div>
-          </Carousel.Item>{" "}
-          <Carousel.Item>
-            <div className="journey-div col-md-12">
-              <img src={MainPic8} width="100%" alt="" />
-              <div className="journey-cova ">
-                <div className="d-md-flex">
-                  {" "}
-                  <div className="col-md-4 offset-md-2 ">
-                    <p>Your Powerful Shield against Germs</p>
-                  </div>
-                  <div className="col-md-5 offset-md- target-img">
                     <img src={Img2} width="100%" alt="" />
                   </div>{" "}
                 </div>
               </div>{" "}
             </div>
-          </Carousel.Item>
+          </Carousel.Item>{" "}
         </Carousel>
       </div>
     </>

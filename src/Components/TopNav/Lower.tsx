@@ -103,7 +103,9 @@ export const Lower = () => {
               <NavLink to={"/about-us"}>About us</NavLink>
             </li>{" "}
             <li className="list-inline-item">
-              <NavLink to={"/our-mission"}>Our Mission</NavLink>
+              <NavLink to={"/our-mission"}>OliviaCare</NavLink>
+            </li>{" "}<li className="list-inline-item">
+              <NavLink to={"/our-mission"}>Careers</NavLink>
             </li>{" "}
             <li className="list-inline-item">
               <NavLink to={"/contact-us"}>Contact us</NavLink>

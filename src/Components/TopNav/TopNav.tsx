@@ -30,7 +30,7 @@ export const TopNav = () => {
 
   return (
     <>
-      <div className="top-nav sticky">
+      <div className="top-nav fixed-top">
         {/* <div className={`upper ${scrollPosition > 50 ? "hide" : ""}`}>
             <Upper />
           </div>

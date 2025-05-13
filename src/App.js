@@ -23,7 +23,7 @@ function App() {
     <>
       <CartProvider>
         {" "}
-        <SmoothScroll>
+        {/* <SmoothScroll> */}
           {" "}
           <ScrollToTop />
           <TopNav />
@@ -39,7 +39,7 @@ function App() {
             <Route path="/faqs" element={<FAQPage />} />{" "}
           </Routes>
           <Footer />
-        </SmoothScroll>
+        {/* </SmoothScroll> */}
       </CartProvider>
     </>
   );
