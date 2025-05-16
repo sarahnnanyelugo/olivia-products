@@ -1,35 +1,4 @@
-.order-details {
-  border: solid 1px #e7e7e7;
-  border-radius: 10px;
-  padding: 40px;
-  cursor: pointer;
-  h6 {
-    color: #18272f;
-    position: relative;
-    text-decoration: none;
-    text-decoration: none !important;
-  }
-  a {
-  }
-  h6::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #18272f;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
 
-  h6:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-}
 .general-info {
   height: 500px;
   background: rgba(51, 50, 131, 1);
@@ -39,7 +8,7 @@
   margin-top:30px;}
     li {
       color: #fff; font-family: sailecMedium;}
-      span{color:red;}
+      span{color:skyblue;}
      
 }
 
@@ -77,8 +46,8 @@
     margin-bottom: 30px;
   }
   button {
-    width: 100%;
-    padding: 14px;
+   
+    padding: 10px 35px;
     border-radius: 5px;
     border: none;
     font-size: 26px !important;

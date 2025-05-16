@@ -1,19 +1,14 @@
 .mission-landing {
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 300px;
-  margin-top: 90px;
-  background: rgb(130, 186, 227);
-  background: linear-gradient(
-    180deg,
-    rgba(130, 186, 227, 1) 46%,
-    rgba(171, 201, 227, 1) 69%
-  );
+  margin-top: 40px;
+ background:url("../../assets/images/carebg.jpg");
+ background-size:cover;
+ background-position:center;
+ height:500px;
   h1 {
-    font-family: sailecLight;
-    font-size: 80px;
-  }
-  p {
-    font-size: 20px;
+    font-size: 60px;
+    color:#fff !important;
   }
 }
 .mission-statement {
@@ -23,83 +18,14 @@
     font-size: 20px;
   }
 }
-.mission-statement2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  h1 {
-    font-family: sailecLight;
-    font-size: 40px;
-    margin-bottom: 30px;
+
+.img-div{
+  border:solid 4px #4b3d97;
+  background-color: rgb(231, 226, 226);
+  height:400px
+}
+.galleries{
+  h1{
+    margin-top:160px;
   }
-}
-.change-div {
-  background: #f9f5eb;
-}
-.mission-navlinks {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #f5f9ff;
-  position: sticky;
-  top: 60px;
-  z-index: 10;
-  @media screen and (max-width: 820px) {
-    top: 40px;
-  }
-  ul {
-  }
-  li {
-    margin: 0 135px;
-    @media screen and (max-width: 820px) {
-      margin: 0 30px;
-    }
-    a {
-      font-size: 16px;
-      font-family: sailecMedium;
-      text-decoration: none;
-      color: #003057;
-    }
-    a.active {
-      // color: #000;
-      font-family: sailecBold;
-      border-bottom: 4px solid rgb(84, 84, 219);
-    }
-  }
-}
-#planet {
-  margin-bottom: 60px;
-  margin-top: 60px;
-  p {
-    font-size: 13px;
-  }
-}
-#product {
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
-#people {
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
-#policy {
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
-.mission-container {
-  .accordion {
-    --bs-accordion-border-width: 0;
-  }
-  .accordion-button {
-    z-index: 1 !important;
-    border-bottom: solid 1px #e7e7e7;
-  }
-}
-.abt {
-  position: relative;
-  img {
-    // z-index: -1;
-  }
-}
-.accordion-button:not(.collapsed) {
-  background-color: transparent;
-  box-shadow: 0 0 5px 5px rgb(178, 177, 177);
 }

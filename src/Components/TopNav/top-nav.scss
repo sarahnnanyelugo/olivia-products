@@ -82,116 +82,14 @@
   }
 }
 
-.top-mega-menu {
-  .menu-trigger {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .mega-menu {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 55%;
-    background-color: #fff;
-    color: #fff;
-    display: flex;
-    padding: 20px 30px;
-    // align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transform-origin: center;
-    transition: transform 0.5s ease;
-    z-index: 10 !important;
-    overflow: hidden;
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .mega-menu.open {
-    transform: scale(1);
-  }
-
-  .menu-content {
-    padding-top: 0;
-
-    .first-ul {
-      border-left: solid 1px rgb(163, 163, 226);
-      padding-left: 60px;
-    }
-    a {
-      font-size: 25px;
-      &:hover {
-        color: rgb(125, 125, 215);
-      }
-    }
-  }
-}
-
-.top-mega-menu2 {
-  .menu-trigger {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .mega-menu {
-    position: fixed;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: #fff;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transform-origin: center;
-    transition: transform 0.5s ease;
-    z-index: 10;
-    overflow: hidden;
-  }
-
-  .mega-menu.open {
-    transform: scale(1);
-  }
-
-  .menu-content {
-  }
-  .search-box {
-    margin-top: 30px;
-    border-bottom: solid 1px #e7e7e7;
-  }
-  .search-icon {
-    color: rgb(132, 124, 124);
-    font-size: 40px;
-  }
-  input {
-    width: 100%;
-    border: none;
-  }
-}
-.menu-search {
+.dropdown-toggle{
   color: #003057;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 15px;
-  margin-right: 20px;
+    font-size: 14px;
+    font-family: sailecMedium;
+    margin: 15px;
 }
-.shop-btn {
-  color: #003057;
-  font-family: sailecMedium;
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  margin-right: 20px;
-}
-.no-scroll {
-  overflow: hidden;
+.dropdown-item{
+  width:80%;
 }
 
 .mobile-view {

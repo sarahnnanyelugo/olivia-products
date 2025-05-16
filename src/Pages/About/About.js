@@ -86,12 +86,10 @@ export const About = () => {
     <div className="home-div">
       {/* Video Section */}
       <div className="banner">
-        <center>
-          <div className="col-md-5">
-            {" "}
-            <h5>About Us</h5>
-          </div>
-        </center>
+        <div className="col-md-5 offset-md-2">
+          {" "}
+          <h5>About Us</h5>
+        </div>
       </div>
       <div className="overview-div d-md-flex">
         <div className="col-md-3  offset-md-2 ">
@@ -113,8 +111,8 @@ export const About = () => {
             MP3.
           </p>
         </div>
-        <div className="col-md-4 offset-md-1 " style={{ padding: "60px" }}>
-          <div className="borders col-md-6" />
+        <div className="col-md-4 offset-md-1 page-video">
+          <div className="borders col-md-6 col-6" />
           <div className=" video-holder">
             <img src={VidBg} width="100%" />
             <div className="overlay">
@@ -128,34 +126,44 @@ export const About = () => {
       </div>
 
       <div className="mission-div">
-        <center>
-          <h2>Vision & Mission</h2>
-        </center>
-        <div className="col-md-8 offset-md-2 d-md-flex">
-          <div className="col-md-4">
+        <div className="col-md-10 offset-md-1 d-md-flex">
+          <div className="col-md-4" style={{ padding: "0px 30px" }}>
             <center>
               <img src={Vision} width="140px" />
               <h3>Our Vision</h3>
               <p>
-                To become one of the well-known, successful and reputable
-                company in Africa
+                To be the number one leading cosmetics brand that provide
+                standard, reliable and innovative solutions to our customers
+                through our sustainable quality product.
               </p>
             </center>
           </div>{" "}
-          <div className="col-md-4 offset-md-3">
+          <div className="col-md-4 offset-md-" style={{ padding: "0px 30px" }}>
             <center>
               <img src={Mission} width="140px" />
               <h3>Our Mission</h3>
               <p>
-                To become one of the well-known, successful and reputable
-                company in Africa
+                To completely transfrom, make healthy hair, and cleaning easier
+                for individuals to stay confident, beautiful and hygienic.
               </p>
+            </center>
+          </div>
+          <div className="col-md-4 offset-md-" style={{ padding: "0px 30px" }}>
+            <center>
+              <img src={Mission} width="140px" />
+              <h3>Our Values</h3>
+              <ul className="list-unstyled">
+                <li>Quality</li>
+                <li>Accountability, Transparency, Professionalism</li>
+                <li>Respect, Family, Friendship</li>
+                <li>Hardwork Dedication, Achievement</li>
+              </ul>{" "}
             </center>
           </div>
         </div>
       </div>
 
-      <div className="col-md-8 d-flex offset-md-2 directors-corner">
+      <div className="col-md-8 d-md-flex offset-md-2 directors-corner">
         <div className="col-md-5">
           <h2>Board of Directors</h2>
           <p>

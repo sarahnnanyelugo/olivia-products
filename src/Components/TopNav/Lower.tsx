@@ -46,7 +46,7 @@ export const Lower = () => {
             <li className="list-inline-item">
               {" "}
               <Dropdown>
-                <Dropdown.Toggle variant="light">Our Products</Dropdown.Toggle>
+                <Dropdown.Toggle variant="">Our Products</Dropdown.Toggle>
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">
