@@ -14,6 +14,7 @@ import Fac3 from "../../assets/images/fac3.jpeg";
 import Fac4 from "../../assets/images/fac4.jpeg";
 import Fac5 from "../../assets/images/fac5.jpeg";
 import Fac6 from "../../assets/images/fac6.jpeg";
+import Value from "../../assets/images/values.png";
 import { IoPerson } from "react-icons/io5";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -150,7 +151,7 @@ export const About = () => {
           </div>
           <div className="col-md-4 offset-md-" style={{ padding: "0px 30px" }}>
             <center>
-              <img src={Mission} width="140px" />
+              <img src={Value} width="140px" style={{ borderRadius: "50%" }} />
               <h3>Our Values</h3>
               <ul className="list-unstyled">
                 <li>Quality</li>

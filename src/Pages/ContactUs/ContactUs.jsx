@@ -9,10 +9,10 @@ export const ContactUs = () => {
     <div className="col-md-12">
       <div className="contact-hero d-flex">
         <h1 className="offset-md-1">Contact Us</h1>
-        {/* <img src={Hero} width="100%" alt="" /> */}
+     
       </div>
-      {/* <OrderDetails /> */}
-      <div className=" d-flex contact-info col-md-10 offset-md-1">
+   
+      <div className=" d-md-flex contact-info col-md-10 offset-md-1">
         <div className="col-md-7">
           <form className="contact-form">
             {" "}
@@ -52,7 +52,7 @@ export const ContactUs = () => {
             </div>
           </form>
         </div>
-        <div className="col-md-5 " style={{ paddingLeft: "30px" }}>
+        <div className="col-md-5 gf-cova" >
           <div className="general-info">
             <h4>Olivia Products Nigeria Ltd</h4>
             <p>Location:KM 8 Hadejia Road, Kano, Nigeria

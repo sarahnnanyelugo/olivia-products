@@ -1,11 +1,15 @@
-import first from "../assets/images/laundry-tab.avif";
-import second from "../assets/images/laundry-tab-u.avif";
-import product1 from "../assets/images/product1.avif";
-import product2 from "../assets/images/product2.avif";
-import product3 from "../assets/images/product3.avif";
-import product4 from "../assets/images/product4.avif";
-import PaperTablet from "../assets/images/paper-tablet.avif";
-import TabletSample from "../assets/images/tablet-sample.avif";
+import first from "../assets/images/hand-wash1.png";
+import second from "../assets/images/hand-wash2.png";
+import product1 from "../assets/images/air-freshner1.png";
+import product2 from "../assets/images/air-freshner3.png";
+import product3 from "../assets/images/dish-wash1.png";
+import product4 from "../assets/images/dish-wash2.png";
+import product5 from "../assets/images/shampoo1.png";
+import product6 from "../assets/images/shampoo2.png";
+import product7 from "../assets/images/car-wash1.png";
+import product8 from "../assets/images/car-wash2.png";
+import PaperTablet from "../assets/images/shampoo1.png";
+import TabletSample from "../assets/images/shampoo2.png";
 import Tablet3 from "../assets/images/tablet3.avif";
 import TabletCompare from "../assets/images/tablet-compare.avif";
 export const allProductsData = [
@@ -43,8 +47,8 @@ export const allProductsData = [
     category: ["dish-wash", "hand-soap"],
   },
   {
-    firstImg: product1,
-    hoverImg: product2,
+    firstImg: product5,
+    hoverImg: product6,
     id: 4,
     price: 12000,
     rating: 4.5, // Added rating
@@ -54,8 +58,8 @@ export const allProductsData = [
     category: ["laundry"],
   },
   {
-    firstImg: first,
-    hoverImg: second,
+    firstImg: product7,
+    hoverImg: product8,
     id: 5,
     heading: "Toilet Wash",
     price: 9000,

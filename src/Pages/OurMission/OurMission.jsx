@@ -30,12 +30,12 @@ export const OurMission = () => {
   <div className="col-md-8 offset-md-2 row row-cols-1 row-cols-lg-3 g-2 g-lg-3 galleries">
   <h1>Image Gallery
   </h1>
-    <div className="col">
+    <div className="col img-outer">
       <div className="img-div">
       
       </div><p>MSNAI Primary School Rehabilitation in Lagos</p>
       </div> 
-      <div className="col">
+      <div className="col img-outer">
       <div className="img-div">
       
       </div><p>MSNAI Primary School Rehabilitation in Lagos</p>
@@ -43,25 +43,25 @@ export const OurMission = () => {
 </div> <div className="col-md-8 offset-md-2 row row-cols-1 row-cols-lg-3 g-2 g-lg-3 mt-5 galleries">
   <h1>Video Gallery
   </h1>
-    <div className="col">
+    <div className="col img-outer">
       <div className="img-div">
       
       </div>
       <p>MSNAI Primary School Rehabilitation in Lagos</p>
       </div> 
-      <div className="col">
+      <div className="col img-outer">
       <div className="img-div">
       
       </div><p>MSNAI Primary School Rehabilitation in Lagos</p>
-      </div>  <div className="col">
+      </div>  <div className="col img-outer">
       <div className="img-div">
       
       </div><p>MSNAI Primary School Rehabilitation in Lagos</p>
-      </div>  <div className="col">
+      </div>  <div className="col img-outer">
       <div className="img-div">
       
       </div><p>MSNAI Primary School Rehabilitation in Lagos</p>
-      </div><div className="col">
+      </div><div className="col img-outer">
       <div className="img-div">
       
       </div><p>MSNAI Primary School Rehabilitation in Lagos</p>

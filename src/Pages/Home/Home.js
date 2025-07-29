@@ -52,7 +52,7 @@ export const Home = () => {
       {/* Stats Section */}
 
       <div className="col-md-8 offset-md-2 d-md-flex abt-div">
-        <div className="col-md-6">
+        <div className="col-md-6 col-12">
           <h6>ABOUT US</h6>
           <h5>
             One of the largest manufacturer and distributor of Laundry, Hygiene

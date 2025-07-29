@@ -1,18 +1,28 @@
-import React from "react";
+import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import { Desktop } from "../../Utils/mediaQueries";
+import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useCart } from "../../CartContext";
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import { GrCart } from "react-icons/gr";
+import { IoMenu } from "react-icons/io5";
+
 export const Lower = () => {
   const { setIsOffCanvasOpen, cart } = useCart();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
+   <>
     <Desktop>
       {" "}
       <div className="lower-nav-div">
         <center>
           <ul className="list-inline list-unstyled">
+          
             <li className="list-inline-item">
               <NavLink to={"/"} style={{ fontFamily: "sailecBold" }}>
                 Home
@@ -137,5 +147,51 @@ export const Lower = () => {
         </center>
       </div>
     </Desktop>
+
+
+
+<TabletAndBelow>
+<div className="mobile-nav d-flex">
+  <div style={{flexGrow:1}}>Logo</div>
+  <div style={{ position: "relative", cursor: "pointer" }}>
+                <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />
+                {cart.length > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-8px",
+                      right: "-8px",
+                      backgroundColor: "red",
+                      color: "white",
+                      borderRadius: "50%",
+                      padding: "2px 6px",
+                      fontSize: "12px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {cart.length}
+                  </span>
+                )}
+              </div>
+
+  <IoMenu onClick={handleShow} className="menu-icon"/>
+
+     
+      </div>
+
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+
+</TabletAndBelow>
+   
+   </>
   );
 };

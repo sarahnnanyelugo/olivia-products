@@ -8,10 +8,10 @@ import MainPic5 from "../../../assets/images/slide-bg5.jpg";
 import MainPic6 from "../../../assets/images/slide-bg6.jpg";
 import MainPic7 from "../../../assets/images/slide-bg7.jpg";
 import MainPic8 from "../../../assets/images/slide-bg8.jpg";
-import Img from "../../../assets/images/olivia1.png";
-import Img2 from "../../../assets/images/olivia2.png";
-import Img3 from "../../../assets/images/olivia3.png";
-import Img4 from "../../../assets/images/olivia4.png";
+import Img from "../../../assets/images/air-freshner1.png";
+import Img2 from "../../../assets/images/hand-wash1.png";
+import Img3 from "../../../assets/images/dish-wash5.png";
+import Img4 from "../../../assets/images/hair-care8.png";
 import { IoArrowForward } from "react-icons/io5";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
@@ -24,7 +24,7 @@ export const HomeSlide = () => {
         <Carousel fade>
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic} width="100%" alt="" />
+              <img src={MainPic} width="100%" alt="" className="bg-img" />
               <div className="journey-cova ">
                 <div className="d-md-flex">
                   <div className="col-md-4 offset-md-2 ">
@@ -39,7 +39,7 @@ export const HomeSlide = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic2} width="100%" alt="" />
+              <img src={MainPic2} width="100%" alt="" className="bg-img" />
               <div className="journey-cova ">
                 <div className="d-md-flex">
                   {" "}
@@ -55,7 +55,7 @@ export const HomeSlide = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic3} width="100%" alt="" />
+              <img src={MainPic3} width="100%" alt="" className="bg-img" />
               <div className="journey-cova ">
                 <div className="d-md-flex">
                   {" "}
@@ -71,7 +71,7 @@ export const HomeSlide = () => {
           </Carousel.Item>{" "}
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic4} width="100%" alt="" />
+              <img src={MainPic4} width="100%" alt="" className="bg-img" />
               <div className="journey-cova ">
                 <div className="d-md-flex">
                   {" "}
@@ -87,7 +87,7 @@ export const HomeSlide = () => {
           </Carousel.Item>{" "}
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic5} width="100%" alt="" />
+              <img src={MainPic5} width="100%" alt="" className="bg-img" />
               <div className="journey-cova ">
                 <div className="d-md-flex">
                   {" "}
@@ -103,7 +103,7 @@ export const HomeSlide = () => {
           </Carousel.Item>{" "}
           <Carousel.Item>
             <div className="journey-div col-md-12">
-              <img src={MainPic7} width="100%" alt="" />
+              <img src={MainPic7} width="100%" alt="" className="bg-img" />
               <div className="journey-cova ">
                 <div className="d-md-flex">
                   {" "}

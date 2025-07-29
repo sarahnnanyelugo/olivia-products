@@ -9,13 +9,14 @@ import { Product } from "./Product";
 import { FaPause } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 
-import Product1 from "../../../assets/images/product1.avif";
-import Product2 from "../../../assets/images/product2.avif";
-import Product3 from "../../../assets/images/product3.avif";
-import Product4 from "../../../assets/images/product4.avif";
-import Product5 from "../../../assets/images/product5.avif";
-import Product6 from "../../../assets/images/product6.avif";
-import Product7 from "../../../assets/images/product7.avif";
+import Product1 from "../../../assets/images/group1.png";
+import Product2 from "../../../assets/images/group2.png";
+import Product3 from "../../../assets/images/group3.png";
+import Product4 from "../../../assets/images/group4.png";
+import Product5 from "../../../assets/images/group5.png";
+import Product6 from "../../../assets/images/group8.png";
+import Product7 from "../../../assets/images/group9.png";
+import Product8 from "../../../assets/images/group8.png";
 import MainProduct from "../../../Components/MainProducts/MainProducts";
 import { allProductsData } from "../../../TestData/allProductsData";
 
