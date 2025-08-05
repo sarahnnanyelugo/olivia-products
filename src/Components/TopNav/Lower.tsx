@@ -66,14 +66,14 @@ export const Lower = () => {
                     </NavLink>
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
-                    <NavLink to={"/collections?category=hand-soap"}>
-                      Hand Soap
+                    <NavLink to={"/collections?category=dish-wash"}>
+                    Dish Wash
                     </NavLink>
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-3">
                     {" "}
-                    <NavLink to={"/collections?category=dish-wash"}>
-                      Dish
+                    <NavLink to={"/collections?category=air-freshener"}>
+                      Air Freshener
                     </NavLink>
                   </Dropdown.Item>{" "}
                   <Dropdown.Item href="#/action-3">

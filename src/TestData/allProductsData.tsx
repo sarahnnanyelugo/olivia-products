@@ -22,6 +22,8 @@ import AF1 from "../assets/images/air-freshner1.png";
 import AF2 from "../assets/images/air-freshner2.png";
 import AF3 from "../assets/images/air-freshner3.png";
 import AF4 from "../assets/images/air-freshner4.png";
+import AF5 from "../assets/images/air-freshner5.png";
+
 import Dish3 from "../assets/images/dish-wash3.png";
 import Dish4 from "../assets/images/dish-wash4.png";
 import Dish5 from "../assets/images/dish-wash5.png";
@@ -50,7 +52,7 @@ export const allProductsData = [
     rating: 4.2, // Added rating
     name: "Hand Wash",
     additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-    category: ["hand-soap"],
+    category: [""],
     bestSeller:true
   },
   {
@@ -61,8 +63,9 @@ export const allProductsData = [
     price: 10000,
     rating: 4.8, // Added rating
     name: "Air Freshener",
-    additionalImgs: [AF1, AF2, AF3, AF4 ],
-    category: ["dish-wash", "hand-soap"],
+    additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
+    category: ["", ""],
+    bestSeller:true
   },
   {
     firstImg: product3,
@@ -73,7 +76,7 @@ export const allProductsData = [
     rating: 4.0, // Added rating
     name: "Dish wash",
     additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-    category: ["dish-wash", "hand-soap"],
+    category: [""],
     bestSeller:true
 
   },
@@ -87,6 +90,8 @@ export const allProductsData = [
     name: "Laundry stones",
     additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
     category: ["laundry"],
+    bestSeller:true
+
   },
   {
     firstImg: product7,
@@ -98,6 +103,7 @@ export const allProductsData = [
     name: "Laundry Tablets",
     additionalImgs: [],
     category: ["toilet-wash"],
+    bestSeller:true
   },
   {
     firstImg: Tile1,
@@ -109,6 +115,7 @@ export const allProductsData = [
     name: "Tile / Floor",
     additionalImgs: [],
     category: ["shampoo"],
+    bestSeller:true
   },
   {
     firstImg: Window,
@@ -120,6 +127,8 @@ export const allProductsData = [
     name: "Face wash",
     additionalImgs: [],
     category: ["personal-care"],
+    bestSeller:true
+
   },
   {
     firstImg: SkinCare1,
@@ -130,7 +139,195 @@ export const allProductsData = [
     id: 8,
     name: "Skin Care",
     additionalImgs: [],
-    category: ["hand-soap"],
+    category: [""],
   },
- 
+ ////////////////////////////////////////other products other than bestsellers displayed on the home page
+
+
+ ///////below is handsoap catergory
+ {
+  heading: "Hand Wash",
+  firstImg: first,
+  hoverImg: first,
+  id: 1,
+  price: 16000,
+  rating: 4.2, // Added rating
+  name: "Banana Splash",
+  additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
+  category: ["hand-soap"],
+  
+},
+{
+  heading: "Hand Wash",
+  firstImg: HandWash2,
+  hoverImg: HandWash2,
+  id: 1,
+  price: 16000,
+  rating: 4.2, // Added rating
+  name: "Strawberry Mix",
+  additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
+  category: ["hand-soap"],
+  
+},
+{
+  heading: "Hand Wash",
+  firstImg: HandWash3,
+  hoverImg: HandWash3,
+  id: 1,
+  price: 16000,
+  rating: 4.2, // Added rating
+  name: "Citrus Blend",
+  additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
+  category: ["hand-soap"],
+  
+},
+{
+  heading: "Hand Wash",
+  firstImg: HandWash4,
+  hoverImg: HandWash4,
+  id: 1,
+  price: 16000,
+  rating: 4.2, // Added rating
+  name: "Grabe Overflow",
+  additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
+  category: ["hand-soap"],
+  
+},{
+  heading: "Hand Wash",
+  firstImg: HandWash5,
+  hoverImg: HandWash5,
+  id: 1,
+  price: 16000,
+  rating: 4.2, // Added rating
+  name: "Fruit Assemble",
+  additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
+  category: ["hand-soap"],
+  
+},{
+  heading: "Hand Wash",
+  firstImg: HandWash6,
+  hoverImg: HandWash6,
+  id: 1,
+  price: 16000,
+  rating: 4.2, // Added rating
+  name: "Milkyway",
+  additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
+  category: ["hand-soap"],
+  
+},
+
+///////Below is for dishwash
+
+{
+  firstImg: product3,
+  hoverImg: product3,
+  id: 3,
+  heading: "Dish Wash",
+  price: 5000,
+  rating: 4.0, // Added rating
+  name: "Olivia Lemon",
+  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  category: ["dish-wash"],
+
+},
+{
+  firstImg: product4,
+  hoverImg: product4,
+  id: 3,
+  heading: "Dish Wash",
+  price: 5000,
+  rating: 4.0, // Added rating
+  name: "Olivia Lemon",
+  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  category: ["dish-wash"],
+
+},{
+  firstImg: Dish5,
+  hoverImg: Dish5,
+  id: 3,
+  heading: "Dish Wash",
+  price: 3000,
+  rating: 4.0, // Added rating
+  name: "Olivia Fruity",
+  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  category: ["dish-wash"],
+
+},{
+  firstImg: Dish3,
+  hoverImg: Dish3,
+  id: 3,
+  heading: "Dish Wash",
+  price: 3000,
+  rating: 4.0, // Added rating
+  name: "Olivia Apple",
+  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  category: ["dish-wash"],
+
+},{
+  firstImg: Dish4,
+  hoverImg: Dish4,
+  id: 3,
+  heading: "Dish Wash",
+  price: 2000,
+  rating: 4.0, // Added rating
+  name: "Olivia Plain",
+  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  category: ["dish-wash"],
+
+},{
+  firstImg: Dish6,
+  hoverImg: Dish6,
+  id: 3,
+  heading: "Dish Wash",
+  price: 12000,
+  rating: 4.0, // Added rating
+  name: "Olivia Fruity",
+  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  category: ["dish-wash"],
+
+},
+{
+  firstImg: product1,
+  hoverImg: product1,
+  id: 2,
+  heading: "Air Freshener",
+  price: 10000,
+  rating: 4.8, // Added rating
+  name: "Primrose",
+  additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
+  category: ["air-freshener"],
+},
+{
+  firstImg: product2,
+  hoverImg: product2,
+  id: 2,
+  heading: "Air Freshener",
+  price: 10000,
+  rating: 4.8, // Added rating
+  name: "Belle Rose",
+  additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
+  category: ["air-freshener"],
+},
+{
+  firstImg: AF4,
+  hoverImg: AF4,
+  id: 2,
+  heading: "Air Freshener",
+  price: 9000,
+  rating: 4.8, // Added rating
+  name: "Lily",
+  additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
+  category: ["air-freshener"],
+},{
+  firstImg: AF5,
+  hoverImg: AF5,
+  id: 2,
+  heading: "Air Freshener",
+  price: 9000,
+  rating: 4.8, // Added rating
+  name: "Murray Berry",
+  additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
+  category: ["air-freshener"],
+},
+
 ];

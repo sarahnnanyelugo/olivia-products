@@ -13,6 +13,8 @@ export const ProductsHolder = ({
   category = "",
   viewType = "slide",
   sortType = "",
+  showOnlyBestSellers = false,  // <-- new prop
+
 }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -25,28 +27,35 @@ export const ProductsHolder = ({
   const queryParams = new URLSearchParams(location.search);
   const categoryFromQuery = queryParams.get("category") || "";
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 768) {
-  //       setVisibleItems(1); // Show 1 item on small screens
-  //     } else {
-  //       setVisibleItems(4); // Show 4 items on larger screens
-  //     }
-  //   };
+  
 
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
+  // const filteredProducts =
+  //   categoryFromQuery === "*" || categoryFromQuery === ""
+  //     ? allProductsData
+  //     : allProductsData.filter((product) =>
+  //         product.category.some(
+  //           (cat) => cat.toLowerCase() === categoryFromQuery.toLowerCase()
+  //         )
+  //       );
 
-  // Filter products by category
-  const filteredProducts =
-    categoryFromQuery === "*" || categoryFromQuery === ""
-      ? allProductsData
-      : allProductsData.filter((product) =>
-          product.category.some(
-            (cat) => cat.toLowerCase() === categoryFromQuery.toLowerCase()
-          )
-        );
+// Step 1: Optionally filter for best sellers
+let productsToDisplay = allProductsData;
+if (showOnlyBestSellers) {
+  productsToDisplay = allProductsData.filter(product => product.bestSeller);
+}
+
+// Step 2: Category filtering
+const filteredProducts =
+  categoryFromQuery === "*" || categoryFromQuery === ""
+    ? productsToDisplay
+    : productsToDisplay.filter((product) =>
+        product.category.some(
+          (cat) => cat.toLowerCase() === categoryFromQuery.toLowerCase()
+        )
+      );
+
+
+
 
   // Sorting logic based on sortOrder
   const sortedProducts = [...filteredProducts].sort((a, b) => {

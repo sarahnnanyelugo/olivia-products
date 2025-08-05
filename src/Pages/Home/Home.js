@@ -136,7 +136,7 @@ export const Home = () => {
       <center>
         <h1>Our Bestsellers</h1>
       </center>
-      <ProductsHolder  />
+      <ProductsHolder showOnlyBestSellers={true} />
 
       <div className=" col-md-10 offset-md-1 d-flex mt-5">
         <div className="col-md-6 mission-vision">
