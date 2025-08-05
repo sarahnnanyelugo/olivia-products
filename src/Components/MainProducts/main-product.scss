@@ -89,6 +89,9 @@
 }
 .product-container {
   position: relative;
+  background: rgb(209, 199, 199);
+  padding-bottom:30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%; /* Ensures the component occupies the expected space */
   margin: auto;
 }
@@ -159,6 +162,7 @@
 }
 .prd-details {
   h6 {
-    font-size: 13px;
+    font-size: 18px;
+    margin-top:30px;
   }
 }

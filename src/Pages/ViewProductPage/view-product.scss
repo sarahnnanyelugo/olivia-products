@@ -16,12 +16,13 @@
       // flex: 1;
       overflow: hidden;
       border-radius: 8px;
-
+background:rgb(209, 199, 199);
       .image-container {
         display: flex;
         transition: transform 0.6s ease-in-out;
 
         .main-image {
+          margin-top:-80px;
           min-width: 100%;
           height: auto;
         }
@@ -62,8 +63,10 @@
       flex-direction: column;
       gap: 0.5rem;
       align-items: center;
+      margin-top:80px;
       @media screen and (max-width: 820px) {
         margin-right: 20px;
+        margin-top: 0px;
       }
       .thumbnail {
         width: 60px;

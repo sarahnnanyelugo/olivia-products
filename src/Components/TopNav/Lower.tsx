@@ -62,7 +62,7 @@ export const Lower = () => {
                   <Dropdown.Item href="#/action-1">
                     {" "}
                     <NavLink to={"/collections?category=hand-soap"}>
-                      Hand Soap
+                      Hand Wash
                     </NavLink>
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-2">

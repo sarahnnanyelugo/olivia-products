@@ -15,7 +15,7 @@ import Testifier from "../../assets/images/fast.avif";
 import Testifier2 from "../../assets/images/oprah.avif";
 import Testifier3 from "../../assets/images/corp.avif";
 import Testifier4 from "../../assets/images/today.avif";
-import MissionImg from "../../assets/images/mission-img.avif";
+import MissionImg from "../../assets/images/group6.png";
 import CountUp from "react-countup";
 import { ProductsSlide } from "./ProductsSlide/ProductsSlide";
 import { ProductsHolder } from "./ProductsHolder";
@@ -136,10 +136,10 @@ export const Home = () => {
       <center>
         <h1>Our Bestsellers</h1>
       </center>
-      <ProductsHolder />
+      <ProductsHolder  />
 
-      <div className="mission-vision col-md-10 offset-md-1 d-flex mt-5">
-        <div className="col-md-6">
+      <div className=" col-md-10 offset-md-1 d-flex mt-5">
+        <div className="col-md-6 mission-vision">
           <img src={MissionImg} width="100%" alt="" />
         </div>
         <div className="col-md-6 statement">
