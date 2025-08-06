@@ -8,10 +8,7 @@ import product5 from "../assets/images/shampoo1.png";
 import product6 from "../assets/images/shampoo2.png";
 import product7 from "../assets/images/car-wash1.png";
 import product8 from "../assets/images/car-wash2.png";
-import PaperTablet from "../assets/images/shampoo1.png";
-import TabletSample from "../assets/images/shampoo2.png";
-import Tablet3 from "../assets/images/tablet3.avif";
-import TabletCompare from "../assets/images/tablet-compare.avif";
+
 import HandWash1 from "../assets/images/hand-wash1.png";
 import HandWash2 from "../assets/images/hand-wash2.png";
 import HandWash3 from "../assets/images/hand-wash3.png";
@@ -23,6 +20,7 @@ import AF2 from "../assets/images/air-freshner2.png";
 import AF3 from "../assets/images/air-freshner3.png";
 import AF4 from "../assets/images/air-freshner4.png";
 import AF5 from "../assets/images/air-freshner5.png";
+import Toilet from "../assets/images/toilet-cleaner.png";
 
 import Dish3 from "../assets/images/dish-wash3.png";
 import Dish4 from "../assets/images/dish-wash4.png";
@@ -52,7 +50,7 @@ export const allProductsData = [
     rating: 4.2, // Added rating
     name: "Hand Wash",
     additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-    category: [""],
+    category: ["" ],
     bestSeller:true
   },
   {
@@ -76,7 +74,7 @@ export const allProductsData = [
     rating: 4.0, // Added rating
     name: "Dish wash",
     additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-    category: [""],
+    category: ["", "liquid-soap"],
     bestSeller:true
 
   },
@@ -88,7 +86,7 @@ export const allProductsData = [
     rating: 4.5, // Added rating
     heading: "Hair Care",
     name: "Laundry stones",
-    additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+    additionalImgs: [Hair, Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
     category: ["laundry"],
     bestSeller:true
 
@@ -102,7 +100,7 @@ export const allProductsData = [
     rating: 4.3, // Added rating
     name: "Laundry Tablets",
     additionalImgs: [],
-    category: ["toilet-wash"],
+    category: ["car-wash"],
     bestSeller:true
   },
   {
@@ -114,7 +112,7 @@ export const allProductsData = [
     rating: 4.1, // Added rating
     name: "Tile / Floor",
     additionalImgs: [],
-    category: ["shampoo"],
+    category: [""],
     bestSeller:true
   },
   {
@@ -126,7 +124,7 @@ export const allProductsData = [
     id: 7,
     name: "Face wash",
     additionalImgs: [],
-    category: ["personal-care"],
+    category: ["window-cleaner"],
     bestSeller:true
 
   },
@@ -149,70 +147,70 @@ export const allProductsData = [
   heading: "Hand Wash",
   firstImg: first,
   hoverImg: first,
-  id: 1,
+  id: 9,
   price: 16000,
   rating: 4.2, // Added rating
   name: "Banana Splash",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-  category: ["hand-soap"],
+  category: ["hand-soap", "liquid-soap"],
   
 },
 {
   heading: "Hand Wash",
   firstImg: HandWash2,
   hoverImg: HandWash2,
-  id: 1,
+  id: 10,
   price: 16000,
   rating: 4.2, // Added rating
   name: "Strawberry Mix",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-  category: ["hand-soap"],
+  category: ["hand-soap", "liquid-soap"],
   
 },
 {
   heading: "Hand Wash",
   firstImg: HandWash3,
   hoverImg: HandWash3,
-  id: 1,
+  id: 11,
   price: 16000,
   rating: 4.2, // Added rating
   name: "Citrus Blend",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-  category: ["hand-soap"],
+  category: ["hand-soap", "liquid-soap"],
   
 },
 {
   heading: "Hand Wash",
   firstImg: HandWash4,
   hoverImg: HandWash4,
-  id: 1,
+  id: 12,
   price: 16000,
   rating: 4.2, // Added rating
   name: "Grabe Overflow",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-  category: ["hand-soap"],
+  category: ["hand-soap", "liquid-soap"],
   
 },{
   heading: "Hand Wash",
   firstImg: HandWash5,
   hoverImg: HandWash5,
-  id: 1,
+  id: 13,
   price: 16000,
   rating: 4.2, // Added rating
   name: "Fruit Assemble",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-  category: ["hand-soap"],
+  category: ["hand-soap", "liquid-soap"],
   
 },{
   heading: "Hand Wash",
   firstImg: HandWash6,
   hoverImg: HandWash6,
-  id: 1,
+  id: 14,
   price: 16000,
   rating: 4.2, // Added rating
   name: "Milkyway",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
-  category: ["hand-soap"],
+  category: ["hand-soap", "liquid-soap"],
   
 },
 
@@ -221,75 +219,75 @@ export const allProductsData = [
 {
   firstImg: product3,
   hoverImg: product3,
-  id: 3,
+  id: 15,
   heading: "Dish Wash",
   price: 5000,
   rating: 4.0, // Added rating
   name: "Olivia Lemon",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-  category: ["dish-wash"],
+  category: ["dish-wash", "liquid-soap"],
 
 },
 {
   firstImg: product4,
   hoverImg: product4,
-  id: 3,
+  id: 16,
   heading: "Dish Wash",
   price: 5000,
   rating: 4.0, // Added rating
   name: "Olivia Lemon",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-  category: ["dish-wash"],
+  category: ["dish-wash", "liquid-soap"],
 
 },{
   firstImg: Dish5,
   hoverImg: Dish5,
-  id: 3,
+  id: 17,
   heading: "Dish Wash",
   price: 3000,
   rating: 4.0, // Added rating
   name: "Olivia Fruity",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-  category: ["dish-wash"],
+  category: ["dish-wash", "liquid-soap"],
 
 },{
   firstImg: Dish3,
   hoverImg: Dish3,
-  id: 3,
+  id: 18,
   heading: "Dish Wash",
   price: 3000,
   rating: 4.0, // Added rating
   name: "Olivia Apple",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-  category: ["dish-wash"],
+  category: ["dish-wash", "liquid-soap"],
 
 },{
   firstImg: Dish4,
   hoverImg: Dish4,
-  id: 3,
+  id: 19,
   heading: "Dish Wash",
   price: 2000,
   rating: 4.0, // Added rating
   name: "Olivia Plain",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-  category: ["dish-wash"],
+  category: ["dish-wash", "liquid-soap"],
 
 },{
   firstImg: Dish6,
   hoverImg: Dish6,
-  id: 3,
+  id: 20,
   heading: "Dish Wash",
   price: 12000,
   rating: 4.0, // Added rating
   name: "Olivia Fruity",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
-  category: ["dish-wash"],
+  category: ["dish-wash", "liquid-soap"],
 
 },
 {
   firstImg: product1,
   hoverImg: product1,
-  id: 2,
+  id: 21,
   heading: "Air Freshener",
   price: 10000,
   rating: 4.8, // Added rating
@@ -300,7 +298,7 @@ export const allProductsData = [
 {
   firstImg: product2,
   hoverImg: product2,
-  id: 2,
+  id: 22,
   heading: "Air Freshener",
   price: 10000,
   rating: 4.8, // Added rating
@@ -311,7 +309,7 @@ export const allProductsData = [
 {
   firstImg: AF4,
   hoverImg: AF4,
-  id: 2,
+  id: 23,
   heading: "Air Freshener",
   price: 9000,
   rating: 4.8, // Added rating
@@ -321,7 +319,7 @@ export const allProductsData = [
 },{
   firstImg: AF5,
   hoverImg: AF5,
-  id: 2,
+  id: 24,
   heading: "Air Freshener",
   price: 9000,
   rating: 4.8, // Added rating
@@ -329,5 +327,160 @@ export const allProductsData = [
   additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
   category: ["air-freshener"],
 },
+{
+  firstImg: product5,
+  hoverImg: product5,
+  id: 25,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Beauty Shampoo",
+  additionalImgs: [Hair, Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: product6,
+  hoverImg: product6,
+  id: 26,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Neutralizing Shampoo",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: Hair2,
+  hoverImg:Hair2,
+  id: 27,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Hair Cream",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: Hair3,
+  hoverImg:Hair3,
+  id: 28,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Shea Butter Relaxer",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: Hair5,
+  hoverImg:Hair5,
+  id: 29,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Styling Gel",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: Hair6,
+  hoverImg:Hair6,
+  id: 30,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Hair Food",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: Hair7,
+  hoverImg:Hair7,
+  id: 31,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Ella Bella Shampoo",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},{
+  firstImg: Hair8,
+  hoverImg:Hair8,
+  id: 32,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Ella Bella Conditioner",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},
+{
+  firstImg: Hair10,
+  hoverImg:Hair10,
+  id: 33,
+  price: 12000,
+  rating: 4.5, // Added rating
+  heading: "Hair Care",
+  name: "Mentholated Shampoo",
+  additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
+  category: ["shampoo"],
+ 
+},
 
+
+{
+  firstImg: product7,
+  hoverImg: product7,
+  id: 34,
+  heading: "Car Wash",
+  price: 9000,
+  rating: 4.3, // Added rating
+  name: "Car Wash",
+  additionalImgs: [],
+  category: ["car-wash", "liquid-soap"],
+},{
+  firstImg: product8,
+  hoverImg: product8,
+  id: 35,
+  heading: "Car Wash",
+  price: 9000,
+  rating: 4.3, // Added rating
+  name: "Car Wash",
+  additionalImgs: [],
+  category: ["car-wash", "liquid-soap"],
+},
+{
+  firstImg:Toilet,
+  hoverImg:Toilet,
+  id: 36,
+  heading: "Car Wash",
+  price: 9000,
+  rating: 4.3, // Added rating
+  name: "Toilet Wash",
+  additionalImgs: [Toilet],
+  category: [""],
+},{
+  firstImg:Window,
+  hoverImg:Window,
+  id: 37,
+  heading: "Car Wash",
+  price: 9000,
+  rating: 4.3, // Added rating
+  name: "Window Cleaner",
+  additionalImgs: [],
+  category: ["window-cleaner"],
+},
+{
+  firstImg:SkinCare1,
+  hoverImg:SkinCare1,
+  id: 37,
+  heading: "Personal Care",
+  price: 9000,
+  rating: 4.3, // Added rating
+  name: "Petroluem Jelly",
+  additionalImgs: [],
+  category: ["personal-care"],
+},
 ];

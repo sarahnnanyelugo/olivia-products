@@ -61,6 +61,12 @@ export const Lower = () => {
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">
                     {" "}
+                    <NavLink to={"/collections?category=*"}>
+                      All Olivia Products
+                    </NavLink>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
+                    {" "}
                     <NavLink to={"/collections?category=hand-soap"}>
                       Hand Wash
                     </NavLink>
@@ -75,31 +81,40 @@ export const Lower = () => {
                     <NavLink to={"/collections?category=air-freshener"}>
                       Air Freshener
                     </NavLink>
+                    
                   </Dropdown.Item>{" "}
                   <Dropdown.Item href="#/action-3">
                     {" "}
-                    <NavLink to={"/collections?category=hand-soap"}>
-                      Hand Soap
+                    <NavLink to={"/collections?category=shampoo"}>
+                    Hair Care
+                    </NavLink>
+                    
+                  </Dropdown.Item>{" "}
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=car-wash"}>
+                      Car Wash
                     </NavLink>
                   </Dropdown.Item>{" "}
                   <Dropdown.Item href="#/action-3">
                     {" "}
-                    <NavLink to={"/collections?category=Laundry"}>
-                      Laundry
+                    <NavLink to={"/collections?category=liquid-soap"}>
+                     Liquid Soap
                     </NavLink>
                   </Dropdown.Item>{" "}
                   <Dropdown.Item href="#/action-3">
                     {" "}
                     <NavLink to={"/collections?category=toilet-Wash"}>
-                      Toilet
+                      Toilet Wash
                     </NavLink>
                   </Dropdown.Item>{" "}
+                 
                   <Dropdown.Item href="#/action-3">
                     {" "}
-                    <NavLink to={"/collections?category=Shampoo"}>
-                      Shampoo
+                    <NavLink to={"/collections?category=window-cleaner"}>
+                   Window Cleaner
                     </NavLink>
-                  </Dropdown.Item>
+                  </Dropdown.Item> 
                   <Dropdown.Item href="#/action-3">
                     {" "}
                     <NavLink to={"/collections?category=personal-care"}>
