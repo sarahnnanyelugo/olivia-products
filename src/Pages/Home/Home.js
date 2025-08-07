@@ -1,16 +1,6 @@
 import React from "react";
 import Video from "../../assets/images/home-video.mp4";
-import Power from "../../assets/images/power.png";
-import Money from "../../assets/images/money.png";
-import Flower from "../../assets/images/flower.png";
-import Plastic from "../../assets/images/plastic.png";
-import Product1 from "../../assets/images/product1.avif";
-import Product2 from "../../assets/images/product2.avif";
-import Product3 from "../../assets/images/product3.avif";
-import Product4 from "../../assets/images/product4.avif";
-import Product5 from "../../assets/images/product5.avif";
-import Product6 from "../../assets/images/product6.avif";
-import Product7 from "../../assets/images/product7.avif";
+
 import Testifier from "../../assets/images/fast.avif";
 import Testifier2 from "../../assets/images/oprah.avif";
 import Testifier3 from "../../assets/images/corp.avif";

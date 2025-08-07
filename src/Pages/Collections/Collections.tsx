@@ -4,23 +4,45 @@ import { NavLink, useLocation } from "react-router-dom";
 import "./collection.scss";
 import SelectDrop from "../../Components/SelectDrop/SelectDrop";
 import PurchaseType from "../../Components/PurchaseType/PurchaseType";
+import { allProductsData } from "../../TestData/allProductsData";
 
 export const Collections: React.FC = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const category = params.get("category") || ""; // Get category from URL
+// Get products matching the category
+const filteredProducts =
+  category === "" || category === "*"
+    ? allProductsData
+    : allProductsData.filter(product =>
+        product.category.some(
+          cat => cat.toLowerCase() === category.toLowerCase()
+        )
+      );
 
   const [sortType, setSortType] = useState("price-asc"); // Default sort type
+  const matchingProduct = allProductsData.find(product =>
+    product.category.some(
+      cat => cat.toLowerCase() === category.toLowerCase()
+    )
+  );
+  
+  const categoryHeading = matchingProduct?.heading || "Shop All";
+  const categoryIntro = matchingProduct?.detail || "From sparkling dishes to nourished skin, Olivia delivers everyday essentials crafted for a cleaner home, a fresher space, and a more beautiful you.";
+  const itemCount = filteredProducts.length;
 
   return (
-    <div className="col-md-12 collection-section">
-      <h2>Shop All</h2>
-      <p>
-        Sustainable cleaning essentials that make going eco easier than ever
+    <div className="col-md-12 collection-section line">
+      <h2>{categoryHeading}</h2>
+
+      <p className="col-md-5 animate-charcter lineUp">
+      {categoryIntro}
       </p>
       <div className="d-flex">
         {" "}
-        <p style={{ flexGrow: 1, color: "grey" }}>49 Items</p>
+        <p style={{ flexGrow: 1, color: "grey" , fontSize:"30px"}}>
+    {itemCount} Item{itemCount !== 1 ? "s" : ""}
+  </p>
         <div
           className="sort-bar  col-md-"
           style={{

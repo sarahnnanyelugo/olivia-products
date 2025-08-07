@@ -1,49 +1,212 @@
-import React, { useEffect, useState } from "react";
-import { Lower } from "./Lower";
-import { Middle } from "./Middle";
-import { Upper } from "./Upper";
-import { useLocation } from "react-router-dom"; // Import useLocation
-import "./top-nav.scss";
-import { Desktop } from "../../Utils/mediaQueries";
-
+import { useState } from 'react';
+import { NavLink } from "react-router-dom";
+import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
+import Dropdown from "react-bootstrap/Dropdown";
+import { useCart } from "../../CartContext";
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { GrCart } from "react-icons/gr";
+import { IoMenu } from "react-icons/io5";
+import './top-nav.scss'
 export const TopNav = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const location = useLocation();
+  const { setIsOffCanvasOpen, cart } = useCart();
+  const [show, setShow] = useState(false);
 
-  const excludedPaths = ["/login", "/register", "/wholesale-page"];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Check if the current path is in the excludedPaths list
-  if (excludedPaths.includes(location.pathname)) {
-    return null; // Do not render TopNav if the path is excluded
-  }
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
-    <>
-      <div className="top-nav fixed-top">
-        {/* <div className={`upper ${scrollPosition > 50 ? "hide" : ""}`}>
-            <Upper />
-          </div>
-          <div className="middle">
-            <Middle />
-          </div> */}
-        {/* <div className={`lower ${scrollPosition > 50 ? "hide" : ""}`}>
-          <Lower />
-        </div>{" "} */}
-        <div className="lower">
-          <Lower />
-        </div>
+   <>
+    <Desktop>
+      {" "}
+      <div className="lower-nav-div">
+        <center>
+          <ul className="list-inline list-unstyled">
+          
+            <li className="list-inline-item">
+              <NavLink to={"/"} style={{ fontFamily: "sailecBold" }}>
+                Home
+              </NavLink>
+            </li>{" "}
+            <li className="list-inline-item">
+              <NavLink
+                to={"/wholesale-page"}
+                style={{ color: "green", fontFamily: "sailecBold" }}
+              >
+                Wholesale
+              </NavLink>
+            </li>{" "}
+            <li className="list-inline-item">
+              <NavLink
+                to={"/wholesale-page"}
+                style={{ color: "green", fontFamily: "sailecBold" }}
+              >
+                Distribution
+              </NavLink>
+            </li>{" "}
+            <li className="list-inline-item">
+              <NavLink
+                to={"/wholesale-page"}
+                style={{ color: "green", fontFamily: "sailecBold" }}
+              >
+                Retail
+              </NavLink>
+            </li>{" "}
+            <span>||</span>
+            <li className="list-inline-item">
+              {" "}
+              <Dropdown>
+                <Dropdown.Toggle variant="">Our Products</Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">
+                    {" "}
+                    <NavLink to={"/collections?category=*"}>
+                      All Olivia Products
+                    </NavLink>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
+                    {" "}
+                    <NavLink to={"/collections?category=hand-soap"}>
+                      Hand Wash
+                    </NavLink>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    <NavLink to={"/collections?category=dish-wash"}>
+                    Dish Wash
+                    </NavLink>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=air-freshener"}>
+                      Air Freshener
+                    </NavLink>
+                    
+                  </Dropdown.Item>{" "}
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=shampoo"}>
+                    Hair Care
+                    </NavLink>
+                    
+                  </Dropdown.Item>{" "}
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=car-wash"}>
+                      Car Wash
+                    </NavLink>
+                  </Dropdown.Item>{" "}
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=liquid-soap"}>
+                     Liquid Soap
+                    </NavLink>
+                  </Dropdown.Item>{" "}
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=toilet-Wash"}>
+                      Toilet Wash
+                    </NavLink>
+                  </Dropdown.Item>{" "}
+                 
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=window-cleaner"}>
+                   Window Cleaner
+                    </NavLink>
+                  </Dropdown.Item> 
+                  <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=personal-care"}>
+                      Personal Care
+                    </NavLink>
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </li>
+            <li className="list-inline-item">
+              <NavLink to={"/about-us"}>About us</NavLink>
+            </li>{" "}
+            <li className="list-inline-item">
+              <NavLink to={"/our-mission"}>OliviaCare</NavLink>
+            </li>{" "}<li className="list-inline-item">
+              <NavLink to={"/our-mission"}>Careers</NavLink>
+            </li>{" "}
+            <li className="list-inline-item">
+              <NavLink to={"/contact-us"}>Contact us</NavLink>
+            </li>
+            <li className="list-inline-item">
+              {" "}
+              <div style={{ position: "relative", cursor: "pointer" }}>
+                <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />
+                {cart.length > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-8px",
+                      right: "-8px",
+                      backgroundColor: "red",
+                      color: "white",
+                      borderRadius: "50%",
+                      padding: "2px 6px",
+                      fontSize: "12px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {cart.length}
+                  </span>
+                )}
+              </div>
+            </li>
+          </ul>
+        </center>
       </div>
-    </>
+    </Desktop>
+
+
+
+<TabletAndBelow>
+<div className="mobile-nav d-flex">
+  <div style={{flexGrow:1}}>Logo</div>
+  <div style={{ position: "relative", cursor: "pointer" }}>
+                <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />
+                {cart.length > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-8px",
+                      right: "-8px",
+                      backgroundColor: "red",
+                      color: "white",
+                      borderRadius: "50%",
+                      padding: "2px 6px",
+                      fontSize: "12px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {cart.length}
+                  </span>
+                )}
+              </div>
+
+  <IoMenu onClick={handleShow} className="menu-icon"/>
+
+     
+      </div>
+
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+
+</TabletAndBelow>
+   
+   </>
   );
 };

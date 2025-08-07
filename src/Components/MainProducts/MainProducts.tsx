@@ -75,11 +75,12 @@ const MainProduct: React.FC<ProductProps> = ({
         style={{ textAlign: "left", padding: "5px" }}
       >
         <div style={{ flexGrow: 1 }}>
-          <h6>{rating}</h6>
-          <h6>{productName}</h6>
+        <h5 style={{color: "#B8860B "}}>{productName}</h5>
+         
+        <h6 style={{color:"grey"}}>{rating}</h6>
         </div>
 
-        <h6>${productPrice.toFixed(2)}</h6>
+        <h6 style={{color:"grey"}}>${productPrice.toFixed(2)}</h6>
       </div>
     </>
   );

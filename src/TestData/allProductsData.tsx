@@ -51,6 +51,8 @@ export const allProductsData = [
     name: "Hand Wash",
     additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
     category: ["" ],
+    detail:"what we sell",
+    moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
     bestSeller:true
   },
   {
@@ -63,6 +65,7 @@ export const allProductsData = [
     name: "Air Freshener",
     additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
     category: ["", ""],
+    detail:"what we sell 2",
     bestSeller:true
   },
   {
@@ -75,7 +78,9 @@ export const allProductsData = [
     name: "Dish wash",
     additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
     category: ["", "liquid-soap"],
-    bestSeller:true
+    detail:"Multipurpose, deeply cleansing, and gentle on skin — a must-have for every home.",
+    bestSeller:true,
+    moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
   },
   {
@@ -85,10 +90,12 @@ export const allProductsData = [
     price: 12000,
     rating: 4.5, // Added rating
     heading: "Hair Care",
-    name: "Laundry stones",
+    name: "Hair Care",
     additionalImgs: [Hair, Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
-    category: ["laundry"],
-    bestSeller:true
+    category: ["hair-care"],
+    detail:"what we sell4",
+    bestSeller:true,
+    moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
 
   },
   {
@@ -101,6 +108,7 @@ export const allProductsData = [
     name: "Laundry Tablets",
     additionalImgs: [],
     category: ["car-wash"],
+    detail:"what we sell5",
     bestSeller:true
   },
   {
@@ -113,6 +121,7 @@ export const allProductsData = [
     name: "Tile / Floor",
     additionalImgs: [],
     category: [""],
+    detail:"what we sell6",
     bestSeller:true
   },
   {
@@ -125,7 +134,9 @@ export const allProductsData = [
     name: "Face wash",
     additionalImgs: [],
     category: ["window-cleaner"],
-    bestSeller:true
+    detail:"what we sell7",
+    bestSeller:true,
+    moreDetail:"Achieve crystal-clear transparency with Olivia Window Cleaner — your go-to solution for streak-free glass and mirrors. Powered by vinegar extract and ammonia-free polish agents, it effortlessly removes smudges, fingerprints, and dust while being safe for indoor use. Watch your windows sparkle like never before."
 
   },
   {
@@ -136,6 +147,7 @@ export const allProductsData = [
     rating: 3.9, // Added rating
     id: 8,
     name: "Skin Care",
+    detail:"what we sell8",
     additionalImgs: [],
     category: [""],
   },
@@ -151,6 +163,9 @@ export const allProductsData = [
   price: 16000,
   rating: 4.2, // Added rating
   name: "Banana Splash",
+  detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
+  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
   category: ["hand-soap", "liquid-soap"],
   
@@ -161,8 +176,11 @@ export const allProductsData = [
   hoverImg: HandWash2,
   id: 10,
   price: 16000,
+  detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   rating: 4.2, // Added rating
   name: "Strawberry Mix",
+  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
   category: ["hand-soap", "liquid-soap"],
   
@@ -175,6 +193,9 @@ export const allProductsData = [
   price: 16000,
   rating: 4.2, // Added rating
   name: "Citrus Blend",
+  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+
+  detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
   category: ["hand-soap", "liquid-soap"],
   
@@ -187,6 +208,9 @@ export const allProductsData = [
   price: 16000,
   rating: 4.2, // Added rating
   name: "Grabe Overflow",
+  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+
+  detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
   category: ["hand-soap", "liquid-soap"],
   
@@ -196,8 +220,11 @@ export const allProductsData = [
   hoverImg: HandWash5,
   id: 13,
   price: 16000,
+  detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   rating: 4.2, // Added rating
   name: "Fruit Assemble",
+  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
   category: ["hand-soap", "liquid-soap"],
   
@@ -209,6 +236,9 @@ export const allProductsData = [
   price: 16000,
   rating: 4.2, // Added rating
   name: "Milkyway",
+  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+
+  detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash1, HandWash2, HandWash3, HandWash4, HandWash5, HandWash6],
   category: ["hand-soap", "liquid-soap"],
   
@@ -224,9 +254,10 @@ export const allProductsData = [
   price: 5000,
   rating: 4.0, // Added rating
   name: "Olivia Lemon",
+  detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
   category: ["dish-wash", "liquid-soap"],
-
+  moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 },
 {
   firstImg: product4,
@@ -236,8 +267,10 @@ export const allProductsData = [
   price: 5000,
   rating: 4.0, // Added rating
   name: "Olivia Lemon",
+  detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
   category: ["dish-wash", "liquid-soap"],
+  moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish5,
@@ -247,8 +280,10 @@ export const allProductsData = [
   price: 3000,
   rating: 4.0, // Added rating
   name: "Olivia Fruity",
+  detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
   category: ["dish-wash", "liquid-soap"],
+  moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish3,
@@ -258,8 +293,10 @@ export const allProductsData = [
   price: 3000,
   rating: 4.0, // Added rating
   name: "Olivia Apple",
+  detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
   category: ["dish-wash", "liquid-soap"],
+  moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish4,
@@ -269,8 +306,10 @@ export const allProductsData = [
   price: 2000,
   rating: 4.0, // Added rating
   name: "Olivia Plain",
+  detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
   category: ["dish-wash", "liquid-soap"],
+  moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish6,
@@ -280,8 +319,10 @@ export const allProductsData = [
   price: 12000,
   rating: 4.0, // Added rating
   name: "Olivia Fruity",
+  detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
   category: ["dish-wash", "liquid-soap"],
+  moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },
 {
@@ -292,8 +333,10 @@ export const allProductsData = [
   price: 10000,
   rating: 4.8, // Added rating
   name: "Primrose",
+  detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
   category: ["air-freshener"],
+  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
 },
 {
   firstImg: product2,
@@ -303,8 +346,11 @@ export const allProductsData = [
   price: 10000,
   rating: 4.8, // Added rating
   name: "Belle Rose",
+  detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
   category: ["air-freshener"],
+  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
+
 },
 {
   firstImg: AF4,
@@ -314,8 +360,11 @@ export const allProductsData = [
   price: 9000,
   rating: 4.8, // Added rating
   name: "Lily",
+  detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
   category: ["air-freshener"],
+  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
+
 },{
   firstImg: AF5,
   hoverImg: AF5,
@@ -324,8 +373,11 @@ export const allProductsData = [
   price: 9000,
   rating: 4.8, // Added rating
   name: "Murray Berry",
+  detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [AF1, AF2, AF3, AF4, AF5 ],
   category: ["air-freshener"],
+  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
+
 },
 {
   firstImg: product5,
@@ -335,8 +387,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Beauty Shampoo",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [Hair, Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
  
 },{
   firstImg: product6,
@@ -346,9 +401,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Neutralizing Shampoo",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },{
   firstImg: Hair2,
   hoverImg:Hair2,
@@ -357,8 +414,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Hair Cream",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
  
 },{
   firstImg: Hair3,
@@ -368,9 +428,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Shea Butter Relaxer",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },{
   firstImg: Hair5,
   hoverImg:Hair5,
@@ -379,9 +441,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Styling Gel",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },{
   firstImg: Hair6,
   hoverImg:Hair6,
@@ -390,9 +454,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Hair Food",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },{
   firstImg: Hair7,
   hoverImg:Hair7,
@@ -401,9 +467,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Ella Bella Shampoo",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },{
   firstImg: Hair8,
   hoverImg:Hair8,
@@ -412,9 +480,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Ella Bella Conditioner",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },
 {
   firstImg: Hair10,
@@ -424,9 +494,11 @@ export const allProductsData = [
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Mentholated Shampoo",
+  detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair2, Hair3, Hair5, Hair6, Hair7, Hair8, Hair9, Hair10],
   category: ["shampoo"],
- 
+     moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+
 },
 
 
@@ -439,7 +511,9 @@ export const allProductsData = [
   rating: 4.3, // Added rating
   name: "Car Wash",
   additionalImgs: [],
+  detail:"Give your ride a showroom finish — powerful clean, streak-free shine.",
   category: ["car-wash", "liquid-soap"],
+  moreDetail:"Olivia Car Wash cleans, protects, and polishes — all in one go. Its concentrated foam formula lifts dirt and grime effortlessly while preserving your car’s paint and shine. Infused with wax-enhancing agents and anti-scratch polymers, it delivers a spotless, showroom finish that turns heads and defies weather damage."
 },{
   firstImg: product8,
   hoverImg: product8,
@@ -448,19 +522,24 @@ export const allProductsData = [
   price: 9000,
   rating: 4.3, // Added rating
   name: "Car Wash",
+  detail:"Give your ride a showroom finish — powerful clean, streak-free shine.",
   additionalImgs: [],
   category: ["car-wash", "liquid-soap"],
+  moreDetail:"Olivia Car Wash cleans, protects, and polishes — all in one go. Its concentrated foam formula lifts dirt and grime effortlessly while preserving your car’s paint and shine. Infused with wax-enhancing agents and anti-scratch polymers, it delivers a spotless, showroom finish that turns heads and defies weather damage."
+
 },
 {
   firstImg:Toilet,
   hoverImg:Toilet,
   id: 36,
-  heading: "Car Wash",
+  heading: "Toilet Wash",
   price: 9000,
   rating: 4.3, // Added rating
   name: "Toilet Wash",
+  detail:"Knock out stains and odors — for a toilet that looks and smells freshly scrubbed.",
   additionalImgs: [Toilet],
-  category: [""],
+  category: ["toilet"],
+  moreDetail:"Olivia Toilet Wash destroys 99.9% of germs and limescale with every flush, leaving your toilet hygienically clean and smelling fresh. Its thick formula clings to the bowl, breaking down stains and eliminating foul odors. Fortified with active disinfectants and natural pine oil, it's a powerhouse of cleanliness for your bathroom"
 },{
   firstImg:Window,
   hoverImg:Window,
@@ -469,18 +548,22 @@ export const allProductsData = [
   price: 9000,
   rating: 4.3, // Added rating
   name: "Window Cleaner",
+  detail:"Streak-free clarity in one wipe — let the light in, beautifully.",
   additionalImgs: [],
   category: ["window-cleaner"],
+  moreDetail:"Achieve crystal-clear transparency with Olivia Window Cleaner — your go-to solution for streak-free glass and mirrors. Powered by vinegar extract and ammonia-free polish agents, it effortlessly removes smudges, fingerprints, and dust while being safe for indoor use. Watch your windows sparkle like never before."
 },
 {
   firstImg:SkinCare1,
   hoverImg:SkinCare1,
-  id: 37,
+  id: 38,
   heading: "Personal Care",
   price: 9000,
   rating: 4.3, // Added rating
   name: "Petroluem Jelly",
   additionalImgs: [],
+  detail:"Pamper yourself daily — premium care for skin that deserves the best.",
   category: ["personal-care"],
+  moreDetail:"Olivia Personal Care products are crafted for daily self-care rituals that feel indulgent yet purposeful. From body lotions to face cleansers, each formula is infused with botanical extracts, vitamins, and soothing essential oils to hydrate, protect, and revive your skin. Elevate your wellness routine with clean, conscious, and caring skincare."
 },
 ];
