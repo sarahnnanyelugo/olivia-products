@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useCart } from "../../CartContext";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Accordion from 'react-bootstrap/Accordion';
+import Logo from "../../assets/images/logo.png";
 
 import { GrCart } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
@@ -21,7 +22,11 @@ export const TopNav = () => {
    <>
     <Desktop>
       {" "}
-      <div className="lower-nav-div">
+      <div className="lower-nav-div d-md-flex">
+        <div className="col-md-1 logo" >
+         <Link to={"/"} > <img src={Logo} width="100%" /></Link>
+        </div>
+        <div style={{flexGrow:1}} />
         <center>
           <ul className="list-inline list-unstyled">
           

@@ -75,7 +75,7 @@ const MainProduct: React.FC<ProductProps> = ({
         style={{ textAlign: "left", padding: "5px" }}
       >
         <div style={{ flexGrow: 1 }}>
-        <h5 style={{color: "#B8860B "}}>{productName}</h5>
+        <h5 style={{color: "#7bbd21"}}>{productName}</h5>
          
         <h6 style={{color:"grey"}}>{rating}</h6>
         </div>
