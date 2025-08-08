@@ -79,7 +79,6 @@ export const Home = () => {
             </p>
           </div>
         </center>
-        {/* Category Section */}
         <div className="category-div">
           <div className="col-md-12 prd-slid">
             <ProductsSlide options={OPTIONS} />

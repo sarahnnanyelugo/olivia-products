@@ -111,8 +111,8 @@ export const ViewProductPage: React.FC = () => {
         {/* Product Details Section */}
         <div className="product-info col-md-5 offset-3 offset-md-0">
           <h1>{product.name}</h1>
-          <h5>Product Details</h5>
-          <p>{product.moreDetail}:</p>
+          <h5>Product Details :</h5>
+          <p>{product.moreDetail}</p>
           <div className="quantity-controls">
             <span
               onClick={handleDecrement}

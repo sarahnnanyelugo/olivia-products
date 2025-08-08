@@ -47,37 +47,38 @@ const YouTube = () => {
   const featuredPost = YoutubePosts[featuredIndex]; // Featured video based on current week
 
   return (
-    <div ref={headingRef}>
-      {" "}
-      <div
-        className="ig-social twitter"
-        style={{
-          width: "100%",
+    <>
+      <div ref={headingRef} style={{ overflow: "hidden" }}>
+        {" "}
+        <div
+          className="ig-social twitter"
+          style={{
+            width: "100%",
 
-          transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
-          opacity: inViewHeading ? 1 : 0,
-          transition: "transform 2s ease, opacity 2s ease",
-        }}
-      >
-        {/* FEATURED Video */}
-        {featuredPost && (
-          <div>
-            <iframe
-              width="100%"
-              height="350"
-              src={getYouTubeEmbedUrl(featuredPost.url)}
-              title={`Featured YouTube video ${featuredPost.id}`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
+            opacity: inViewHeading ? 1 : 0,
+            transition: "transform 2s ease, opacity 2s ease",
+          }}
+        >
+          {featuredPost && (
+            <div>
+              <iframe
+                width="100%"
+                height="350"
+                src={getYouTubeEmbedUrl(featuredPost.url)}
+                title={`Featured YouTube video ${featuredPost.id}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
 
-            <p>{featuredPost.caption}</p>
-            <p style={{ fontSize: "12px" }}>{featuredPost.description}</p>
-          </div>
-        )}
+              <p>{featuredPost.caption}</p>
+              <p style={{ fontSize: "12px" }}>{featuredPost.description}</p>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
