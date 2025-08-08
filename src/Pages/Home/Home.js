@@ -127,7 +127,7 @@ export const Home = () => {
       </center>
       <ProductsHolder showOnlyBestSellers={true} />
 
-      <div className=" col-md-10 offset-md-1 d-flex mt-5">
+      <div className=" col-md-10 offset-md-1 d-md-flex mt-5">
         <div className="col-md-6 mission-vision">
           <img src={MissionImg} width="100%" alt="" />
         </div>

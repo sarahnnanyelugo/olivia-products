@@ -18,10 +18,13 @@ import { About } from "./Pages/About/About";
 import { FAQPage } from "./Pages/FAQPage/FAQPage";
 import SmoothScroll from "./Components/SmoothScroll";
 import { TopNav } from "./Components/TopNav/TopNav";
+import { MdOutlineVerticalAlignTop } from "react-icons/md";
+
 function App() {
   return (
     <>
       {/* <SmoothScroll> */}
+      <div id="top" />
       <CartProvider>
         {" "}
         <ScrollToTop />
@@ -40,6 +43,11 @@ function App() {
         <Footer />
       </CartProvider>{" "}
       {/* </SmoothScroll> */}
+      <div className="bck-to-top">
+        <a href="#top">
+          <MdOutlineVerticalAlignTop />
+        </a>
+      </div>
     </>
   );
 }

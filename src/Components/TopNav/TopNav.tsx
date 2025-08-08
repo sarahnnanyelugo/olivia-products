@@ -5,6 +5,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useCart } from "../../CartContext";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Accordion from 'react-bootstrap/Accordion';
+
 import { GrCart } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
 import './top-nav.scss'
@@ -200,102 +202,77 @@ export const TopNav = () => {
           {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
         </Offcanvas.Header>
         <Offcanvas.Body>
-        <ListGroup>
-      <ListGroup.Item>
+      <div className="mobile-nav">
+          <ListGroup>
+      <ListGroup.Item onClick={handleClose}>
         <NavLink to={"/"}>Home</NavLink>
       </ListGroup.Item>
-      <ListGroup.Item>  
-     <NavLink to={"/wholesale"}>Wholesale</NavLink>
-     </ListGroup.Item>  <ListGroup.Item>  
-     <NavLink to={"/wholesale"}>Distribution</NavLink>
+      <ListGroup.Item onClick={handleClose}>  
+     <NavLink to={"/wholesale-page"}>Wholesale</NavLink>
+     </ListGroup.Item >  <ListGroup.Item onClick={handleClose}>  
+     <NavLink to={"/wholesale-page"}>Distribution</NavLink>
      </ListGroup.Item>  
-     <ListGroup.Item>  
-     <NavLink to={"/wholesale"}>Retail</NavLink>
+     <ListGroup.Item onClick={handleClose}>  
+     <NavLink to={"/wholesale-page"}>Retail</NavLink>
      </ListGroup.Item> 
      
      
       <ListGroup.Item>  
-      
-     <Dropdown>
-                <Dropdown.Toggle variant="">Our Products</Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
-                    {" "}
-                    <NavLink to={"/collections?category=*"}>
+<Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Our Products</Accordion.Header>
+        <Accordion.Body>
+           <ul >
+            <li onClick={handleClose}><NavLink to={"/collections?category=*"}>
                       All Olivia Products
-                    </NavLink>
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-1">
-                    {" "}
-                    <NavLink to={"/collections?category=hand-soap"}>
+                    </NavLink></li>
+                    <li onClick={handleClose}>   <NavLink to={"/collections?category=hand-soap"}>
                       Hand Wash
-                    </NavLink>
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    <NavLink to={"/collections?category=dish-wash"}>
-                    Dish Wash
-                    </NavLink>
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=air-freshener"}>
+                    </NavLink></li>
+                    <li onClick={handleClose}>   <NavLink to={"/collections?category=dish-wash"}>
+                      Dish Wash
+                    </NavLink></li>
+                    <li>   <NavLink to={"/collections?category=air-freshener"}>
                       Air Freshener
-                    </NavLink>
-                    
-                  </Dropdown.Item>{" "}
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=shampoo"}>
-                    Hair Care
-                    </NavLink>
-                    
-                  </Dropdown.Item>{" "}
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=car-wash"}>
+                    </NavLink></li>
+                    <li onClick={handleClose}>   <NavLink to={"/collections?category=shampoo"}>
+                      Hair Care
+                    </NavLink></li>
+                    <li onClick={handleClose}>   <NavLink to={"/collections?category=car-wash"}>
                       Car Wash
-                    </NavLink>
-                  </Dropdown.Item>{" "}
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=liquid-soap"}>
-                     Liquid Soap
-                    </NavLink>
-                  </Dropdown.Item>{" "}
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=toilet-Wash"}>
+                    </NavLink></li>
+                    <li onClick={handleClose}>   <NavLink to={"/collections?category=liquid-soap"}>
+                      Liquid Soap
+                    </NavLink></li>
+                    <li onClick={handleClose}><NavLink to={"/collections?category=toilet-Wash"}>
                       Toilet Wash
-                    </NavLink>
-                  </Dropdown.Item>{" "}
-                 
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=window-cleaner"}>
+                    </NavLink></li>
+                    <li onClick={handleClose}> <NavLink to={"/collections?category=window-cleaner"}>
                    Window Cleaner
-                    </NavLink>
-                  </Dropdown.Item> 
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=personal-care"}>
+                    </NavLink></li>
+                    <li onClick={handleClose}><NavLink to={"/collections?category=personal-care"}>
                       Personal Care
-                    </NavLink>
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-      </Dropdown>
+                    </NavLink></li>
+                   
+           </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      
+    </Accordion>
      </ListGroup.Item>
-     <ListGroup.Item>  
+     <ListGroup.Item onClick={handleClose}>  
      <NavLink to={"/about-us"}>About Us</NavLink>
      </ListGroup.Item>  <ListGroup.Item>  
      <NavLink to={"/our-mission"}>Olivia Care</NavLink>
      </ListGroup.Item>  
-     <ListGroup.Item>  
+     <ListGroup.Item onClick={handleClose}>  
      <NavLink to={"/"}>Careers</NavLink>
-     </ListGroup.Item> <ListGroup.Item>  
+     </ListGroup.Item > <ListGroup.Item onClick={handleClose}>  
      <NavLink to={"/contact-us"}>Contact Us</NavLink>
      </ListGroup.Item> 
     </ListGroup>
+      </div>
         </Offcanvas.Body>
       </Offcanvas>
 
