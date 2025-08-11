@@ -1,7 +1,7 @@
 // ProductsHolder.jsx
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import CartOffcanvas from "../../Components/CartList/CartList";
+// import CartOffcanvas from "../../Components/CartList/CartList";
 import MainProduct from "../../Components/MainProducts/MainProducts";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -29,14 +29,7 @@ export const ProductsHolder = ({
 
   
 
-  // const filteredProducts =
-  //   categoryFromQuery === "*" || categoryFromQuery === ""
-  //     ? allProductsData
-  //     : allProductsData.filter((product) =>
-  //         product.category.some(
-  //           (cat) => cat.toLowerCase() === categoryFromQuery.toLowerCase()
-  //         )
-  //       );
+  
 
 // Step 1: Optionally filter for best sellers
 let productsToDisplay = allProductsData;
@@ -110,14 +103,16 @@ const filteredProducts =
   }, [isTransitioning, startIndex, filteredProducts.length]);
 
   const {
-    cart,
-    setIsOffCanvasOpen,
-    addToCart,
-    handleRemoveFromCart,
-    handleClearCart,
-    incrementQuantity,
-    decrementQuantity,
-  } = useCart();
+   
+  cart,
+  setIsOffCanvasOpen,
+  addToCart,
+  removeFromCart,
+  clearCart,
+  incrementQuantity,
+  decrementQuantity,
+} = useCart();
+
 
   // Render logic based on viewType
   if (viewType === "grid") {
@@ -142,7 +137,7 @@ const filteredProducts =
         </div>
 
         {/* Cart Offcanvas */}
-        <CartOffcanvas
+        {/* <CartOffcanvas
           show={setIsOffCanvasOpen}
           onClose={() => setIsOffCanvasOpen(false)}
           cart={cart}
@@ -150,7 +145,7 @@ const filteredProducts =
           onClearCart={handleClearCart}
           onIncrementQuantity={incrementQuantity}
           onDecrementQuantity={decrementQuantity}
-        />
+        /> */}
       </div>
     );
   }
@@ -229,7 +224,7 @@ const filteredProducts =
           </Carousel>
         </TabletAndBelow>
         {/* Cart Offcanvas */}
-        <CartOffcanvas
+        {/* <CartOffcanvas
           show={setIsOffCanvasOpen}
           onClose={() => setIsOffCanvasOpen(false)}
           cart={cart}
@@ -237,7 +232,7 @@ const filteredProducts =
           onClearCart={handleClearCart}
           onIncrementQuantity={incrementQuantity}
           onDecrementQuantity={decrementQuantity}
-        />
+        /> */}
       </div>
     </center>
   );

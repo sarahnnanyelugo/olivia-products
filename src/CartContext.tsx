@@ -12,6 +12,8 @@ interface CartContextType {
   cart: CartItem[];
   isOffCanvasOpen: boolean;
   setIsOffCanvasOpen: (open: boolean) => void;
+  openCart: () => void;          // NEW
+  closeCart: () => void;         // NEW
   addToCart: (item: CartItem) => void;
   removeFromCart: (id: number) => void;
   clearCart: () => void;
@@ -21,17 +23,19 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-export const CartProvider: React.FC<{ children: ReactNode }> = ({
-  children,
-}) => {
+export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
+
+  // NEW: explicit functions to open/close cart
+  const openCart = () => setIsOffCanvasOpen(true);
+  const closeCart = () => setIsOffCanvasOpen(false);
 
   const addToCart = (item: CartItem) => {
     const itemExists = cart.some((cartItem) => cartItem.id === item.id);
     if (!itemExists) {
       setCart((prev) => [...prev, { ...item, quantity: 1 }]);
-      setIsOffCanvasOpen(true);
+      openCart(); // opens cart when item added
     } else {
       alert("This item is already in your cart!");
     }
@@ -67,6 +71,8 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({
         cart,
         isOffCanvasOpen,
         setIsOffCanvasOpen,
+        openCart,         // NEW
+        closeCart,        // NEW
         addToCart,
         removeFromCart,
         clearCart,

@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./Pages/Home/Home";
 import ScrollToTop from "./scrollToTop";
 import { ViewProductPage } from "./Pages/ViewProductPage/ViewProductPage";
-import { CartProvider } from "./CartContext";
+import { CartProvider, useCart } from "./CartContext";
 import { Footer } from "./Components/Footer/Footer";
 import { ContactUs } from "./Pages/ContactUs/ContactUs";
 import { OrderForm } from "./Pages/ContactUs/OrderForm";
@@ -19,6 +19,31 @@ import { FAQPage } from "./Pages/FAQPage/FAQPage";
 import SmoothScroll from "./Components/SmoothScroll";
 import { TopNav } from "./Components/TopNav/TopNav";
 import { MdOutlineVerticalAlignTop } from "react-icons/md";
+import CartOffcanvas from "./Components/CartList/CartList";
+
+function GlobalCart() {
+  const {
+    isOffCanvasOpen,
+    closeCart,
+    cart,
+    removeFromCart,
+    clearCart,
+    incrementQuantity,
+    decrementQuantity,
+  } = useCart();
+
+  return (
+    <CartOffcanvas
+      show={isOffCanvasOpen}
+      onClose={closeCart}
+      cart={cart}
+      onRemoveFromCart={removeFromCart}
+      onClearCart={clearCart}
+      onIncrementQuantity={incrementQuantity}
+      onDecrementQuantity={decrementQuantity}
+    />
+  );
+}
 
 function App() {
   return (
@@ -26,8 +51,7 @@ function App() {
       {/* <SmoothScroll> */}
       <div id="top" />
       <CartProvider>
-        {" "}
-        <ScrollToTop />
+        <GlobalCart /> <ScrollToTop />
         <TopNav />
         <Routes>
           <Route path="/" element={<Home />} />{" "}
