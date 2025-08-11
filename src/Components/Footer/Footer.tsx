@@ -53,16 +53,16 @@ export const Footer = () => {
               <ul className="list-unstyled footer-links">
                 <h5>Shop</h5>
                 <li>
-                  <NavLink to={""}>All</NavLink>
+                  <NavLink to={"/collections?category=*"}>All</NavLink>
                 </li>
                 <li>
-                  <NavLink to={""}>Starter Kits</NavLink>
+                  <NavLink to={"/collections?category=dish-wash"}>Dish Wash</NavLink>
                 </li>
                 <li>
-                  <NavLink to={""}>Refills</NavLink>
+                  <NavLink to={"/collections?category=air-freshener"}>Air Fresheners</NavLink>
                 </li>
                 <li>
-                  <NavLink to={""}>Bestsellers</NavLink>
+                  <NavLink to={"/collections?category=shampoo"}>Hair Care</NavLink>
                 </li>
               </ul>
             </div>
@@ -79,9 +79,7 @@ export const Footer = () => {
                 <li>
                   <NavLink to={"/wholesale-page"}>Wholesale Inquiries</NavLink>
                 </li>
-                <li>
-                  <NavLink to={""}>Store Locator</NavLink>
-                </li>
+                
               </ul>
             </div>
             <div className="col-4">
@@ -97,9 +95,7 @@ export const Footer = () => {
                 <li>
                   <NavLink to={"/faqs"}>FAQ</NavLink>
                 </li>
-                <li>
-                  <NavLink to={""}>Accessibility Tool</NavLink>
-                </li>
+               
               </ul>
             </div>
           </div>
