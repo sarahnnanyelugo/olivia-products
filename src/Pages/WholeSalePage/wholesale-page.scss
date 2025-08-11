@@ -122,3 +122,9 @@
 .checkbox__input {
   display: none;
 }
+.app-form-cover{
+  @media screen and (max-width:820px){
+    padding-left:10px;
+    padding-right:10px;
+  }
+}

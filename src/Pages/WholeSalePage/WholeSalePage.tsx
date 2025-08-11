@@ -27,9 +27,9 @@ export const WholeSalePage: React.FC = () => {
   };
 
   return (
-    <div className="wholesale-page col-md-6 offset-md-3">
+    <div className="app-form-cover"><div className="wholesale-page col-md-6 offset-md-3">
       <form>
-        <div className="col-md-2">
+        <div className="col-md-2 col-4">
           {" "}
           <img src={Logo} width="70%" />
         </div>
@@ -153,6 +153,6 @@ export const WholeSalePage: React.FC = () => {
           <button>Submit</button>
         </center>
       </form>
-    </div>
+    </div></div>
   );
 };

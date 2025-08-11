@@ -2,9 +2,18 @@
   margin-top: 100px;
   padding-right: 70px;
   padding-left: 70px;
+  @media screen and (max-width:820px){
+    margin-top:50px;
+    padding-right: 10px;
+      padding-left: 10px;
+  }
 }
 .sort-bar {
   font-family: sailecMedium;
+  @media screen and (max-width:820px) {
+      margin-top: 30px;
+     
+    }
 }
 .animate-charcter {
   text-transform: uppercase;
@@ -51,5 +60,12 @@
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+.prd-figure{
+  color: rgb(216, 216, 216);
+  font-size: 30px;
+  @media screen and (max-width:820px){
+    font-size:18px;
   }
 }

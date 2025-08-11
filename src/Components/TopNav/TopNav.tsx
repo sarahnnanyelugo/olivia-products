@@ -174,7 +174,11 @@ export const TopNav = () => {
 
 <TabletAndBelow>
 <div className="mobile-nav d-flex">
-  <div style={{flexGrow:1}}>Logo</div>
+ 
+  <div className="col-3 logo " >
+         <Link to={"/"} > <img src={Logo} width="100%" /></Link>
+        </div>
+         <div style={{flexGrow:1}} />
   <div style={{ position: "relative", cursor: "pointer" }}>
                 <GrCart size={30} onClick={() => setIsOffCanvasOpen(true)} />
                 {cart.length > 0 && (
@@ -211,24 +215,13 @@ export const TopNav = () => {
           <ListGroup>
       <ListGroup.Item onClick={handleClose}>
         <NavLink to={"/"}>Home</NavLink>
-      </ListGroup.Item>
-      <ListGroup.Item onClick={handleClose}>  
-     <NavLink to={"/wholesale-page"}>Wholesale</NavLink>
-     </ListGroup.Item >  <ListGroup.Item onClick={handleClose}>  
-     <NavLink to={"/wholesale-page"}>Distribution</NavLink>
-     </ListGroup.Item>  
-     <ListGroup.Item onClick={handleClose}>  
-     <NavLink to={"/wholesale-page"}>Retail</NavLink>
-     </ListGroup.Item> 
-     
-     
-      <ListGroup.Item>  
+      </ListGroup.Item> <ListGroup.Item>  
 
-<Accordion defaultActiveKey="0">
+<Accordion defaultActiveKey="">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Our Products</Accordion.Header>
         <Accordion.Body>
-           <ul >
+           <ul className="list-unstyled">
             <li onClick={handleClose}><NavLink to={"/collections?category=*"}>
                       All Olivia Products
                     </NavLink></li>
@@ -266,6 +259,17 @@ export const TopNav = () => {
       
     </Accordion>
      </ListGroup.Item>
+      <ListGroup.Item onClick={handleClose}>  
+     <NavLink to={"/wholesale-page"}>Wholesale</NavLink>
+     </ListGroup.Item >  <ListGroup.Item onClick={handleClose}>  
+     <NavLink to={"/wholesale-page"}>Distribution</NavLink>
+     </ListGroup.Item>  
+     <ListGroup.Item onClick={handleClose}>  
+     <NavLink to={"/wholesale-page"}>Retail</NavLink>
+     </ListGroup.Item> 
+     
+     
+     
      <ListGroup.Item onClick={handleClose}>  
      <NavLink to={"/about-us"}>About Us</NavLink>
      </ListGroup.Item>  <ListGroup.Item>  

@@ -154,6 +154,7 @@
   background-size: cover !important;
   background-repeat: no-repeat;
 margin-top:-200px;
+z-index:-1;
   background: url("../../assets/images/contact.jpg");
   @media screen and (max-width:820px) {
   background-position: center; }

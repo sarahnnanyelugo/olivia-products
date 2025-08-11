@@ -38,12 +38,12 @@ const filteredProducts =
       <p className="col-md-5 animate-charcter lineUp">
       {categoryIntro}
       </p>
-      <div className="d-flex">
+      <div className="d-md-flex">
         {" "}
-        <p style={{ flexGrow: 1, color: "grey" , fontSize:"30px"}}>
+        <p style={{ flexGrow: 1}} className="prd-figure">
     {itemCount} Item{itemCount !== 1 ? "s" : ""}
   </p>
-        <div
+     <div className="d-flex">   <div
           className="sort-bar  col-md-"
           style={{
             borderRight: "solid 1px #e7e7e7",
@@ -63,7 +63,7 @@ const filteredProducts =
           }}
         >
           <SelectDrop />
-        </div>
+        </div></div>
         <div className="sort-bar  col-md-2">
           <select
             value={sortType}
