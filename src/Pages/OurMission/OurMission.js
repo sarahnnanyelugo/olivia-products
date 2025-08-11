@@ -11,7 +11,6 @@ export const OurMission = () => {
 
   return (
     <div className="home-div">
-      {/* Video Section */}
       <div className="mission-landing">
        
           <h1 className="col-md-4 offset-md-2">Welcome to our Space</h1>

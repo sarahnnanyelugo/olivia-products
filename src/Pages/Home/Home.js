@@ -27,19 +27,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 export const Home = () => {
   return (
     <div className="home-div">
-      {/* <video
-        className="video"
-        width="100%"
-        autoPlay
-        loop
-        muted
-        playsInline
-        controls
-        src={Video}
-      ></video> */}
-
       <HomeSlide />
-      {/* Stats Section */}
 
       <div className="col-md-8 offset-md-2 d-md-flex abt-div">
         <div className="col-md-6 col-12">

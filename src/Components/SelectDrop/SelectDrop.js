@@ -13,25 +13,44 @@ function SelectDrop() {
 
           <Dropdown.Menu>
             <Dropdown.Item>
+              <NavLink to={"/collections?category=*"}>All Products</NavLink>
+            </Dropdown.Item>{" "}
+            <Dropdown.Item>
               <NavLink to={"/collections?category=hand-soap"}>
                 Hand Soap
               </NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
-              <NavLink to={"/collections?category=Laundry"}> Laundry</NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink to={"/collections?category=spray-cleaners"}>
-                Spray Cleaners
-              </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
               <NavLink to={"/collections?category=dish-wash"}>
+                {" "}
                 Dish Wash
               </NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <NavLink to={"/collections?category=air-fresheners"}>
+                Air Fresheners
+              </NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <NavLink to={"/collections?category=shampoo"}>Hair Care</NavLink>
             </Dropdown.Item>{" "}
             <Dropdown.Item>
-              <NavLink to={"/collections?category=toilet"}>Toilet</NavLink>
+              <NavLink to={"/collections?category=car-wash"}>Car Washs</NavLink>
+            </Dropdown.Item>{" "}
+            <Dropdown.Item>
+              <NavLink to={"/collections?category=liquid-soap"}>
+                Liquid Soap
+              </NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <NavLink to={"/collections?category=toilet-wash"}>
+                Toilet Wash
+              </NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <NavLink to={"/collections?category=window-cleaner"}>
+                Window Cleaner
+              </NavLink>
             </Dropdown.Item>{" "}
             <Dropdown.Item>
               <NavLink to={"/collections?category=personal-care"}>

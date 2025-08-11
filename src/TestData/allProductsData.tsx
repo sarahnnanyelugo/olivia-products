@@ -538,7 +538,7 @@ export const allProductsData = [
   name: "Toilet Wash",
   detail:"Knock out stains and odors — for a toilet that looks and smells freshly scrubbed.",
   additionalImgs: [Toilet],
-  category: ["toilet"],
+  category: ["toilet-wash"],
   moreDetail:"Olivia Toilet Wash destroys 99.9% of germs and limescale with every flush, leaving your toilet hygienically clean and smelling fresh. Its thick formula clings to the bowl, breaking down stains and eliminating foul odors. Fortified with active disinfectants and natural pine oil, it's a powerhouse of cleanliness for your bathroom"
 },{
   firstImg:Window,
