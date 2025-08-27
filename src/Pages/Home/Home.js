@@ -48,7 +48,10 @@ export const Home = () => {
             products, luxurious beauty soaps to enhance your skin, and jellies
             to protect your skin.
           </p>
-          <button>Explore More</button>
+          <Link to={"/about-us"}>
+            {" "}
+            <button>Explore More</button>
+          </Link>
         </div>
       </div>
 
