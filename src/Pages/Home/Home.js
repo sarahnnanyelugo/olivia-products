@@ -20,6 +20,7 @@ import { HomeSlide } from "./HomeSlide/HomeSlide";
 import FBSocials from "./FBSocials";
 import TwitterHandle from "./TwitterHandle/TwitterHandle";
 import YouTube from "./Youtube";
+import SampleSlide from "./ProductsSlide/ProductsSlide";
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -70,11 +71,8 @@ export const Home = () => {
             </p>
           </div>
         </center>
-        <div className="category-div">
-          <div className="col-md-12 prd-slid">
-            <ProductsSlide options={OPTIONS} />
-          </div>
-        </div>
+        
+        <SampleSlide />
       </div>
 
       {/* Testifiers Section */}

@@ -1,135 +1,142 @@
-import React, { useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { NextButton, PrevButton, usePrevNextButtons } from "./ArrowButtons";
-import { DotButton, useDotButton } from "./DotButton";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Product1 from "../../../assets/images/group2-cli.png";
+import Product2 from "../../../assets/images/hand-wash-clip.png";
+import Product3 from "../../../assets/images/tile-group.png";
+import Product4 from "../../../assets/images/group2-clip.png";
+import Bg from "../../../assets/images/flower5.jpg";
+import Bg2 from "../../../assets/images/flower2.jpeg";
+import Bg3 from "../../../assets/images/flower4.webp";
+import Bg4 from "../../../assets/images/flower-bg.jpg";
 import "./products-slide.scss";
-import { useAutoplay } from "./Autoplay";
-import { Product } from "./Product";
-import { FaPause } from "react-icons/fa6";
-import { FaPlay } from "react-icons/fa";
+const backgrounds = [Bg, Bg2, Bg3, Bg4];
+const images = [Product1, Product2, Product3, Product4];
 
-import Product1 from "../../../assets/images/group1.png";
-import Product2 from "../../../assets/images/group2.png";
-import Product3 from "../../../assets/images/group3.png";
-import Product4 from "../../../assets/images/group4.png";
-import Product5 from "../../../assets/images/group5.png";
-import Product6 from "../../../assets/images/group8.png";
-import Product7 from "../../../assets/images/group9.png";
-import Product8 from "../../../assets/images/group8.png";
-import MainProduct from "../../../Components/MainProducts/MainProducts";
-import { allProductsData } from "../../../TestData/allProductsData";
+const ProductsSlide = () => {
+  const [current, setCurrent] = useState(0);
 
-const items = [
-  { id: 1, prdImg: Product1, price: "$10", name: "Hair Care" },
-  { id: 2, prdImg: Product2, price: "$20", name: "Kitchen Use" },
-  { id: 3, prdImg: Product3, price: "$30", name: "Auto Maintainance" },
-  { id: 4, prdImg: Product4, price: "$40", name: "Laundry" },
-  { id: 5, prdImg: Product5, price: "$50", name: "Home Hygiene" },
-  { id: 6, prdImg: Product6, price: "$60", name: "Body Care" },
-  { id: 7, prdImg: Product7, price: "$70", name: "Unlabeled" },
-];
-
-export const ProductsSlide = (props) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    {
-      loop: true,
-      skipSnaps: false, // Important so it doesn't snap weird at the edges
-      align: "center", // Center the active slide nicely
-    },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
-
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi);
-  const {
-    prevBtnDisabled,
-    nextBtnDisabled,
-    onPrevButtonClick,
-    onNextButtonClick,
-  } = usePrevNextButtons(emblaApi);
-  const { autoplayIsPlaying, toggleAutoplay, onAutoplayButtonClick } =
-    useAutoplay(emblaApi);
-
+  const next = () => setCurrent((prev) => (prev + 1) % images.length);
+  const prev = () =>
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
   useEffect(() => {
-    if (!emblaApi) return;
-
-    const updateSlideStyles = () => {
-      const slides = emblaApi.slideNodes();
-      const scrollSnapList = emblaApi.scrollSnapList();
-      const scrollProgress = emblaApi.scrollProgress();
-      const selectedIndex = emblaApi.selectedScrollSnap();
-
-      slides.forEach((slideNode, index) => {
-        const diffToTarget = scrollSnapList[index] - scrollProgress;
-        const distance = Math.abs(diffToTarget);
-
-        // 🎯 Make middle slide large, others smaller
-        const scale =
-          index === selectedIndex ? 1.25 - Math.min(distance, 1) * 0.1 : 0.7; // <<< non-selected slides smaller
-
-        const translateY =
-          index === selectedIndex ? -20 * (1 - Math.min(distance, 1)) : 0; // <<< only focus slide moves slightly up
-
-        slideNode.style.transform = `scale(${scale}) translateY(${translateY}px)`;
-        slideNode.style.transition = "transform 0.5s ease"; // Smooth transition
-      });
-    };
-
-    emblaApi.on("scroll", updateSlideStyles);
-    emblaApi.on("reInit", updateSlideStyles);
-    updateSlideStyles(); // Run once initially
-
-    return () => {
-      emblaApi.off("scroll", updateSlideStyles);
-      emblaApi.off("reInit", updateSlideStyles);
-    };
-  }, [emblaApi]);
-
+    const interval = setInterval(next, 3000);
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
   return (
-    <div className="embla col-md-12">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {items.map((item) => (
-            <div className="embla__slide" key={item.id}>
-              <Product {...item} />
-            </div>
-          ))}
-        </div>
+    <div style={styles.container}>
+      <button onClick={prev} style={styles.button}>
+        ◀
+      </button>
+
+      <div style={styles.slider}>
+        {images.map((color, index) => {
+          // Position relative to current
+          const offset = (index - current + images.length) % images.length;
+
+          // Normalize offset to [-2, -1, 0, 1, 2]
+          let position = offset;
+          if (offset > Math.floor(images.length / 2)) {
+            position = offset - images.length;
+          }
+
+          return (
+            <motion.div
+              key={index}
+              initial={false}
+              animate={{
+                x: position * 400, // horizontal spacing
+                scale: position === 0 ? 1.3 : 0.7, // middle bigger
+                opacity: Math.abs(position) > 1 ? 0 : 1, // hide distant ones
+                zIndex: position === 0 ? 2 : 1, // middle on top
+              }}
+              transition={{ duration: 0.5 }}
+              style={{
+                ...styles.box,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundImage: `url(${
+                  backgrounds[index % backgrounds.length]
+                })`,
+              }}
+            >
+              <img
+                width="100%"
+                src={images[index % images.length]} // pair images with colors
+                alt="products"
+                style={styles.image}
+              />
+            </motion.div>
+          );
+        })}
       </div>
 
-      <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton
-            onClick={() => onAutoplayButtonClick(onPrevButtonClick)}
-            disabled={prevBtnDisabled}
+      <button onClick={next} style={styles.button}>
+        ▶
+      </button>
+      <div style={styles.dots} className="dots">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            onClick={() => setCurrent(index)}
+            style={{
+              ...styles.dot,
+              background: current === index ? "#333" : "#bbb",
+              transform: current === index ? "scale(1.2)" : "scale(1)",
+            }}
           />
-          <NextButton
-            onClick={() => onAutoplayButtonClick(onNextButtonClick)}
-            disabled={nextBtnDisabled}
-          />
-        </div>
-
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() =>
-                onAutoplayButtonClick(() => onDotButtonClick(index))
-              }
-              className={`embla__dot${
-                index === selectedIndex ? " embla__dot--selected" : ""
-              }`}
-            />
-          ))}
-        </div>
-
-        <button className="embla__play" onClick={toggleAutoplay} type="button">
-          {autoplayIsPlaying ? <FaPause /> : <FaPlay />}
-        </button>
+        ))}
       </div>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh",
+    // background: "#310303ff",
+    gap: "1rem",
+  },
+  slider: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "80%",
+    height: "1000px",
+    position: "relative",
+    overflow: "hidden",
+  },
+  box: {
+    position: "absolute",
+    width: "600px",
+    height: "500px",
+    borderRadius: "12px",
+    boxShadow: "0 6px 12px rgba(0,0,0,0.2)",
+    padding: "40px",
+  },
+
+  button: {
+    fontSize: "2rem",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+  },
+
+  dots: {
+    display: "flex",
+    gap: "8px",
+    marginTop: "10px",
+  },
+  dot: {
+    width: "12px",
+    height: "12px",
+    borderRadius: "50%",
+    background: "#bbb",
+    cursor: "pointer",
+    transition: "all 0.3s ease",
+  },
 };
 
 export default ProductsSlide;
