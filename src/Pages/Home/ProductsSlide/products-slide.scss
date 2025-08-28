@@ -1,5 +1,11 @@
-.dots{
+.prd-slide-cont{
     @media screen and (max-width:820px){
-        display:none !important
+       height:50vh !important
+    }
+}
+.mobile-dots{
+    @media screen and (max-width:820px){
+       margin-top:-150px !important;
+       display:none !important
     }
 }
