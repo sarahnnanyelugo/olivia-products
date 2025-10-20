@@ -36,7 +36,6 @@
 
   img {
     position: relative;
-
     border-radius: 10px;
   }
   h6 {
@@ -50,16 +49,6 @@
   height: auto;
   overflow: hidden;
 
-  .product-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
-    opacity: 1;
-  }
 
   .hidden {
     opacity: 0;
@@ -89,11 +78,12 @@
 }
 .product-container {
   position: relative;
-  background: rgb(209, 199, 199);
-  padding-bottom:30px;
+  // background: rgb(209, 199, 199);
+  // padding-bottom:30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%; /* Ensures the component occupies the expected space */
   margin: auto;
+  height:500px;
 }
 
 .image-wrapper {
@@ -101,14 +91,14 @@
   width: 100%;
   padding-top: 100%; /* Maintain aspect ratio */
   overflow: hidden;
-
+height: 500px;
   .product-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+   height: 500px;
+    object-fit:cover;
     transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
   }
 

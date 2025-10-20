@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Product1 from "../../../assets/images/group2-cli.png";
-import Product2 from "../../../assets/images/hand-wash-clip.png";
+import Product1 from "../../../assets/images/group.png";
+import Product2 from "../../../assets/images/handwash-clip.png";
 import Product3 from "../../../assets/images/tile-group.png";
-import Product4 from "../../../assets/images/group2-clip.png";
+import Product4 from "../../../assets/images/group1.png";
 import Bg from "../../../assets/images/flower5.jpg";
 import Bg2 from "../../../assets/images/flower2.jpeg";
 import Bg3 from "../../../assets/images/flower4.webp";
@@ -219,7 +219,6 @@ const styles = {
     alignItems: "center",
     gap: "12px",
     zIndex: 3,
-    
   },
 };
 

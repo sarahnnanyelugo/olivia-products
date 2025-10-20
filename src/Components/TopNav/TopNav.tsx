@@ -103,12 +103,7 @@ export const TopNav = () => {
                       Car Wash
                     </NavLink>
                   </Dropdown.Item>{" "}
-                  <Dropdown.Item href="#/action-3">
-                    {" "}
-                    <NavLink to={"/collections?category=liquid-soap"}>
-                     Liquid Soap
-                    </NavLink>
-                  </Dropdown.Item>{" "}
+                  
                   <Dropdown.Item href="#/action-3">
                     {" "}
                     <NavLink to={"/collections?category=toilet-Wash"}>
@@ -125,7 +120,17 @@ export const TopNav = () => {
                   <Dropdown.Item href="#/action-3">
                     {" "}
                     <NavLink to={"/collections?category=personal-care"}>
-                      Personal Care
+                     Skin Care
+                    </NavLink>
+                  </Dropdown.Item> <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=tile-cleaner"}>
+                    Tile Cleaner
+                    </NavLink>
+                  </Dropdown.Item> <Dropdown.Item href="#/action-3">
+                    {" "}
+                    <NavLink to={"/collections?category=fabric-wash"}>
+                     Fabric Wash
                     </NavLink>
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -240,9 +245,7 @@ export const TopNav = () => {
                     <li onClick={handleClose}>   <NavLink to={"/collections?category=car-wash"}>
                       Car Wash
                     </NavLink></li>
-                    <li onClick={handleClose}>   <NavLink to={"/collections?category=liquid-soap"}>
-                      Liquid Soap
-                    </NavLink></li>
+                   
                     <li onClick={handleClose}><NavLink to={"/collections?category=toilet-Wash"}>
                       Toilet Wash
                     </NavLink></li>
@@ -250,7 +253,12 @@ export const TopNav = () => {
                    Window Cleaner
                     </NavLink></li>
                     <li onClick={handleClose}><NavLink to={"/collections?category=personal-care"}>
-                      Personal Care
+                     Skin Care
+                    </NavLink></li> 
+                    <li onClick={handleClose}><NavLink to={"/collections?category=tile-cleaner"}>
+                     Tile / Floor Cleaner
+                    </NavLink></li> <li onClick={handleClose}><NavLink to={"/collections?category=fabric-wash"}>
+                    Fabric Wash
                     </NavLink></li>
                    
            </ul>
