@@ -39,13 +39,23 @@ import AF11 from "../assets/images/air11.png";
 import Toilet from "../assets/images/toilet-cleaner.png";
 import Toilet2 from "../assets/images/toilet-cleaner2.png";
 import Toilet3 from "../assets/images/toilet-cleaner3.png";
-import Dish3 from "../assets/images/dish-wash3.png";
+import Dish3 from "../assets/images/dish3.png";
+import Dish33 from "../assets/images/dish33.png";
+import Dish333 from "../assets/images/dish333.png";
+import Dish2 from "../assets/images/dish2.png";
+import Dish22 from "../assets/images/dish22.png";
+import Dish222 from "../assets/images/dish222.png";
 import Dish1 from "../assets/images/dish1.png";
 import Dish11 from "../assets/images/dish11.png";
 import Dish111 from "../assets/images/dish111.png";
-import Dish4 from "../assets/images/dish-wash4.png";
-import Dish5 from "../assets/images/dish-wash5.png";
-import Dish6 from "../assets/images/dish-wash6.png"
+import Dish4 from "../assets/images/dish4.png";
+import Dish44 from "../assets/images/dish44.png";
+import Dish5 from "../assets/images/dish5.png";
+import Dish55 from "../assets/images/dish55.png";
+import Dish6 from "../assets/images/dish6.png"
+import Dish66 from "../assets/images/dish66.png"
+import Dish666 from "../assets/images/dish666.png"
+import Dish6666 from "../assets/images/dish6666.png"
 import Hair7 from "../assets/images/hair7.png";
 import Hair77 from "../assets/images/hair77.png";
 import Hair8 from "../assets/images/hair8.png";
@@ -295,80 +305,80 @@ export const allProductsData = [
 ///////Below is for dishwash
 
 {
-  firstImg: product3,
-  hoverImg: product3,
+  firstImg: Dish1,
+  hoverImg: Dish11,
   id: 15,
   heading: "Dish Wash",
   price: 5000,
   rating: 4.0, // Added rating
   name: "Olivia Lemon",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
-  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  additionalImgs: [Dish111],
   category: ["dish-wash", "liquid-soap"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 },
 {
-  firstImg: product4,
-  hoverImg: product4,
+  firstImg:Dish2,
+  hoverImg: Dish22,
   id: 16,
   heading: "Dish Wash",
   price: 5000,
   rating: 4.0, // Added rating
   name: "Olivia Lemon",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
-  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  additionalImgs: [Dish222],
   category: ["dish-wash", "liquid-soap"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish5,
-  hoverImg: Dish5,
+  hoverImg: Dish55,
   id: 17,
   heading: "Dish Wash",
   price: 3000,
   rating: 4.0, // Added rating
   name: "Olivia Fruity",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
-  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  additionalImgs: [],
   category: ["dish-wash", "liquid-soap"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish3,
-  hoverImg: Dish3,
+  hoverImg: Dish33,
   id: 18,
   heading: "Dish Wash",
   price: 3000,
   rating: 4.0, // Added rating
   name: "Olivia Apple",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
-  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  additionalImgs: [Dish333],
   category: ["dish-wash", "liquid-soap"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish4,
-  hoverImg: Dish4,
+  hoverImg: Dish44,
   id: 19,
   heading: "Dish Wash",
   price: 2000,
   rating: 4.0, // Added rating
   name: "Olivia Plain",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
-  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  additionalImgs: [],
   category: ["dish-wash", "liquid-soap"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
   firstImg: Dish6,
-  hoverImg: Dish6,
+  hoverImg: Dish66,
   id: 20,
   heading: "Dish Wash",
   price: 12000,
   rating: 4.0, // Added rating
   name: "Olivia Fruity",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
-  additionalImgs: [product3, product4, Dish3, Dish4, Dish5, Dish6],
+  additionalImgs: [ Dish666, Dish6666],
   category: ["dish-wash", "liquid-soap"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
