@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Product1 from "../../../assets/images/group.png";
-import Product2 from "../../../assets/images/handwash-clip.png";
-import Product3 from "../../../assets/images/tile-group.png";
-import Product4 from "../../../assets/images/group1.png";
+import Product1 from "../../../assets/images/air-group-no-bg.png";
+import Product2 from "../../../assets/images/hand-group-no-bg.png";
+import Product3 from "../../../assets/images/dish-group-no-bg.png";
+import Product4 from "../../../assets/images/car-group-no-bg.png";
+import Product5 from "../../../assets/images/liquid-no-bg.png";
 import Bg from "../../../assets/images/flower5.jpg";
 import Bg2 from "../../../assets/images/flower2.jpeg";
 import Bg3 from "../../../assets/images/flower4.webp";
 import Bg4 from "../../../assets/images/flower-bg.jpg";
 import "./products-slide.scss";
-const backgrounds = [Bg, Bg2, Bg3, Bg4];
-const images = [Product1, Product2, Product3, Product4];
+const backgrounds = [Bg, Bg2, Bg3, Bg4, Bg2];
+const images = [Product1, Product2, Product3, Product4, Product5];
 const ProductsSlide = () => {
   const [current, setCurrent] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -76,12 +77,14 @@ const ProductsSlide = () => {
                 })`,
               }}
             >
-              <img
-                width="100%"
-                src={images[index % images.length]}
-                alt="products"
-                style={styles.image}
-              />
+              <center>
+                <img
+                  width="80%"
+                  src={images[index % images.length]}
+                  alt="products"
+                  style={styles.image}
+                />
+              </center>
             </motion.div>
           );
         })}
@@ -159,20 +162,22 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     width: "80%",
-    height: "700px",
+    height: "950px",
     position: "relative",
     overflow: "hidden",
   },
   box: {
     position: "absolute",
     width: "600px",
-    height: "500px",
+    minHeight: "450px",
     borderRadius: "12px",
     boxShadow: "0 6px 12px rgba(0,0,0,0.2)",
-    padding: "40px",
+    // padding: "5px",
+    marginTop: "50px",
   },
   image: {
-    objectFit: "contain",
+    objectFit: "cover",
+    alignItems: "center",
   },
   button: {
     fontSize: "2rem",
