@@ -10,7 +10,7 @@ import Bg2 from "../../../assets/images/flower2.jpeg";
 import Bg3 from "../../../assets/images/flower4.webp";
 import Bg4 from "../../../assets/images/flower-bg.jpg";
 import "./products-slide.scss";
-const backgrounds = [Bg, Bg2, Bg3, Bg4, Bg2];
+const backgrounds = [Bg4, Bg2, Bg, Bg3, Bg2];
 const images = [Product1, Product2, Product3, Product4, Product5];
 const ProductsSlide = () => {
   const [current, setCurrent] = useState(0);
