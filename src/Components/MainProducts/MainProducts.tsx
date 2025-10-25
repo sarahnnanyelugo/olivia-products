@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Offcanvas } from "react-bootstrap"; // Assuming you're using Bootstrap's Offcanvas component
 import { Link } from "react-router-dom";
 import { Desktop } from "../../Utils/mediaQueries";
@@ -35,6 +35,14 @@ const MainProduct: React.FC<ProductProps> = ({
   const handleAddToCart = () => {
     onAddToCart({ id, firstImg, hoverImg, productPrice, productName, rating });
   };
+ const [inViewParagraph, setInViewParagraph] = useState(false);
+  const paragraphRef = useRef(null);
+
+
+
+
+
+
 
   return (
     <>

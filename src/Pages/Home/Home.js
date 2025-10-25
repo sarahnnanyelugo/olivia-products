@@ -40,14 +40,15 @@ export const Home = () => {
         </div>
         <div className="col-md-6">
           <p>
-            As the foremost personal care product manufacturers in Nigeria, our
-            product portfolio covers almost all the hygiene and healthcare
-            essentials for your daily lives. At Aspira, our dream is to ‘Develop
-            a Healthier Nation’. By manufacturing a wide range of affordable and
-            superior quality products that are suitable for the entire family –
-            from soaps for babies to adults with sensitive skin; oral care
-            products, luxurious beauty soaps to enhance your skin, and jellies
-            to protect your skin.
+            At Olivia Products, we take pride in redefining everyday care
+            through innovation, quality, and trust. Our growing portfolio spans
+            across hair care, skin care, dish wash, fabric cleaner, tile and
+            toilet wash, car wash, window cleaner, and air fresheners—each
+            crafted to bring freshness, brilliance, and protection to your daily
+            life. Guided by a commitment to excellence, we create products that
+            combine powerful performance with gentle care, ensuring every Olivia
+            experience leaves your home, your car, and your family feeling
+            renewed.
           </p>
           <Link to={"/about-us"}>
             {" "}
@@ -61,17 +62,19 @@ export const Home = () => {
         <center>
           <div className="col-md-5 home-prd">
             <h6>OUR PRODUCTS</h6>
-            <h2>We touch millions of lives every day!</h2>
+            <h2>Millions trust our touch. Every day begins with Olivia.</h2>
             <p>
-              All of our products go through stringent quality control measures,
-              and their efficacy, safety, and Purity, are all well established.
-              A product leaves our factory gates only when we are 100% satisfied
-              about its quality. It’s no surprise therefore, that Aspira
-              products are the most popular personal care products in Nigeria.
+              At Olivia Products, quality is never compromised. Every item we
+              produce undergoes rigorous testing to ensure purity, safety, and
+              exceptional performance. From formulation to packaging, each
+              product meets the highest standards before leaving our factory —
+              because we believe our customers deserve nothing less than
+              perfection. It’s this unwavering commitment to excellence that has
+              made Olivia Products a trusted name in homes across Nigeria.
             </p>
+            <h5>From homes to hearts — Olivia makes a difference every day.</h5>
           </div>
         </center>
-        
         <SampleSlide />
       </div>
 
@@ -127,11 +130,12 @@ export const Home = () => {
             Make A Difference With <span>Olivia Products</span>
           </h2>
           <p>
-            We are committed to positively impact the daily lives of people, and
-            to empower communities through our corporate social responsibility
-            activities. Our main focus is on helping the youth by providing
-            adequate support to develop their skills, and improving the
-            education system.
+            At Olivia Products, making a difference goes beyond what we create —
+            it’s about how we care. We’re dedicated to enriching everyday lives
+            and uplifting communities through purposeful action. Our focus
+            remains on empowering the youth, nurturing talent, and supporting
+            education — helping tomorrow’s leaders build brighter futures, one
+            opportunity at a time.
           </p>
           <Link to={"/our-mission"}>
             Our Mission <FaAngleRight />
@@ -148,7 +152,7 @@ export const Home = () => {
           <div className="col-md-6">
             <h3>Get To Know More About Us From The Media</h3>
             <p>
-              Get to know more about Aspira – the leading personal care product
+              Get to know more about Olivia – the leading personal care product
               suppliers in Nigeria – with news and stories appearing in
               prominent media.
             </p>
