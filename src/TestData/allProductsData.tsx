@@ -126,14 +126,14 @@ export const allProductsData = [
     bestSeller:true
   },
   {
-    firstImg: product1,
-    hoverImg: product2,
+    firstImg: AF1,
+    hoverImg:AF11,
     id: 2,
     heading: "Air Freshener",
     price: 10000,
     rating: 4.8, // Added rating
     name: "Air Freshener",
-    additionalImgs: [AF1, AF2, AF3, AF4,  ],
+    additionalImgs: [   ],
     category: ["", ""],
     detail:"what we sell 2",
     bestSeller:true
