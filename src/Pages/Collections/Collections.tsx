@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+// Collections.tsx
+import React, { useMemo, useState } from "react";
 import { ProductsHolder } from "../Home/ProductsHolder";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./collection.scss";
 import SelectDrop from "../../Components/SelectDrop/SelectDrop";
 import PurchaseType from "../../Components/PurchaseType/PurchaseType";
@@ -9,62 +10,71 @@ import { allProductsData } from "../../TestData/allProductsData";
 export const Collections: React.FC = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const category = params.get("category") || ""; // Get category from URL
-// Get products matching the category
-const filteredProducts =
-  category === "" || category === "*"
-    ? allProductsData
-    : allProductsData.filter(product =>
-        product.category.some(
-          cat => cat.toLowerCase() === category.toLowerCase()
-        )
-      );
+  const rawCategory = (params.get("category") || "").trim();
+  const categoryLC = rawCategory.toLowerCase();
 
-  const [sortType, setSortType] = useState("price-asc"); // Default sort type
-  const matchingProduct = allProductsData.find(product =>
-    product.category.some(
-      cat => cat.toLowerCase() === category.toLowerCase()
-    )
+  const [sortType, setSortType] = useState("price-asc");
+
+  // useMemo to avoid recomputing on every render
+  const filteredProducts = useMemo(() => {
+    if (rawCategory === "" || rawCategory === "*") return allProductsData;
+    return allProductsData.filter(p =>
+      (p.category || []).some(c => c.toLowerCase() === categoryLC)
+    );
+  }, [rawCategory, categoryLC]);
+
+  const matchingProduct = useMemo(
+    () =>
+      allProductsData.find(p =>
+        (p.category || []).some(c => c.toLowerCase() === categoryLC)
+      ),
+    [categoryLC]
   );
-  
-  const categoryHeading = matchingProduct?.heading || "Shop All";
-  const categoryIntro = matchingProduct?.detail || "From sparkling dishes to nourished skin, Olivia delivers everyday essentials crafted for a cleaner home, a fresher space, and a more beautiful you.";
+
+  const categoryHeading =
+    matchingProduct?.heading ||
+    (rawCategory ? `${rawCategory} Collection` : "Shop All");
+
+  const categoryIntro =
+    matchingProduct?.detail ||
+    "From sparkling dishes to nourished skin, Olivia delivers everyday essentials crafted for a cleaner home, a fresher space, and a more beautiful you.";
+
   const itemCount = filteredProducts.length;
 
   return (
     <div className="col-md-12 collection-section line">
       <h2>{categoryHeading}</h2>
 
-      <p className="col-md-5 animate-charcter lineUp">
-      {categoryIntro}
-      </p>
+      <p className="col-md-5 animate-charcter lineUp">{categoryIntro}</p>
+
       <div className="d-md-flex">
-        {" "}
-        <p style={{ flexGrow: 1}} className="prd-figure">
-    {itemCount} Item{itemCount !== 1 ? "s" : ""}
-  </p>
-     <div className="d-flex">   <div
-          className="sort-bar  col-md-"
-          style={{
-            borderRight: "solid 1px #e7e7e7",
-            borderRadius: "none",
-            marginRight: "10px",
-          }}
-        >
-          {" "}
-          <PurchaseType />
+        <p style={{ flexGrow: 1 }} className="prd-figure">
+          {itemCount} Item{itemCount !== 1 ? "s" : ""}
+        </p>
+
+        <div className="d-flex">
+          <div
+            className="sort-bar col-md-"
+            style={{
+              borderRight: "solid 1px #e7e7e7",
+              marginRight: "10px",
+            }}
+          >
+            <PurchaseType />
+          </div>
+
+          <div
+            className="sort-bar col-md-"
+            style={{
+              borderRight: "solid 1px #e7e7e7",
+              marginRight: "10px",
+            }}
+          >
+            <SelectDrop />
+          </div>
         </div>
-        <div
-          className="sort-bar  col-md-"
-          style={{
-            borderRight: "solid 1px #e7e7e7",
-            borderRadius: "none",
-            marginRight: "10px",
-          }}
-        >
-          <SelectDrop />
-        </div></div>
-        <div className="sort-bar  col-md-2">
+
+        <div className="sort-bar col-md-2">
           <select
             value={sortType}
             onChange={(e) => setSortType(e.target.value)}
@@ -77,9 +87,14 @@ const filteredProducts =
           </select>
         </div>
       </div>
+
       <hr />
 
-      <ProductsHolder category={category} viewType="grid" sortType={sortType} />
+      <ProductsHolder
+        category={rawCategory}
+        viewType="grid"
+        sortType={sortType}
+      />
     </div>
   );
 };

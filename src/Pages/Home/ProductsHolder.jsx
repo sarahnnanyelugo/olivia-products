@@ -1,6 +1,6 @@
 // ProductsHolder.jsx
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import CartOffcanvas from "../../Components/CartList/CartList";
 import MainProduct from "../../Components/MainProducts/MainProducts";
 import Carousel from "react-bootstrap/Carousel";
@@ -136,16 +136,7 @@ const filteredProducts =
           ))}
         </div>
 
-        {/* Cart Offcanvas */}
-        {/* <CartOffcanvas
-          show={setIsOffCanvasOpen}
-          onClose={() => setIsOffCanvasOpen(false)}
-          cart={cart}
-          onRemoveFromCart={handleRemoveFromCart}
-          onClearCart={handleClearCart}
-          onIncrementQuantity={incrementQuantity}
-          onDecrementQuantity={decrementQuantity}
-        /> */}
+        
       </div>
     );
   }
@@ -187,7 +178,7 @@ const filteredProducts =
                   padding: "10px",
                 }}
               >
-                <MainProduct
+                  <MainProduct
                   productName={product.name}
                   productPrice={product.price}
                   firstImg={product.firstImg}
@@ -195,6 +186,7 @@ const filteredProducts =
                   id={product.id}
                   onAddToCart={addToCart}
                 />
+              
               </div>
             ))}
           </div>
