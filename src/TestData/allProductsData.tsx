@@ -233,7 +233,7 @@ export const allProductsData = [
   moreDetail:"Infused with the playful sweetness of banana, the crisp zest of citrus, and the juicy notes of grape, Olivia TropiGlow Hand Wash brings tropical radiance to your daily routine. Its silky lather leaves hands feeling clean, soft, and delicately scented long after every wash. Each drop is a refreshing escape — bright, fruity, and irresistibly uplifting. With TropiGlow, every wash feels like a little holiday for your hands.",
   additionalImgs: [ HandWash111],
   tagline:"A burst of sunshine in every wash.",
-  category: ["hand-soap", "liquid-soap"],
+  category: ["hand-soap"],
   "flavours": [
       { "id": 1, "name": "🍌 Banana" },
       { "id": 2, "name": "🍊 Citrus" },
@@ -254,7 +254,7 @@ export const allProductsData = [
   moreDetail:"Brimming with the crisp scent of apple, the sweetness of ripe strawberry, and the cooling touch of watermelon, Olivia FreshBurst Hand Wash turns an everyday wash into a moment of fruity delight. Its rich lather cleanses gently while leaving behind a soft, lingering fragrance that feels both playful and pure. Each wash awakens your senses with a rush of freshness and care. With FreshBurst, clean hands have never felt this invigorating.",
 tagline:"Juicy freshness at your fingertips.",
   additionalImgs: [HandWash222, HandWash22],
-  category: ["hand-soap", "liquid-soap"],
+  category: ["hand-soap"],
   "flavours": [
       { "id": 1, "name": "🍎 Apple" },
       { "id": 2, "name": "🍓 Strawberry" },
@@ -276,7 +276,7 @@ tagline:"Juicy freshness at your fingertips.",
 tagline:"Daily tropical freshness that lingers.",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash33,],
-  category: ["hand-soap", "liquid-soap"],
+  category: ["hand-soap"],
    "flavours": [
       { "id": 1, "name": "🥭 Papaya" },
       { "id": 2, "name": "🍍Pineapple" },
@@ -298,7 +298,7 @@ tagline:"Daily tropical freshness that lingers.",
 tagline:"Cool. Clean. Completely refreshing.",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash444],
-  category: ["hand-soap", "liquid-soap"],
+  category: ["hand-soap"],
    "flavours": [
       { "id": 1, "name": "🍇 Grapes" },
       { "id": 2, "name": "🍊 Citrus" },
@@ -320,7 +320,7 @@ tagline:"Cool. Clean. Completely refreshing.",
   moreDetail:"Blending the cooling calm of cucumber, the tropical sweetness of mango, and the gentle allure of blueberries, Olivia VelvetBloom Hand Wash wraps your hands in a soft, luxurious cleanse. Its rich lather refreshes and hydrates, leaving skin velvety-smooth and delicately scented. Each wash feels like a touch of spa luxury — balanced, soothing, and irresistibly fresh. With VelvetBloom, everyday care becomes a little act of indulgence.",
 tagline:"Where freshness meets indulgence.",
   additionalImgs: [],
-  category: ["hand-soap", "liquid-soap"],
+  category: ["hand-soap"],
   color:"#0079ec",
    "flavours": [
       { "id": 1, "name": " 🥒 Cucumber" },
@@ -343,7 +343,7 @@ tagline:"Where freshness meets indulgence.",
 tagline:"Pure softness in every touch.",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash666],
-  category: ["hand-soap", "liquid-soap"],
+  category: ["hand-soap"],
    "flavours": [
       { "id": 1, "name": "🥥 Coconut" },
       { "id": 2, "name": "🌿 Sour Sop" },
@@ -364,7 +364,7 @@ tagline:"Pure softness in every touch.",
   name: "Olivia Lemon",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [Dish111],
-  category: ["dish-wash", "liquid-soap"],
+  category: ["dish-wash"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 },
 {
@@ -377,7 +377,7 @@ tagline:"Pure softness in every touch.",
   name: "Olivia Lemon",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [Dish222],
-  category: ["dish-wash", "liquid-soap"],
+  category: ["dish-wash"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
@@ -390,7 +390,7 @@ tagline:"Pure softness in every touch.",
   name: "Olivia Fruity",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [],
-  category: ["dish-wash", "liquid-soap"],
+  category: ["dish-wash"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
@@ -403,7 +403,7 @@ tagline:"Pure softness in every touch.",
   name: "Olivia Apple",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [Dish333],
-  category: ["dish-wash", "liquid-soap"],
+  category: ["dish-wash"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
@@ -416,7 +416,7 @@ tagline:"Pure softness in every touch.",
   name: "Olivia Plain",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [],
-  category: ["dish-wash", "liquid-soap"],
+  category: ["dish-wash"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },{
@@ -429,7 +429,7 @@ tagline:"Pure softness in every touch.",
   name: "Olivia Fruity",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [ Dish666, Dish6666],
-  category: ["dish-wash", "liquid-soap"],
+  category: ["dish-wash"],
   moreDetail:"Tough on grease but gentle on your hands, Olivia Dish Wash cuts through the most stubborn food residue, leaving your dishes sparkling clean. Powered by lemon extract and plant-based surfactants, it delivers a streak-free shine while being eco-friendly and safe on skin. One drop goes a long way — making dishwashing feel less like a chore and more like a breeze."
 
 },

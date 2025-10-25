@@ -1,171 +1,10 @@
-// import React, { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
-// import { allProductsData } from "../../TestData/allProductsData";
-// import { useCart } from "../../CartContext";
-// import "./view-product.scss";
 
-// export const ViewProductPage: React.FC = () => {
-//   const { id } = useParams(); // Get the product id from the URL
-//   const [product, setProduct] = useState<any>(null);
-//   const [activeImage, setActiveImage] = useState(0);
-//   const [transitionDirection, setTransitionDirection] = useState<
-//     "left" | "right"
-//   >("right");
-//   const [quantity, setQuantity] = useState(1); // Add quantity state
-
-//   const { addToCart } = useCart(); // Use addToCart from CartContext
-
-//   useEffect(() => {
-//     const selectedProduct = allProductsData.find((p) => p.id === Number(id));
-//     setProduct(selectedProduct);
-//   }, [id]);
-
-//   if (!product) {
-//     return <div>Loading...</div>;
-//   }
-
-//   const images = [
-//     product.firstImg,
-//     product.hoverImg,
-//     ...(product.additionalImgs || []),
-//   ];
-
-//   const handleAddToCart = () => {
-//     addToCart({
-//       id: product.id,
-//       productName: product.name,
-//       productPrice: product.price,
-//       firstImg: product.firstImg,
-     
-//       quantity: quantity, // Pass the updated quantity
-//     });
-//   };
-
-//   const handleIncrement = () => {
-//     setQuantity((prevQuantity) => prevQuantity + 1);
-//   };
-
-//   const handleDecrement = () => {
-//     if (quantity > 1) {
-//       setQuantity((prevQuantity) => prevQuantity - 1);
-//     }
-//   };
-
-//   return (
-//     <>
-//       <div className="product-detail d-md-flex col-md-10 offset-md-1">
-//         <div className="product-images col-md-6 d-md-flex">
-//           <div className="image-thumbnails col-2">
-//             {images.map((img, index) => (
-//               <img
-//                 key={index}
-//                 src={img}
-//                 alt={`Thumbnail ${index + 1}`}
-//                 className={`thumbnail ${index === activeImage ? "active" : ""}`}
-//                 onClick={() => {
-//                   setTransitionDirection(
-//                     index > activeImage ? "right" : "left"
-//                   );
-//                   setActiveImage(index);
-//                 }}
-//               />
-//             ))}
-//           </div>
-//           <div className="main-carousel col-10">
-//             <div
-//               className={`image-container ${transitionDirection}`}
-//               style={{ transform: `translateX(-${activeImage * 100}%)` }}
-//             >
-//               {images.map((img, index) => (
-//                 <img
-//                   key={index}
-//                   src={img}
-//                   alt=""
-//                   className="main-image"
-//                   width="100%"
-//                 />
-//               ))}
-//             </div>
-//             <button
-//               className="prev-arrow"
-//               style={{ height: "40px", width: "40px", fontSize: "14px" }}
-//               onClick={() =>
-//                 setActiveImage(
-//                   (prev) => (prev - 1 + images.length) % images.length
-//                 )
-//               }
-//             >
-//               &#10094;
-//             </button>
-//             <button
-//               style={{ height: "40px", width: "40px", fontSize: "14px" }}
-//               className="next-arrow"
-//               onClick={() =>
-//                 setActiveImage((prev) => (prev + 1) % images.length)
-//               }
-//             >
-//               &#10095;
-//             </button>
-//           </div>
-//         </div>
-
-//         {/* Product Details Section */}
-//         <div className="product-info col-md-5 offset-3 offset-md-0">
-//           <h1>Olivia <span style={{color:product.color}}>{product.name}</span>{product.sufix}</h1>
-//           <p>{product.tagline}</p>
-//           <h5>Product Details :</h5>
-//           <p>{product.moreDetail}</p>
-
-//           <h5>Fruity Ingredients:</h5>
-
-        
-     
-//         <ul className="list-unstyled">
-//   {(product.flavours ?? []).map((item: any) => (
-//     <li key={item.id}>{item.name}</li>
-//   ))}
-// </ul>
-
-    
- 
-//           <div className="quantity-controls">
-//             <span
-//               onClick={handleDecrement}
-//               className="decrement-btn"
-//               style={{ cursor: "pointer" }}
-//             >
-//               -
-//             </span>
-//             <span>{quantity}</span>
-//             <span
-//               onClick={handleIncrement}
-//               className="increment-btn"
-//               style={{ cursor: "pointer" }}
-//             >
-//               +
-//             </span>
-//           </div>
-         
-
-//           <button className="add-to-cart2" onClick={handleAddToCart}>
-//             Add to Cart | ${(product.price * quantity).toFixed(2)}{" "}
-//             {/* Show total */}
-//           </button>
-//           <h5>Other Varieties</h5>
-//         </div>
-//       </div>{" "}
-//     </>
-//   );
-// };
-
-
-
-// Pages/ViewProductPage/ViewProductPage.tsx
 import React, { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { allProductsData } from "../../TestData/allProductsData";
 import { useCart } from "../../CartContext";
 import "./view-product.scss";
+import { Desktop, TabletAndBelow } from "../../Utils/mediaQueries";
 
 const PRODUCT_DETAIL_BASE = "/product";
 
@@ -245,6 +84,13 @@ export const ViewProductPage: React.FC = () => {
   return (
     <>
       <div className="product-detail d-md-flex col-md-10 offset-md-1">
+        <TabletAndBelow> {primaryCategory && (
+            <div className="mt-3 all-sections">
+              <Link to={`/collections?category=${encodeURIComponent(primaryCategory)}`} style={{ color: product.color }}>
+                ← Back to all in “{primaryCategory}”
+              </Link>
+            </div>
+          )}</TabletAndBelow>
         {/* Images */}
         <div className="product-images col-md-6 d-md-flex">
           <div className="image-thumbnails col-2">
@@ -262,7 +108,14 @@ export const ViewProductPage: React.FC = () => {
             ))}
           </div>
 
-          <div className="main-carousel col-10">
+          <div className="main-carousel col-md-10">
+            <Desktop> {primaryCategory && (
+            <div className="mt-3 all-sections">
+              <Link to={`/collections?category=${encodeURIComponent(primaryCategory)}`} style={{ color: product.color }}>
+                ← Back to all in “{primaryCategory}”
+              </Link>
+            </div>
+          )}</Desktop>
             <div
               className={`image-container ${transitionDirection}`}
               style={{ transform: `translateX(-${activeImage * 100}%)` }}
@@ -293,13 +146,13 @@ export const ViewProductPage: React.FC = () => {
         </div>
 
         {/* Details */}
-        <div className="product-info col-md-5 offset-3 offset-md-0">
+        <div className="product-info col-md-5 offset-md-0 col-12">
           <h1>
             Olivia <span style={{ color: product.color }}>{product.name}</span>
             {product.sufix}
           </h1>
 
-          {product.tagline && <p>{product.tagline}</p>}
+        <em>  {product.tagline && <p>{product.tagline}</p>}</em>
 
           <h5>Product Details :</h5>
           {product.moreDetail && <p>{product.moreDetail}</p>}
@@ -310,7 +163,7 @@ export const ViewProductPage: React.FC = () => {
               <li key={item.id}>{item.name}</li>
             ))}
           </ul>
-
+<div className="d-flex"><h6>Select Quantity</h6>
           <div className="quantity-controls" aria-label="Quantity selector">
             <span onClick={dec} className="decrement-btn" style={{ cursor: "pointer" }}>
               –
@@ -319,31 +172,22 @@ export const ViewProductPage: React.FC = () => {
             <span onClick={inc} className="increment-btn" style={{ cursor: "pointer" }}>
               +
             </span>
-          </div>
+          </div></div>
 
           <button className="add-to-cart2" onClick={handleAddToCart}>
             Add to Cart | ₦{(Number(product.price) * quantity).toLocaleString()}
           </button>
 
-          {primaryCategory && (
-            <div className="mt-3">
-              <Link to={`/collections?category=${encodeURIComponent(primaryCategory)}`}>
-                ← Back to all in “{primaryCategory}”
-              </Link>
-            </div>
-          )}
-        </div>
-      </div>
 
-      {/* More in this category */}
+{/* More in this category */}
       {related.length > 0 ? (
-        <div className="col-md-10 offset-md-1 mt-4">
+        <div className="mt-4">
           <h5 className="mb-3">
             More in {primaryCategory ? `“${primaryCategory}”` : "this category"}
           </h5>
           <div className="row g-3">
             {related.map((rp) => (
-              <div className="col-6 col-md-3" key={rp.id}>
+              <div className="col-4 col-md-2" key={rp.id}>
                 <Link
                   to={`${PRODUCT_DETAIL_BASE}/${rp.id}`}
                   className="d-block text-decoration-none border rounded p-2 h-100 related-card"
@@ -362,6 +206,11 @@ export const ViewProductPage: React.FC = () => {
           </div>
         </div>
       ) : null}
+
+        </div>
+      </div>
+
+      
     </>
   );
 };
