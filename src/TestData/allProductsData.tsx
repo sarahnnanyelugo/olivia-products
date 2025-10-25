@@ -123,7 +123,12 @@ export const allProductsData = [
     category: ["" ],
     detail:"what we sell",
     moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
-    bestSeller:true
+    bestSeller:true,
+    "flavours": [
+      { "id": 1, "name": "Banana" },
+      { "id": 2, "name": "Citrus" },
+      { "id": 3, "name": "Grape" }
+    ]
   },
   {
     firstImg: AF1,
@@ -221,12 +226,19 @@ export const allProductsData = [
   id: 9,
   price: 16000,
   rating: 4.2, // Added rating
-  name: "Banana Splash",
+  name: "TropiGlow ",
+  sufix:"Hand Wash",
+  color:"#511375",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
-  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
+  moreDetail:"Infused with the playful sweetness of banana, the crisp zest of citrus, and the juicy notes of grape, Olivia TropiGlow Hand Wash brings tropical radiance to your daily routine. Its silky lather leaves hands feeling clean, soft, and delicately scented long after every wash. Each drop is a refreshing escape — bright, fruity, and irresistibly uplifting. With TropiGlow, every wash feels like a little holiday for your hands.",
   additionalImgs: [ HandWash111],
+  tagline:"A burst of sunshine in every wash.",
   category: ["hand-soap", "liquid-soap"],
-  
+  "flavours": [
+      { "id": 1, "name": "🍌 Banana" },
+      { "id": 2, "name": "🍊 Citrus" },
+      { "id": 3, "name": "🍇 Grape" }
+    ]
 },
 {
   heading: "Hand Wash",
@@ -236,12 +248,19 @@ export const allProductsData = [
   price: 16000,
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   rating: 4.2, // Added rating
-  name: "Strawberry Mix",
-  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
-
+  name: "FreshBurst ",
+  sufix:"Hand Wash",
+  color:"#b70207",
+  moreDetail:"Brimming with the crisp scent of apple, the sweetness of ripe strawberry, and the cooling touch of watermelon, Olivia FreshBurst Hand Wash turns an everyday wash into a moment of fruity delight. Its rich lather cleanses gently while leaving behind a soft, lingering fragrance that feels both playful and pure. Each wash awakens your senses with a rush of freshness and care. With FreshBurst, clean hands have never felt this invigorating.",
+tagline:"Juicy freshness at your fingertips.",
   additionalImgs: [HandWash222, HandWash22],
   category: ["hand-soap", "liquid-soap"],
-  
+  "flavours": [
+      { "id": 1, "name": "🍎 Apple" },
+      { "id": 2, "name": "🍓 Strawberry" },
+      { "id": 3, "name": "🍉 Watermelon" },
+
+    ]
 },
 {
   heading: "Hand Wash",
@@ -250,13 +269,20 @@ export const allProductsData = [
   id: 11,
   price: 16000,
   rating: 4.2, // Added rating
-  name: "Citrus Blend",
-  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
-
+  name: "Island Dew ",
+  sufix:"Hand Wash",
+  color:"#f0be0cff",
+  moreDetail:"A radiant blend of papaya, pineapple, and citrus, Olivia Island Dew Hand Wash captures the essence of sunlit shores and pure tropical energy. Its creamy lather nourishes your hands while releasing a wave of juicy, refreshing fragrance with every wash. The exotic sweetness of papaya meets the zesty spark of pineapple and citrus to leave your skin feeling soft, smooth, and revived. With Island Dew, every wash feels like a gentle ocean breeze.",
+tagline:"Daily tropical freshness that lingers.",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash33,],
   category: ["hand-soap", "liquid-soap"],
-  
+   "flavours": [
+      { "id": 1, "name": "🥭 Papaya" },
+      { "id": 2, "name": "🍍Pineapple" },
+      { "id": 3, "name": "🍊 Citrus" },
+     
+    ]
 },
 {
   heading: "Hand Wash",
@@ -265,12 +291,21 @@ export const allProductsData = [
   id: 12,
   price: 16000,
   rating: 4.2, // Added rating
-  name: "Grabe Overflow",
-  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
-
+  name: "ZestMist ",
+  sufix:"Hand Wash",
+  color:"#0aa724ff",
+  moreDetail:"Infused with the tang of citrus, the lush sweetness of grapes, and the cooling touch of kiwi and cucumber, Olivia ZestMist Hand Wash delivers a rush of pure freshness with every cleanse. Its smooth, foamy texture purifies gently while leaving your skin hydrated and delicately perfumed. The scent unfolds like a morning breeze — crisp, fruity, and irresistibly clean. With ZestMist, freshness doesn’t just wash — it awakens.",
+tagline:"Cool. Clean. Completely refreshing.",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash444],
   category: ["hand-soap", "liquid-soap"],
+   "flavours": [
+      { "id": 1, "name": "🍇 Grapes" },
+      { "id": 2, "name": "🍊 Citrus" },
+      { "id": 3, "name": "🥝 Kiwi" },
+      { "id": 4, "name": "🥒 Cucumber" },
+     
+    ]
   
 },{
   heading: "Hand Wash",
@@ -280,11 +315,19 @@ export const allProductsData = [
   price: 16000,
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   rating: 4.2, // Added rating
-  name: "Fruit Assemble",
-  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
-
+  name: " VelvetBloom ",
+  sufix:"Hand Wash",
+  moreDetail:"Blending the cooling calm of cucumber, the tropical sweetness of mango, and the gentle allure of blueberries, Olivia VelvetBloom Hand Wash wraps your hands in a soft, luxurious cleanse. Its rich lather refreshes and hydrates, leaving skin velvety-smooth and delicately scented. Each wash feels like a touch of spa luxury — balanced, soothing, and irresistibly fresh. With VelvetBloom, everyday care becomes a little act of indulgence.",
+tagline:"Where freshness meets indulgence.",
   additionalImgs: [],
   category: ["hand-soap", "liquid-soap"],
+  color:"#0079ec",
+   "flavours": [
+      { "id": 1, "name": " 🥒 Cucumber" },
+      { "id": 2, "name": " 🥭 Mango" },
+      { "id": 3, "name": "🫐 Blue berries" },
+
+    ]
   
 },{
   heading: "Hand Wash",
@@ -293,12 +336,19 @@ export const allProductsData = [
   id: 14,
   price: 16000,
   rating: 4.2, // Added rating
-  name: "Milkyway",
-  moreDetail:"Olivia Hand Wash is your first line of defense against germs, offering a luxurious lather that gently yet effectively cleanses your hands. Enriched with natural antibacterial agents like tea tree oil and aloe vera, it not only protects but also nourishes your skin, leaving your hands feeling soft, refreshed, and lightly scented after every wash. Ideal for frequent use and perfect for the whole family.",
-
+  name: "MilkyWay",
+  sufix:" Hand Wash",
+  color:"#00722e",
+  moreDetail:"Indulge in the silky fusion of coconut and soursop with Olivia MilkyWay Hand Wash, a soothing formula that pampers your skin with creamy nourishment. The tropical coconut caresses your hands with natural moisture, while the gentle sweetness of soursop refreshes and uplifts your senses. Each wash leaves your skin soft, smooth, and delicately scented — a perfect balance of purity and indulgence. With MilkyWay, clean hands feel luxuriously cared for.",
+tagline:"Pure softness in every touch.",
   detail:"Gentle on skin, ruthless on germs — protect your hands with every wash.",
   additionalImgs: [HandWash666],
   category: ["hand-soap", "liquid-soap"],
+   "flavours": [
+      { "id": 1, "name": "🥥 Coconut" },
+      { "id": 2, "name": "🌿 Sour Sop" },
+     
+    ]
   
 },
 

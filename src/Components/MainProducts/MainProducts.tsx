@@ -35,8 +35,6 @@ const MainProduct: React.FC<ProductProps> = ({
   const handleAddToCart = () => {
     onAddToCart({ id, firstImg, hoverImg, productPrice, productName, rating });
   };
- const [inViewParagraph, setInViewParagraph] = useState(false);
-  const paragraphRef = useRef(null);
 
 
 

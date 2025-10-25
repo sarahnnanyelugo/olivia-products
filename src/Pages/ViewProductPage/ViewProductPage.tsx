@@ -36,6 +36,7 @@ export const ViewProductPage: React.FC = () => {
       productName: product.name,
       productPrice: product.price,
       firstImg: product.firstImg,
+     
       quantity: quantity, // Pass the updated quantity
     });
   };
@@ -110,9 +111,23 @@ export const ViewProductPage: React.FC = () => {
 
         {/* Product Details Section */}
         <div className="product-info col-md-5 offset-3 offset-md-0">
-          <h1>{product.name}</h1>
+          <h1>Olivia <span style={{color:product.color}}>{product.name}</span>{product.sufix}</h1>
+          <p>{product.tagline}</p>
           <h5>Product Details :</h5>
           <p>{product.moreDetail}</p>
+
+          <h5>Flavours:</h5>
+
+        
+     
+        <ul className="list-unstyled">
+  {(product.flavours ?? []).map((item: any) => (
+    <li key={item.id}>{item.name}</li>
+  ))}
+</ul>
+
+    
+ 
           <div className="quantity-controls">
             <span
               onClick={handleDecrement}
