@@ -116,7 +116,7 @@ export const ViewProductPage: React.FC = () => {
           <h5>Product Details :</h5>
           <p>{product.moreDetail}</p>
 
-          <h5>Flavours:</h5>
+          <h5>Fruity Flavours:</h5>
 
         
      
