@@ -590,11 +590,14 @@ tagline:"Strength, shine, and a touch of natural depth.",
   price: 12000,
   rating: 4.5, // Added rating
   heading: "Hair Care",
-  name: "Styling Gel",
+  name: "FlexHold ",
+  sufix:"Styling Gel",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair44, Hair4444],
   category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+  tagline:"Style with strength. Shine with confidence.",
+  moreDetail:"Designed for precision and perfection, Olivia FlexHold Styling Gel gives you lasting control without the crunch. Its lightweight, non-flaking formula defines every strand while keeping your hair soft, glossy, and touchable. Whether sleek, sculpted, or natural, your style stays effortlessly in place all day. With FlexHold, every look begins and ends with confidence and shine.",
+color:"#2850c7ff",
 
 },{
   firstImg: Hair7,
@@ -603,11 +606,13 @@ tagline:"Strength, shine, and a touch of natural depth.",
   price: 12000,
   rating: 4.5, // Added rating
   heading: "Hair Care",
-  name: "Hair Food",
+  name: "MoistureGold",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [],
+      tagline:"Feed your hair. Feel the softness",
+color:"#caa303",
   category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
+  moreDetail:"Enriched with natural emollients and vitamins, Olivia MoistureGold Hair Food delivers deep hydration that revives even the driest strands. Its creamy texture melts into your scalp, nourishing from within to restore softness, strength, and natural shine. Perfect for daily use, it keeps your hair silky, manageable, and full of life. With MoistureGold, your hair stays moisturized, radiant, and effortlessly touchable every"
 
 },{
   firstImg: Hair8,
@@ -619,6 +624,7 @@ tagline:"Strength, shine, and a touch of natural depth.",
   name: "Ella Bella Shampoo",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair88,],
+    tagline:"Feed your hair. Feel the softness",
   category: ["shampoo"],
   moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
 
