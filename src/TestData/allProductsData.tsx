@@ -92,6 +92,9 @@ import Shampoo2 from "../assets/images/shampoo2.png";
 import Shampoo22 from "../assets/images/shampoo22.png";
 import Shampoo222 from "../assets/images/shampoo222.png";
 import Tile1 from "../assets/images/tile1.png";
+import Tile2 from "../assets/images/tile3.png";
+import Tile22 from "../assets/images/tile33.png";
+import Tile222 from "../assets/images/tile333.png";
 import Tile11 from "../assets/images/tile11.png";
 import Tile111 from "../assets/images/tile111.png";
 import Tile1111 from "../assets/images/tile1111.png";
@@ -205,10 +208,13 @@ export const allProductsData = [
     price: 1000,
     rating: 3.9, // Added rating
     id: 7,
-    name: "Face wash",
+    name: "CrystalView",
+    sufix:" Window Cleaner",
     additionalImgs: [Window111],
     category: ["window-cleaner"],
     detail:"what we sell7",
+    tagline:"Pure clarity. Perfect shine",
+    color:"#007dcb",
     bestSeller:true,
     moreDetail:"Achieve crystal-clear transparency with Olivia Window Cleaner — your go-to solution for streak-free glass and mirrors. Powered by vinegar extract and ammonia-free polish agents, it effortlessly removes smudges, fingerprints, and dust while being safe for indoor use. Watch your windows sparkle like never before."
 
@@ -718,11 +724,14 @@ color:"#caa303",
   heading: "Toilet Wash",
   price: 9000,
   rating: 4.3, // Added rating
-  name: "Toilet Wash",
+  name: "GermShield",
+  sufix:" Toilet Wash",
   detail:"Knock out stains and odors — for a toilet that looks and smells freshly scrubbed.",
   additionalImgs: [Toilet3],
+  tagline:"Power that protects. Freshness that lasts.",
   category: ["toilet-wash"],
-  moreDetail:"Olivia Toilet Wash destroys 99.9% of germs and limescale with every flush, leaving your toilet hygienically clean and smelling fresh. Its thick formula clings to the bowl, breaking down stains and eliminating foul odors. Fortified with active disinfectants and natural pine oil, it's a powerhouse of cleanliness for your bathroom"
+  color:"#03762d",
+  moreDetail:"Formulated with advanced antibacterial agents, Olivia GermShield Toilet Wash eliminates 99.9% of germs while leaving your toilet sparkling clean and refreshingly fragrant. Its thick, fast-acting formula clings to surfaces, cutting through stains and buildup with ease. Each wash ensures a deep hygienic clean and long-lasting freshness that redefines everyday care. With GermShield, your bathroom stays spotless, safe, and confidently clean"
 },
 {
   firstImg:SkinCare3,
@@ -731,11 +740,14 @@ color:"#caa303",
   heading: "Personal Care",
   price: 9000,
   rating: 4.3, // Added rating
-  name: "Petroluem Jelly",
+  sufix: " Petroluem Jelly",
+  name:"PureGuard",
+  tagline:"Seal in softness. Shine with care.",
   additionalImgs: [SkinCare4],
   detail:"Pamper yourself daily — premium care for skin that deserves the best.",
   category: ["personal-care"],
-  moreDetail:"Olivia Personal Care products are crafted for daily self-care rituals that feel indulgent yet purposeful. From body lotions to face cleansers, each formula is infused with botanical extracts, vitamins, and soothing essential oils to hydrate, protect, and revive your skin. Elevate your wellness routine with clean, conscious, and caring skincare."
+  color:"gold",
+  moreDetail:"Enriched with pure petroleum jelly, Olivia PureGuard locks in moisture to keep your skin soft, smooth, and beautifully protected all day. Its rich, gentle formula shields against dryness, helping heal rough patches while restoring natural radiance. Ideal for all skin types, it soothes, hydrates, and nourishes from head to toe. With PureGuard, your skin stays cared for, confident, and comforted — naturally.."
 },{
   firstImg:Tile1,
   hoverImg:Tile11,
@@ -743,11 +755,31 @@ color:"#caa303",
   heading: "Personal Care",
   price: 9000,
   rating: 4.3, // Added rating
-  name: "Tile Cleaner",
+ sufix: "Tile Cleaner",
+ name:"GleamPro",
   additionalImgs: [Tile111, Tile1111],
   detail:"Pamper yourself daily — premium care for skin that deserves the best.",
   category: ["tile-cleaner"],
-  moreDetail:"Olivia Personal Care products are crafted for daily self-care rituals that feel indulgent yet purposeful. From body lotions to face cleansers, each formula is infused with botanical extracts, vitamins, and soothing essential oils to hydrate, protect, and revive your skin. Elevate your wellness routine with clean, conscious, and caring skincare."
+  color:"#dcb305",
+  tagline:"Deep clean. Lasting shine",
+  moreDetail:"Formulated for brilliance and hygiene, Olivia GleamPro Tile & Floor Cleaner removes stubborn stains, grease, and grime to reveal spotless, radiant surfaces. Its fast-acting formula not only cleans deeply but also leaves a lasting freshness that brightens your entire space. Safe for all tile and floor types, it delivers a gleaming finish without residue. With GleamPro, every step reflects Olivia’s promise of purity and perfection."
+},{
+  firstImg:Tile2,
+  hoverImg:Tile22,
+  id: 42,
+  heading: "Personal Care",
+  price: 9000,
+  rating: 4.3, // Added rating
+  sufix: " Tile Cleaner",
+  name:"ProClean",
+  tagline:"Professional strength. Impeccable results.",
+  additionalImgs: [Tile222],
+  detail:"Pamper yourself daily — premium care for skin that deserves the best.",
+  category: ["tile-cleaner"],
+    color:"#dcb305",
+
+
+  moreDetail:"Built for industrial and commercial standards, Olivia ProClean Tile & Floor Cleaner delivers exceptional cleaning power for high-traffic spaces. Its advanced formula breaks down tough stains, grease, and dirt with ease, leaving behind spotless surfaces and a fresh, hygienic scent. Effective on ceramic, marble, and vinyl floors, it ensures lasting shine and a germ-free finish. Trusted by professionals, Olivia ProClean is the ultimate partner for spotless, high-performance spaces."
 },{
   firstImg:Fabric1,
   hoverImg:Fabric11,
