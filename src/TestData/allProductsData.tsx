@@ -1,8 +1,5 @@
 import first from "../assets/images/hand-wash1.png";
-import product1 from "../assets/images/air-freshner4.png";
-import product2 from "../assets/images/air-freshner3.png";
-import product3 from "../assets/images/dish-wash1.png";
-import product4 from "../assets/images/dish-wash2.png";
+
 import Car1 from "../assets/images/car1.png";
 import Car11 from "../assets/images/car11.png";
 import Car111 from "../assets/images/car111.png";
@@ -27,7 +24,6 @@ import HandWash55 from "../assets/images/hand-wash55.png";
 import HandWash6 from "../assets/images/hand-wash6.png";
 import HandWash66 from "../assets/images/hand-wash66.png";
 import HandWash666 from "../assets/images/hand-wash666.png";
-import AF2 from "../assets/images/air-freshner2.png";
 import AF3 from "../assets/images/air-freshner3.png";
 import AF33 from "../assets/images/air-life2.png";
 import AF4 from "../assets/images/air-freshner4.png";
@@ -68,7 +64,6 @@ import Hair10 from "../assets/images/hair10.png";
 import Hair1010 from "../assets/images/hair1010.png";
 import Hair101010 from "../assets/images/hair101010.png";
 import Hair10101010 from "../assets/images/hair10101010.png";
-import SkinCare1 from "../assets/images/jelly.png";
 import SkinCare2 from "../assets/images/vaseline-use.png";
 import SkinCare3 from "../assets/images/vaseline-open.png";
 import SkinCare4 from "../assets/images/vaseline-use2.png";
@@ -180,11 +175,15 @@ export const allProductsData = [
     heading: "Car Wash",
     price: 9000,
     rating: 4.3, // Added rating
-    name: "Laundry Tablets",
+    name: "MirrorGloss",
+    sufix:" Car Wash",
+    color:"#dfc402",
     additionalImgs: [Car111],
     category: ["car-wash"],
     detail:"what we sell5",
-    bestSeller:true
+    tagline:"See the world in your shine.",
+    moreDetail:"Experience the brilliance of a perfect wash with Olivia MirrorGloss Car Wash, engineered to reveal the true beauty of your car. Its deep-cleansing formula removes dirt effortlessly while restoring a sleek, reflective glow that turns heads on every road. Enhanced with a radiant finish, it protects your paint and leaves a smooth, glass-like shine that lasts. With MirrorGloss, your car doesn’t just shine — it reflects perfection.",
+    bestSeller:true,
   },
   {
     firstImg: Tile1,
@@ -703,11 +702,14 @@ color:"#caa303",
   heading: "Car Wash",
   price: 9000,
   rating: 4.3, // Added rating
-  name: "Car Wash",
+  name: "RadiantShine",
+  sufix:" Car Wash",
   additionalImgs: [Car222],
+  tagline:"Because every shine tells your story.",
   detail:"Give your ride a showroom finish — powerful clean, streak-free shine.",
-  category: ["car-wash", "liquid-soap"],
-  moreDetail:"Olivia Car Wash cleans, protects, and polishes — all in one go. Its concentrated foam formula lifts dirt and grime effortlessly while preserving your car’s paint and shine. Infused with wax-enhancing agents and anti-scratch polymers, it delivers a spotless, showroom finish that turns heads and defies weather damage."
+  category: ["car-wash"],
+  color:"#dfc402",
+  moreDetail:"Formulated for a spotless, mirror-like finish, Olivia RadiantShine Car Wash brings brilliance and protection to every drive. Its advanced cleansing formula lifts away dirt and grime while revealing a smooth, radiant surface that gleams under any light. Infused with gloss-enhancing agents, it leaves behind a lasting shine that reflects excellence and care. With RadiantShine, your car doesn’t just stay clean — it shines with pride.",
 },
 {
   firstImg:Toilet,
