@@ -361,7 +361,9 @@ tagline:"Pure softness in every touch.",
   heading: "Dish Wash",
   price: 5000,
   rating: 4.0, // Added rating
-  name: "Olivia Lemon",
+  name: "Fruity ",
+  sufix:"Dish Wash",
+  color:"green",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [Dish111],
   category: ["dish-wash"],
@@ -374,7 +376,9 @@ tagline:"Pure softness in every touch.",
   heading: "Dish Wash",
   price: 5000,
   rating: 4.0, // Added rating
-  name: "Olivia Lemon",
+  name: "Lemon",
+  sufix:" Dish Wash",
+  color:"green",
   detail:"Cuts through grease in seconds — for dishes that shine like new.",
   additionalImgs: [Dish222],
   category: ["dish-wash"],
@@ -442,22 +446,31 @@ tagline:"Pure softness in every touch.",
   rating: 4.8, // Added rating
   name: "Primrose",
   detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
+  tagline:"Gentle. Graceful. Unforgettable.",
   additionalImgs: [ ],
+  sufix:" Air Freshener",
+  color:"#920c0f",
   category: ["air-freshener"],
-  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
-},
+  moreDetail:"Inspired by the delicate beauty of blooming petals, Olivia Primrose Air Freshener fills your space with a soft floral embrace that soothes and uplifts. Each mist releases notes of springtime freshness, carrying whispers of wild blossoms and morning dew. The scent lingers tenderly — elegant, calming, and effortlessly pure. With Primrose, every breath feels like stepping into a garden kissed by sunrise.",},
 {
   firstImg: AF3,
   hoverImg:AF33,
   id: 22,
-  heading: "Air Freshener",
+  heading: " Air Freshener",
   price: 10000,
   rating: 4.8, // Added rating
   name: "Belle Rose",
+  color:"red",
+  tagline:"Where elegance blooms in every breath",
+ "flavours": [
+      { "id": 1, "name": "🌹 Rose Flower" },
+     
+    ],
+      sufix:" Air Freshener",
   detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [ ],
   category: ["air-freshener"],
-  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
+  moreDetail:"Born from the delicate harmony of red and white roses, Olivia Belle Rose Air Freshener wraps every space in timeless elegance. Its fragrance balances soft romance with refreshing purity, creating an atmosphere that feels graceful, calm, and inviting. Each mist releases the gentle luxury of fresh-cut roses that linger beautifully through the day. With Belle Rose, every breath becomes a whisper of sophistication"
 
 },
 {
@@ -471,8 +484,14 @@ tagline:"Pure softness in every touch.",
   detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [ ],
   category: ["air-freshener"],
-  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
-
+  tagline:"Sweet fragrance that lingers.",
+  color:"red",
+  sufix:"Air Freshener",
+  moreDetail:"A captivating fusion of ripe raspberry and bold blackberry, Olivia Lily Air Freshener is crafted to uplift and inspire. The scent dances between juicy sweetness and deep allure, filling your space with a burst of fruity vibrance. Long-lasting yet delicately balanced, it transforms the atmosphere into one of freshness, joy, and subtle charm. With Lily, every breath feels like a soft whisper of sweetness.",
+  "flavours": [
+      { "id": 1, "name": "🌹 Raspberry" },
+      { "id": 2, "name": "🍇 Black Berry" },
+  ]
 },{
   firstImg: AF1,
   hoverImg: AF11,
@@ -483,9 +502,16 @@ tagline:"Pure softness in every touch.",
   name: "Murray Berry",
   detail:"Instantly refresh your space with long-lasting, mood-lifting fragrance.",
   additionalImgs: [ ],
+  sufix:" Air Freshener",
+  tagline:"A burst of berry freshness",
   category: ["air-freshener"],
-  moreDetail:"Transform any room into a haven of freshness with Olivia Air Freshener. Designed to eliminate odors — not just mask them — this product infuses your space with long-lasting natural fragrances like lavender, citrus blossom, and eucalyptus. Perfect for homes, cars, and offices, its ultra-fine mist spreads evenly and instantly uplifts your environment."
-
+  moreDetail:"A captivating fusion of strawberry, blueberry, and blackberry, Olivia Murray Berry Air Freshener envelopes your space in a harmony of juicy freshness and gentle calm. Each spray releases waves of ripe sweetness balanced with subtle floral undertones, creating an atmosphere that feels both vibrant and soothing. Its long-lasting fragrance lingers like a soft melody — refreshing, warm, and irresistibly inviting. With Murray Berry, every breath feels like a tender embrace of nature’s sweetness.",
+color:"#0b830bff",
+"flavours": [
+      { "id": 1, "name": "🌹🫐 Blueberry" },
+      { "id": 2, "name": "🍇 Black Berry" },
+      { "id": 3, "name": "🍓 Raspverry" },
+  ]
 },
 {
   firstImg:Hair1,
@@ -498,8 +524,13 @@ tagline:"Pure softness in every touch.",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [Hair11],
   category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+  color:"#ac4c0c",
+  tagline:"Nourish deeply. Shine naturally.",
+  moreDetail:"Infused with the creamy essence of avocado pear, Olivia Beauty Shampoo restores strength and softness from root to tip. Its rich, vitamin-packed formula deeply hydrates and smooths each strand, leaving your hair silky, resilient, and radiant. The gentle lather cleans without stripping away natural oils, revealing hair that feels alive, light, and luxuriously soft. With our Beauty Shampoo, nature’s nourishment meets everyday elegance.",
+"flavours": [
+      { "id": 1, "name": "🥑 Avocado Pear" },
+    
+  ]
  
 },{
   firstImg:Shampoo2,
@@ -509,11 +540,16 @@ tagline:"Pure softness in every touch.",
   rating: 4.5, // Added rating
   heading: "Hair Care",
   name: "Neutralizing Shampoo",
+    tagline:"Nourish deeply. Shine naturally.",
+color:"#106d19",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [Shampoo222],
   category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+  moreDetail:"Infused with the creamy essence of avocado pear, Olivia Neutralizing Shampoo restores strength and softness from root to tip. Its rich, vitamin-packed formula deeply hydrates and smooths each strand, leaving your hair silky, resilient, and radiant. The gentle lather cleans without stripping away natural oils, revealing hair that feels alive, light, and luxuriously soft. With our Neutralizing Shampoo, nature’s nourishment meets everyday elegance.",
+"flavours": [
+      { "id": 1, "name": "🥑 Avocado Pear" },
+    
+  ]
 },{
   firstImg: HairDD,
   hoverImg:HairD,
@@ -525,8 +561,9 @@ tagline:"Pure softness in every touch.",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ HairDDD,],
   category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+  color:"#ec751fff",
+  moreDetail:"Formulated to restore your hair’s natural richness, Olivia EbonyCare Darkening Cream deeply nourishes from root to strand, helping reduce dandruff and revive your hair’s deep, healthy tone. Its gentle conditioning blend enhances natural color while keeping your scalp fresh, balanced, and flake-free. With consistent use, your hair regains its softness, strength, and a radiant, darker sheen that glows with confidence. Olivia EbonyCare — where beauty begins at the roots.",
+tagline:"Strength, shine, and a touch of natural depth.",
  
 },{
   firstImg: Hair3,
@@ -539,8 +576,13 @@ tagline:"Pure softness in every touch.",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair333, Hair3333,Hair33,Hair333333,Hair3333333,],
   category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+  tagline:"Smooth strength, sealed in shea",
+  color:"#3259cfff",
+  moreDetail:"Infused with pure shea butter, Olivia Relaxer transforms hair with a touch of natural luxury. Its rich, creamy formula softens and smooths each strand, leaving hair manageable, glossy, and deeply moisturized. Gentle yet effective, it relaxes without harshness — maintaining strength while enhancing natural shine. With Olivia Relaxer, every application is a silky step toward confidence and care.",
+"flavours": [
+      { "id": 1, "name": "🧈 Shea Butter" },
+    
+  ]
 },{
   firstImg: Hair4,
   hoverImg:Hair444,

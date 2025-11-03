@@ -1,7 +1,7 @@
 export const IgPosts = [
   {
     id: 1,
-    url: "https://www.instagram.com/p/DIrBrg-tK6j/",
+    url: "https://www.instagram.com/oliviafresh.ng/",
   },
   // {
   //   id: 2,
