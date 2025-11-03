@@ -787,22 +787,30 @@ color:"#caa303",
   heading: "Fabric Wash",
   price: 9000,
   rating: 4.3, // Added rating
-  name: "Petroluem Jelly",
+  name: "FiberGuard",
+  sufix:" Fabric Wash",
+  color:"#14368c",
   additionalImgs: [Fabric111],
   detail:"Pamper yourself daily — premium care for skin that deserves the best.",
   category: ["fabric-wash"],
-  moreDetail:"Olivia Personal Care products are crafted for daily self-care rituals that feel indulgent yet purposeful. From body lotions to face cleansers, each formula is infused with botanical extracts, vitamins, and soothing essential oils to hydrate, protect, and revive your skin. Elevate your wellness routine with clean, conscious, and caring skincare."
+    tagline:"Gentle on fabric. Relentless on stains",
+
+  moreDetail:"Designed to preserve color, texture, and freshness, Olivia SoftWash Fabric Wash delivers a deep yet gentle clean that keeps clothes looking new for longer. Its advanced formula removes tough stains while maintaining fabric softness and brilliance. A touch of lasting fragrance leaves every wash smelling crisp and comforting. With SoftWash, your laundry isn’t just clean — it’s cared for with Olivia’s signature touch of excellence."
 },{
   firstImg:Fabric2,
   hoverImg:Fabric22,
   id: 41,
   heading: "Fabric Wash",
   price: 9000,
+  tagline:"Professional clean. Perfect care.",
   rating: 4.3, // Added rating
-  name: "Petroluem Jelly",
+  name: "Fabricare Pro",
+    sufix:" Fabric Wash",
+  color:"#14368c",
+
   additionalImgs: [Fabric222],
   detail:"Pamper yourself daily — premium care for skin that deserves the best.",
   category: ["fabric-wash"],
-  moreDetail:"Olivia Personal Care products are crafted for daily self-care rituals that feel indulgent yet purposeful. From body lotions to face cleansers, each formula is infused with botanical extracts, vitamins, and soothing essential oils to hydrate, protect, and revive your skin. Elevate your wellness routine with clean, conscious, and caring skincare."
+  moreDetail:"Engineered for high-demand environments, Olivia Fabricare Pro delivers industrial-grade cleaning power with a gentle touch. Its advanced formula penetrates deep into fabrics to remove tough stains, odors, and residues while preserving texture and color integrity. Ideal for hotels, laundromats, hospitals, and corporate facilities, it ensures every wash comes out fresh, soft, and spotless. Trusted by professionals, Olivia Fabricare Pro keeps linens bright, garments flawless, and standards impeccably high."
 },
 ];
