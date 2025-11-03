@@ -92,7 +92,7 @@ export const TopNav = () => {
                   </Dropdown.Item>{" "}
                   <Dropdown.Item href="#/action-3">
                     {" "}
-                    <NavLink to={"/collections?category=shampoo"}>
+                    <NavLink to={"/collections?category=hair-care"}>
                     Hair Care
                     </NavLink>
                     
@@ -239,7 +239,7 @@ export const TopNav = () => {
                     <li>   <NavLink to={"/collections?category=air-freshener"}>
                       Air Freshener
                     </NavLink></li>
-                    <li onClick={handleClose}>   <NavLink to={"/collections?category=shampoo"}>
+                    <li onClick={handleClose}>   <NavLink to={"/collections?category=hair-care"}>
                       Hair Care
                     </NavLink></li>
                     <li onClick={handleClose}>   <NavLink to={"/collections?category=car-wash"}>

@@ -523,7 +523,7 @@ color:"#0b830bff",
   name: "Beauty Shampoo",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [Hair11],
-  category: ["shampoo"],
+  category: ["hair-care"],
   color:"#ac4c0c",
   tagline:"Nourish deeply. Shine naturally.",
   moreDetail:"Infused with the creamy essence of avocado pear, Olivia Beauty Shampoo restores strength and softness from root to tip. Its rich, vitamin-packed formula deeply hydrates and smooths each strand, leaving your hair silky, resilient, and radiant. The gentle lather cleans without stripping away natural oils, revealing hair that feels alive, light, and luxuriously soft. With our Beauty Shampoo, nature’s nourishment meets everyday elegance.",
@@ -544,7 +544,7 @@ color:"#0b830bff",
 color:"#106d19",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [Shampoo222],
-  category: ["shampoo"],
+  category: ["hair-care"],
   moreDetail:"Infused with the creamy essence of avocado pear, Olivia Neutralizing Shampoo restores strength and softness from root to tip. Its rich, vitamin-packed formula deeply hydrates and smooths each strand, leaving your hair silky, resilient, and radiant. The gentle lather cleans without stripping away natural oils, revealing hair that feels alive, light, and luxuriously soft. With our Neutralizing Shampoo, nature’s nourishment meets everyday elegance.",
 "flavours": [
       { "id": 1, "name": "🥑 Avocado Pear" },
@@ -560,7 +560,7 @@ color:"#106d19",
   name: "Hair Cream",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ HairDDD,],
-  category: ["shampoo"],
+  category: ["hair-care"],
   color:"#ec751fff",
   moreDetail:"Formulated to restore your hair’s natural richness, Olivia EbonyCare Darkening Cream deeply nourishes from root to strand, helping reduce dandruff and revive your hair’s deep, healthy tone. Its gentle conditioning blend enhances natural color while keeping your scalp fresh, balanced, and flake-free. With consistent use, your hair regains its softness, strength, and a radiant, darker sheen that glows with confidence. Olivia EbonyCare — where beauty begins at the roots.",
 tagline:"Strength, shine, and a touch of natural depth.",
@@ -575,7 +575,7 @@ tagline:"Strength, shine, and a touch of natural depth.",
   name: "Shea Butter Relaxer",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair333, Hair3333,Hair33,Hair333333,Hair3333333,],
-  category: ["shampoo"],
+  category: ["hair-care"],
   tagline:"Smooth strength, sealed in shea",
   color:"#3259cfff",
   moreDetail:"Infused with pure shea butter, Olivia Relaxer transforms hair with a touch of natural luxury. Its rich, creamy formula softens and smooths each strand, leaving hair manageable, glossy, and deeply moisturized. Gentle yet effective, it relaxes without harshness — maintaining strength while enhancing natural shine. With Olivia Relaxer, every application is a silky step toward confidence and care.",
@@ -594,7 +594,7 @@ tagline:"Strength, shine, and a touch of natural depth.",
   sufix:"Styling Gel",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair44, Hair4444],
-  category: ["shampoo"],
+  category: ["hair-care"],
   tagline:"Style with strength. Shine with confidence.",
   moreDetail:"Designed for precision and perfection, Olivia FlexHold Styling Gel gives you lasting control without the crunch. Its lightweight, non-flaking formula defines every strand while keeping your hair soft, glossy, and touchable. Whether sleek, sculpted, or natural, your style stays effortlessly in place all day. With FlexHold, every look begins and ends with confidence and shine.",
 color:"#2850c7ff",
@@ -611,7 +611,7 @@ color:"#2850c7ff",
   additionalImgs: [],
       tagline:"Feed your hair. Feel the softness",
 color:"#caa303",
-  category: ["shampoo"],
+  category: ["hair-care"],
   moreDetail:"Enriched with natural emollients and vitamins, Olivia MoistureGold Hair Food delivers deep hydration that revives even the driest strands. Its creamy texture melts into your scalp, nourishing from within to restore softness, strength, and natural shine. Perfect for daily use, it keeps your hair silky, manageable, and full of life. With MoistureGold, your hair stays moisturized, radiant, and effortlessly touchable every"
 
 },{
@@ -621,13 +621,19 @@ color:"#caa303",
   price: 12000,
   rating: 4.5, // Added rating
   heading: "Hair Care",
-  name: "Ella Bella Shampoo",
+  name: "Ella Bella HoneyGlow",
+  sufix:" Shampoo",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair88,],
-    tagline:"Feed your hair. Feel the softness",
-  category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+    tagline:"Pure nourishment in every wash.",
+  category: ["hair-care"],
+  color:"#752819ff",
+  moreDetail:"Infused with the golden richness of honey and the soothing purity of aloe vera, Ella Bella HoneyGlow Shampoo cleanses your hair with a touch of nature’s tenderness. Its creamy lather hydrates deeply, leaving your strands soft, radiant, and beautifully manageable. Honey restores natural moisture while aloe vera cools and revitalizes the scalp for lasting freshness. With HoneyGlow, every wash feels like a gentle renewal for your hair.",
+"flavours": [
+      { "id": 1, "name": "🍯 Honey" },
+      { "id": 2, "name": "🌿 Aloe Vera" },
+    
+  ]
 },{
   firstImg: Hair9,
   hoverImg:Hair999,
@@ -635,12 +641,19 @@ color:"#caa303",
   price: 12000,
   rating: 4.5, // Added rating
   heading: "Hair Care",
-  name: "Ella Bella Conditioner",
+  name: "Ella Bella HoneySilk",
+  sufix:" Conditioner",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair99, ],
-  category: ["shampoo"],
-  moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+  color:"#af7019",
+  category: ["hair-care"],
+  tagline:"Softness that flows, naturally.",
+  moreDetail:"Enriched with the golden touch of honey and the soothing essence of aloe vera, Ella Bella HoneySilk Conditioner restores moisture and shine after every wash. Its creamy blend smooths away dryness, detangles with ease, and leaves your hair soft, glossy, and luxuriously light. Honey seals in hydration while aloe vera cools and nourishes the scalp, giving your hair lasting vitality. With HoneySilk, your hair doesn’t just shine — it flourishes.",
+"flavours": [
+      { "id": 1, "name": "🍯 Honey" },
+      { "id": 2, "name": "🌿 Aloe Vera" },
+    
+  ]
 },
 {
   firstImg: Hair10,
@@ -649,12 +662,18 @@ color:"#caa303",
   price: 12000,
   rating: 4.5, // Added rating
   heading: "Hair Care",
+  tagline:"Refresh. Revive. Rejuvenate.",
   name: "Mentholated Shampoo",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair101010, Hair10101010],
-  category: ["shampoo"],
-     moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+  category: ["hair-care"],
+  color:"#086e23ff",
+     moreDetail:"Infused with the nourishing blend of coconut oil and avocado pear, Olivia CoolThrive Mentholated Shampoo awakens your scalp with a cool burst of freshness. The menthol energizes and soothes, while the natural oils deeply moisturize and strengthen every strand. Its rich, creamy lather leaves your hair clean, soft, and vibrantly healthy. With CoolThrive, each wash is a refreshing retreat for your hair and senses.",
+"flavours": [
+      { "id": 1, "name": "🥥 Coconut Oil" },
+      { "id": 2, "name": "🥑 Avocado Pear" },
+    
+  ]
 },{
   firstImg: Hair1b,
   hoverImg:Hair1bb,
@@ -662,12 +681,18 @@ color:"#caa303",
   price: 12000,
   rating: 4.5, // Added rating
   heading: "Hair Care",
-  name: "Mentholated Shampoo",
+  name: "CitrusLift ",
+  tagline:"Instant freshness. Lasting radiance.",
+  sufix:"Conditioner",
+  color:"orange",
   detail:"Nourish your hair from root to tip — for softness you can feel and shine you can flaunt.",
   additionalImgs: [ Hair1bbb, Hair1bbbb],
-  category: ["shampoo"],
-     moreDetail:"Olivia Hair Care is a rich, nourishing formula designed to restore strength and shine to dull or damaged hair. Packed with argan oil, keratin, and vitamins B5 & E, it deeply conditions, tames frizz, and promotes healthy hair growth. Whether it’s shampoo or conditioner, this line transforms your haircare routine into a salon-worthy experience."
-
+ category: ["hair-care"],
+     moreDetail:"Bursting with the energizing essence of citrus, Olivia CitrusLift Instant Conditioner revitalizes dull, tired hair in seconds. Its lightweight formula smooths, detangles, and restores shine without weighing your hair down. Each use releases a refreshing scent that awakens your senses while leaving your strands soft, bouncy, and naturally vibrant. With CitrusLift, freshness and beauty go hand in hand.",
+"flavours": [
+      { "id": 1, "name": "🍊 Citrus Extract" },
+    
+  ]
 },
 
 
