@@ -50,7 +50,7 @@ const FBSocials = () => {
       >
         <div
           className="fb-page"
-          data-href="https://www.facebook.com/britishspringawka"
+          data-href="https://web.facebook.com/profile.php?id=61583436475101&_rdc=1&_rdr#"
           data-tabs="timeline"
           data-height=""
           data-small-header="false"
@@ -59,11 +59,11 @@ const FBSocials = () => {
           data-show-facepile="true"
         >
           <blockquote
-            cite="https://www.facebook.com/britishspringawka"
+            cite="https://web.facebook.com/profile.php?id=61583436475101&_rdc=1&_rdr#"
             className="fb-xfbml-parse-ignore"
             style={{ width: "100%", margin: "20px auto" }}
           >
-            <a href="https://www.facebook.com/britishspringawka">
+            <a href="https://web.facebook.com/profile.php?id=61583436475101&_rdc=1&_rdr#">
               British Spring College
             </a>
           </blockquote>

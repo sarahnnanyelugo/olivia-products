@@ -159,7 +159,7 @@ export const Home = () => {
           </div>
         </center>
         <div className="news-inner">
-          <div className="col-md-10 offset-md-1 d-md-flex ">
+          <div className="col-md-8 offset-md-2 d-md-flex ">
             <div className="col-md-4">
               <FBSocials />
             </div>
