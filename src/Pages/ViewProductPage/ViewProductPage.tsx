@@ -108,7 +108,7 @@ export const ViewProductPage: React.FC = () => {
             ))}
           </div>
 
-          <div className="main-carousel col-md-10">
+          <div className="main-carousel col-md-9">
             <Desktop> {primaryCategory && (
             <div className="mt-3 all-sections">
               <Link to={`/collections?category=${encodeURIComponent(primaryCategory)}`} style={{ color: product.color }}>
