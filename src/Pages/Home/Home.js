@@ -30,10 +30,10 @@ export const Home = () => {
     <div className="home-div">
       <HomeSlide />
 
-      <div className="col-md-8 offset-md-2 d-md-flex abt-div">
-        <div className="col-md-6 col-12">
+      <div className=" d-md-flex abt-div col-md-12 container">
+        <div className=" col-md-6 ">
           <h6>ABOUT US</h6>
-          <h5>
+          <h5 className="col-md-12">
             One of the largest manufacturer and distributor of Laundry, Hygiene
             and Hair Care products in Nigeria.
           </h5>
@@ -60,7 +60,7 @@ export const Home = () => {
       <div className="products-intro-corner">
         {" "}
         <center>
-          <div className="col-md-5 home-prd">
+          <div className="col-md-6 home-prd">
             <h6>OUR PRODUCTS</h6>
             <h2>Millions trust our touch. Every day begins with Olivia.</h2>
             <p>
@@ -159,7 +159,7 @@ export const Home = () => {
           </div>
         </center>
         <div className="news-inner">
-          <div className="col-md-8 offset-md-2 d-md-flex ">
+          <div className=" container d-md-flex ">
             <div className="col-md-4">
               <FBSocials />
             </div>
