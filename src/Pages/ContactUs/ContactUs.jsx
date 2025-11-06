@@ -12,7 +12,7 @@ export const ContactUs = () => {
      
       </div>
    
-      <div className=" d-md-flex contact-info col-md-10 offset-md-1">
+      <div className=" d-md-flex contact-info container">
         <div className="col-md-7">
           <form className="contact-form">
             {" "}
