@@ -31,7 +31,7 @@ import VideoModal from "./VideoModal";
 
 const tabs = [
   {
-    label: "Tab 1",
+    label: "Fun fact 1",
     content: {
       image: Abt1,
       heading: "DID YOU KNOW?",
@@ -42,7 +42,7 @@ const tabs = [
     },
   },
   {
-    label: "Tab 2",
+    label: "Fun fact 2",
     content: {
       image: Abt2,
       heading: "DID YOU KNOW?",
@@ -53,7 +53,7 @@ const tabs = [
     },
   },
   {
-    label: "Tab 3",
+    label: "Fun fact 3",
     content: {
       image: Abt3,
       heading: "DID YOU KNOW?",
@@ -92,42 +92,45 @@ export const About = () => {
           <h5>About Us</h5>
         </div>
       </div>
-      <div className="overview-div d-md-flex">
-        <div className="col-md-3  offset-md-2 ">
-          <h4>COMPANY OVERVIEW</h4>
-          <p>
-            Olivia Products Nigeria Ltd is one of the largest manufacturer and
-            distributor of Laundry, Hygiene and hair Care products in Nigeria.
-          </p>
-          <p>
-            Olivia Products was established in 2009, having its manufacturing
-            plant & HQ based in Lagos-Nigeria, producing various brands of
-            consumer products in non-food categories.
-          </p>
-          <p>
-            Our operations in Nigeria span over 15 years, with an enduring
-            commitment to consumers’ daily lives. We raise consumer satisfaction
-            and market standards by offering world-class products such as Viva,
-            Siri, Fizz, Oracare, Biotol, Sabil, Family Care, Baby & Me, Manuka &
-            MP3.
-          </p>
-        </div>
-        <div className="col-md-4 offset-md-1 page-video">
-          <div className="borders col-md-6 col-6" />
-          <div className=" video-holder">
-            <img src={VidBg} width="100%" />
-            <div className="overlay">
-              <div className="justify-content-center d-flex align-items-center">
-                <VideoModal />
+      <div className="overview-div">
+        {" "}
+        <div className="d-md-flex container">
+          <div className="col-md-5   ">
+            <h4>COMPANY OVERVIEW</h4>
+            <p>
+              Olivia Products Nigeria Ltd is one of the largest manufacturer and
+              distributor of Laundry, Hygiene and hair Care products in Nigeria.
+            </p>
+            <p>
+              Olivia Products was established in 2009, having its manufacturing
+              plant & HQ based in Lagos-Nigeria, producing various brands of
+              consumer products in non-food categories.
+            </p>
+            <p>
+              Our operations in Nigeria span over 15 years, with an enduring
+              commitment to consumers’ daily lives. We raise consumer
+              satisfaction and market standards by offering world-class products
+              such as Viva, Siri, Fizz, Oracare, Biotol, Sabil, Family Care,
+              Baby & Me, Manuka & MP3.
+            </p>
+          </div>
+          <div className="col-md-6 offset-md-1 page-video">
+            <div className="borders col-md-6 col-6" />
+            <div className=" video-holder">
+              <img src={VidBg} width="100%" />
+              <div className="overlay">
+                <div className="justify-content-center d-flex align-items-center">
+                  <VideoModal />
+                </div>
               </div>
             </div>
+            <div className="borders2 col-md-6 " />
           </div>
-          <div className="borders2 col-md-6 " />
         </div>
       </div>
 
       <div className="mission-div">
-        <div className="col-md-10 offset-md-1 d-md-flex">
+        <div className="container d-md-flex">
           <div className="col-md-4" style={{ padding: "0px 30px" }}>
             <center>
               <img src={Vision} width="140px" />
@@ -164,7 +167,7 @@ export const About = () => {
         </div>
       </div>
 
-      <div className="col-md-8 d-md-flex offset-md-2 directors-corner">
+      <div className="container d-md-flex  directors-corner">
         <div className="col-md-5">
           <h2>Board of Directors</h2>
           <p>
@@ -201,8 +204,8 @@ export const About = () => {
       <div className="facilities-corner">
         <div className="facility-bg"></div>
         <div className="overlay">
-          <div className="col-md-10 offset-md-2 d-md-flex">
-            <div className="col-md-3">
+          <div className="container d-md-flex">
+            <div className="col-md-5">
               <h2>Manufacturing Facility</h2>
               <p>
                 Our manufacturing facility includes production of Detergent,

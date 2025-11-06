@@ -62,7 +62,7 @@ const FactTab: React.FC<{ tabs: Tab[] }> = ({ tabs }) => {
       {/* Tab Content */}
       <div style={{ borderBottom: "2px solid #ccc" }} />
       <div
-        className="col-md-4 offset-md-4 tab-content d-md-flex"
+        className="col-md-4 offset-md-4 tab-content"
         style={{
           opacity: fade ? 0 : 1,
           transform: fade ? "scale(0.95)" : "scale(1)",

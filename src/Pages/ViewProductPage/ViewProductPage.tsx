@@ -83,7 +83,7 @@ export const ViewProductPage: React.FC = () => {
 
   return (
     <>
-      <div className="product-detail d-md-flex col-md-10 offset-md-1">
+      <div className="product-detail d-md-flex col-md-12 container">
         <TabletAndBelow> {primaryCategory && (
             <div className="mt-3 all-sections">
               <Link to={`/collections?category=${encodeURIComponent(primaryCategory)}`} style={{ color: product.color }}>
